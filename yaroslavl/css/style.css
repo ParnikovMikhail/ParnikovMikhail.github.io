@@ -1,0 +1,722 @@
+body {
+	font-family: 'Roboto slab', tahoma, sans-serif;
+	font-size: 15px;
+	padding: 0px;
+	margin: 0px;
+}
+
+div, p, input, button, form {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+header {
+    background: #fff;
+}
+
+.menu_top {
+    
+}
+
+/** логотип началл **/
+.menu_top_logo {
+    float: left;
+    margin-right: 20px;
+}
+
+.menu_top_logo_img {
+    float: left;
+    margin-top: 10px;
+}
+
+.menu_top_logo_caption {
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu_top_logo_text {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+}
+/** логотип конец **/
+
+/** меню начало *//
+.menu_top_list_item {
+    margin: 0px;
+}
+
+.menu_top_list_item li {
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 46px;
+    list-style-type: none;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu_top_list_item a {
+    color: black;
+    border-radius: 5px;
+    padding: 12px 10px;
+}
+
+.menu_top_list li a:hover  {
+    background: #f7f2fe;
+}
+
+.menu_top_phone {
+    color: #2f1059;
+}
+
+.menu_top_phone_num {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.menu_top_phone_button {
+    border: 2px solid #2f1059;
+    border-radius: 5px;
+    display: table;
+    font-weight: bold;
+    padding: 10px 4px 14px 13px;
+    float: right;
+    margin-top: 7px;
+}
+
+.menu_top_phone_button_text {
+    float: right;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+
+.first {
+    display: block;
+    background: url(../img/pimgpsh_fullsize_distr.png) no-repeat center;
+    color: #2f1059;
+    text-align: center;
+}
+
+.first_cloud {
+    padding-top: 30px;
+    margin-bottom: 170px;
+}
+
+.first_cloud-img {
+    display: block;
+    background: url(../img/cloud.png) no-repeat center;
+    height: 190px;
+    padding-top: 50px;
+}
+
+.first_cloud_text_top {
+    line-height: 30%;
+    font-size: 22px;
+}
+
+.first_cloud-caption {
+    font-size: 43px;
+    text-transform: uppercase;
+}
+
+.first_cloud_tex_bottom {
+    font-size: 20px;
+}
+
+.first_form-img {
+    background: url(../img/form.png) center no-repeat;
+    height: 220px;
+    padding-top: 30px;
+    position: relative;
+    top: 30px;
+    border-radius: 5px 5px;
+}
+
+.first_form-caption {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.first_form-caption-bottom {
+    font-size: 17px;    
+    font-weight: 100;
+}
+
+/** форма начало **/
+form {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.first_form_name {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px 5px;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.first_form_tel_icon {
+    background: url(../img/form_phone.png);
+}
+
+.first_form_tel {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px 5px;
+    font-size: 16px;
+    display: inline-block;
+    border-top: 100px;
+}
+
+.firs_form_act {
+    width: 274px;
+    height: 50px;
+    background: #d22828;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px 5px;
+}
+
+.first_form_bottom {
+    margin-left: 42%;
+    margin-top: 30px;
+}
+
+.fitst_form_bottom-text {
+    margin-right: 5px;
+    float: left;
+}
+
+.first_form_bottom-text5 {
+    border: 1px solid #8049cb;
+    width: 27px;
+    border-radius: 5px 5px;
+    color: #8049cb;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 5px;
+    float: left;
+}
+
+.first_form_bottom-text_right {
+    float: left;
+}
+/** форма конец **/
+
+/** Круги начало **/
+.circle {
+    overflow: hidden;
+}
+
+.circle1{
+    display: table;
+    background: url(../img/circle.png) no-repeat;
+    height: 150px;
+    width: 160px;
+    margin-top: 220px;
+    padding: 60px 30px;
+    font-size: 17px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.circle2{
+    display: table;
+    background: url(../img/circle.png) no-repeat;
+    height: 150px;
+    padding: 60px 10px 0px 20px;
+    font-size: 17px;
+    margin-top: 120px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.circle3{
+    display: table;
+    background: url(../img/circle.png) no-repeat;
+    height: 150px;
+    padding: 50px 10px 0px 20px;
+    font-size: 17px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.circle4 {
+    display: table;
+    background: url(../img/circle.png) no-repeat;
+    height: 150px;
+    padding: 50px 20px 0px 30px;
+    font-size: 17px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.circle5 {
+    display: table;
+    background: url(../img/circle.png) no-repeat;
+    height: 150px;
+    padding: 50px 20px 0px 30px;
+    font-size: 17px;
+    margin-top: 120px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.circle6{
+    display: table;
+    background: url(../img/circle.png) no-repeat;
+    margin-top: 220px;
+    padding: 50px 10px;
+    font-size: 16px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+
+/** Круги конец **/
+
+/** Блок дом готов начало **/
+
+.house_reade {
+    background: url(../img/house_reade.png) no-repeat center;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    height: 210px;
+    padding-top: 40px
+}
+
+.house_reade-caption {
+}
+
+.house_reade_text-img {
+    margin: 0px auto;
+    display: table;
+    margin-top: 10px;
+}
+
+.house_reade_text_img-flag {
+    background: url(../img/Flag.png) no-repeat;
+    padding: 0px 8px 0px 0px;
+    
+}
+
+.house_reade-text {
+    font-size: 20px;
+    float: right;
+}
+
+.house_reade_thumb {
+    display: block;
+}
+
+/** Блок дом готов конец **/
+
+/** Блок идеальный дом начало **/
+
+.ideal_house {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.ideal_house_caption {
+    text-align: center;
+    font-size: 37px;
+}
+
+.ideal_house_title {
+    font-size: 20px;
+}
+
+.ideal_house_img1 {
+    display: table;
+    text-align: center;
+    float: left;
+}
+
+.ideal_house_img1_img {
+    width: 383px;
+} 
+
+.ideal_house_img1_caption {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+
+/** Блок идеальный дом конец **/
+
+/** Блок развитая инфраструктура конец **/
+
+.infrastructure {
+    background: url(../img/infrastructure.png) no-repeat center 185px;
+    margin-top: 88px;
+    padding-top: 77px;
+    padding-bottom: 50px;
+}
+
+/*.infrastructure-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,0,0,0.3);
+}*/
+
+.infrastructure_caption {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 37px;
+    text-transform: uppercase;
+}
+
+.infrastructure_list {
+    display: table;
+    margin-left: 90px;
+}
+
+.infrastructure_left {
+    display: table;
+    float: left;
+    margin-left: 30px;
+}
+
+
+.infrastructure_social_title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.infrastructure_social_title_line {
+    background: #c9d9c9;
+    width: 290px;
+    height: 1px;
+    margin-bottom: 60px;
+    box-shadow: 20px 20xp 10px 10px black;
+}
+
+.infrastructure_social_text {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.infrastructure_social_text_line {
+    background: #c9d9c9;
+    width: 340px;
+    height: 1px;
+    margin-top: 10px;
+}
+
+/** Блок развития инфраструткра конец **/
+
+/** Блок до центра 5 минут начало **/
+
+.block-urban {
+    background: url(../img/center.png) no-repeat;
+    color: white;
+}
+
+
+.center_list {
+    display: table;
+    margin-left: 90px;
+    padding: 15px 0px 15px 0px;
+}
+
+.center_list_item {
+    padding: 20px 0px 20px 0px;
+    float: left;
+    width: 360px;
+}
+
+.center_list_item:nth-child(3) {
+    width: 390px;
+}
+
+.center_list_item-img {
+    float: left;
+    margin-right: 20px;
+}
+
+.center_list_item-title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.center_list_item-text {
+    font-weight: normal;
+    
+}
+
+/** Блок до центра 5 минут конец ** /
+
+
+/** Блок конструкции дома начало **/
+
+
+.design {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+.desing_caption {
+    font-size: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.design_list {
+    
+}
+
+.desing_list-item {
+    float: left;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.design_list_item_img_3 {
+    width: 300px;
+    height: 187px;
+}
+
+.design_list_item_title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.design_list_item_img {
+    margin-bottom: 25px;
+}
+
+.design_list_item_text {
+    text-align: left;
+}
+
+/** Блок конструкции дома конец **/
+
+/** Блок комплектация начало **/
+
+.equipment {
+    background: #329c35;
+    padding-top: 74px;
+    padding-bottom: 80px;
+    color: white;
+    overflow: hidden;
+}
+
+.equipment_caption {
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.equipment_list-item {
+    display: inline-block;
+    width: 400px;
+    float: left;
+}
+
+.equipment_list_text {
+    list-style-image: url(../img/check.png);
+}
+
+.equipment_list_title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.equipment_list_text_line {
+    background: #48a646;
+    width: 340px;
+    height: 1px;
+    margin-bottom: 15px;
+    
+}
+
+/** Блок комплектация конец **/
+
+/** Блок документы начало **/
+
+.doc {
+    background: url(../img/doc.png) no-repeat;
+    padding-top: 85px;
+    padding-bottom: 75px;
+    overflow: hidden;
+}
+
+.doc_caption {
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.doc_caption-title {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.doc_list {
+    float: left;
+    margin-left: 73px;
+}
+
+/** Блок документы конец **/
+
+/** Футер **/
+
+footer {
+    background: #080808;
+    color: white;
+    overflow: hidden;
+}
+
+
+/** логотип началл **/
+.footer_top_logo {
+    float: left;
+    margin-right: 40px;
+}
+
+.footer_top_logo_img {
+    float: left;
+    margin-top: 10px;
+}
+
+.footer_top_logo_caption {
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer_top_logo_text {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+}
+/** логотип конец **/
+
+.footer_menu {
+    float: left;
+    font-size: 13px;
+}
+
+.footer_menu_left_bottom {
+    text-decoration: underline;
+}
+
+.footer_menu {
+    margin-top: 40px;
+}
+
+.footer_menu_add {
+    float: left;
+}
+
+.footer_menu_right_add {
+    font-weight: bold;    
+}
+
+.footer_menu_right_add_text {
+    font-weight: normal;
+}
+
+
+.footer_menu_right {
+    list-style-type: none;
+}
+
+
+
+/** меню начало *//
+.footer_top_list_item {
+    margin: 0px;
+}
+
+.footer_top_list_item li {
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 46px;
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer_top_list_item a {
+    color: black;
+}
+
+.footer_top_list_item_button {
+    width: 172px;
+    height: 37px;
+    margin-top: 30px;
+    background: #f7f2fe;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.footer_top_phone {
+    float: right;
+}
+
+.footer_top_phone_num {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.footer_top_phone_button {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: table;
+    font-weight: bold;
+    padding: 10px 4px 14px 13px;
+    float: right;
+    margin-top: 7px;
+}
+
+.footer_top_phone_button_text {
+    float: right;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+/** Футер конец **/ 
