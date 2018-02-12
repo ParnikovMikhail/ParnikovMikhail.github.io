@@ -1,6 +1,6 @@
 
 # Михаил Парников
-Портфолио по верстке мои работы:
+Портфолио по верстке мои последние работы:
 
 1. [Автоматизированная штукатурка стен](https://parnikovmikhail.github.io/github/ "Автоматизированная штукатурка стен"){:target="_blank"}
 2. [Arkada](https://parnikovmikhail.github.io/arkada/){:target="_blank"}
