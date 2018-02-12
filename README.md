@@ -14,5 +14,5 @@
 
 
 Мои контакты:
-почта - web-design-ykt@mail.ru, [Вконтакте](https://vk.com/id4707022){:target="_blank"}, 
+почта - web-design-ykt@mail.ru, [Написать мне в вконтакте](https://vk.me/id4707022){:target="_blank"}, 
 скайп mixa198775.
