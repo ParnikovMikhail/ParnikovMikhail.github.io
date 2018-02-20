@@ -1,0 +1,1004 @@
+/* Fonts family */
+@font-face {
+    font-family: 'DINRoundPro';
+    src: url('../fonts/DINRoundPro-Bold.eot');
+    src: url('../fonts/DINRoundPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINRoundPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINRoundPro-Bold.woff') format('woff'),
+        url('../fonts/DINRoundPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINRoundPro';
+    src: url('../fonts/DINRoundPro.eot');
+    src: url('../fonts/DINRoundPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINRoundPro.woff2') format('woff2'),
+        url('../fonts/DINRoundPro.woff') format('woff'),
+        url('../fonts/DINRoundPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'DINRoundPro-Medi';
+    src: url('../fonts/DINRoundPro-Medi.eot');
+    src: url('../fonts/DINRoundPro-Medi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINRoundPro-Medi.woff2') format('woff2'),
+        url('../fonts/DINRoundPro-Medi.woff') format('woff'),
+        url('../fonts/DINRoundPro-Medi.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Colors */
+/* Basic setting */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto', 'DINRoundPro' sans-serif;
+}
+body.modal-open {
+    overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+
+ul, li {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.button {
+  background-color: #edc025;
+  width: 206px;
+  height: 34px;
+  border: #edc025;
+  border-bottom: 2px solid #a98a1d;
+}
+
+.button-calc {
+  padding: 1.5rem 6rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: #d8d8d8;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #d99a03;
+
+}
+
+/* Оформление линии заголовка */
+.header-line {
+  height: 2px;
+  background: #507022;
+  top: 50%;
+  margin-top: 36px;
+} 
+/*оформление форм */
+.form {
+  /*поле для ввода*/
+  /*подписи к полям*/
+  /* кнопка отравить заявку */
+}
+.form-input,
+.form-textarea {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 1.7rem;
+  font-style: 24px;
+}
+.form-input {
+    background-image: url(../img/form/man-user.png);   
+    background-repeat: no-repeat;  
+    background-position: 20px;  
+    outline: none;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;  
+    border-radius: 5px; 
+    padding-left: 70px; 
+    width: 454px;
+   -moz-box-shadow:inset 1px 1px 10px rgba(0,0,0,0.45);
+    -webkit-box-shadow:inset 1px 1px 10px rgba(0,0,0,0.45);
+    box-shadow:inset 1px 1px 10px rgba(0,0,0,0.45);
+}
+.form-input2 {
+    background-image: url(../img/form/telephone.png);   
+    background-repeat: no-repeat;  
+    background-position: 20px;  
+    outline: none;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;  
+    border-radius: 5px; 
+    padding-left: 70px;  
+}
+.form-input3 {
+    background-image: url(../img/form/support.png);   
+    background-repeat: no-repeat;  
+    background-position: 18px 11px;  
+    outline: none;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;  
+    border-radius: 5px; 
+    padding-left: 70px;  
+}
+
+.form-btn {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #7c5944;
+  font-family: DINRoundPro;
+  font-weight: 600; 
+  text-transform: uppercase;
+}
+/* Typography */
+section {
+  padding: 70px 0;
+}
+.section-header {
+  margin: 70px 0 53px;
+  text-align: center;
+}
+.section-header_lignt {
+  color: #ffffff;
+}
+.section-header h2 {
+    color: #507022;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-header p {
+  font-size: 1.4rem;
+}
+
+/* галлерея */
+.thumb img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+ 
+.thumb img:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.thumb {
+    padding: 5px;
+}
+
+
+/* header */
+.header {
+  padding-top: 24px;
+  padding-bottom: 6px;
+}
+
+.logo {
+  width: 75px;
+  height: 71px;
+}
+
+.logo-text p {
+  font-family: Roboto;
+  color:  #1b1b1b;
+  font-size: 27px;
+  font-weight: 900;
+  text-align: center;
+  height: 7rem;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.header-text {
+  font-family: DINRoundPro;
+  color: #1b1b1b;
+  font-size: 22px; 
+  font-weight: bold;
+  line-height: 26px; 
+  text-align: center;
+  text-transform: uppercase;
+  height: 70px;
+  margin-top: 20px; 
+}
+
+.header-contacts {
+  float: right;
+}
+
+.phone-link {
+  font-family: Roboto;
+  color: #1b1b1b;
+  font-size: 22px; 
+  font-weight: 600;
+  text-align: center;
+}
+
+.header-btn {
+  font-family: Roboto;
+  color: #1b1b1b;
+  font-size: 19.05px; 
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* main */
+
+.main {
+  background: url(../img/main/bg-main.png) bottom -10rem center no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+
+.main-block {
+  box-shadow: 0px 0px 27.2px 4.8px rgba(0, 0, 0, 0.7);
+  padding-right: 27px;
+}
+
+.main-offer {
+  background: url(../img/main/main.jpg) center center no-repeat;
+  padding-top: 35px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  height: 332px;
+}
+
+.main-title {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 24.71px; 
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 
+    -0   -5px 0   #000000,
+     0   -5px 0   #000000,
+    -0    5px 0   #000000,
+     0    5px 0   #000000,
+    -5px -0   0   #000000,
+     5px -0   0   #000000,
+    -5px  0   0   #000000,
+     5px  0   0   #000000,
+    -1px -5px 0   #000000,
+     1px -5px 0   #000000,
+    -1px  5px 0   #000000,
+     1px  5px 0   #000000,
+    -5px -1px 0   #000000,
+     5px -1px 0   #000000,
+    -5px  1px 0   #000000,
+     5px  1px 0   #000000,
+    -2px -5px 0   #000000,
+     2px -5px 0   #000000,
+    -2px  5px 0   #000000,
+     2px  5px 0   #000000,
+    -5px -2px 0   #000000,
+     5px -2px 0   #000000,
+    -5px  2px 0   #000000,
+     5px  2px 0   #000000,
+    -3px -5px 0   #000000,
+     3px -5px 0   #000000,
+    -3px  5px 0   #000000,
+     3px  5px 0   #000000,
+    -5px -3px 0   #000000,
+     5px -3px 0   #000000,
+    -5px  3px 0   #000000,
+     5px  3px 0   #000000,
+    -4px -5px 0   #000000,
+     4px -5px 0   #000000,
+    -4px  5px 0   #000000,
+     4px  5px 0   #000000,
+    -5px -4px 0   #000000,
+     5px -4px 0   #000000,
+    -5px  4px 0   #000000,
+     5px  4px 0   #000000,
+    -5px -5px 0   #000000,
+     5px -5px 0   #000000,
+    -5px  5px 0   #000000,
+     5px  5px 0   #000000,
+    -5px -5px 0   #000000,
+     5px -5px 0   #000000,
+    -5px  5px 0   #000000,
+     5px  5px 0   #000000;
+}
+
+.main-subtitle {
+  font-family: Roboto;
+  color: #fd003a;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 190px;
+  display: inline-block;
+  text-shadow: 
+    -0   -5px 0   #000000,
+     0   -5px 0   #000000,
+    -0    5px 0   #000000,
+     0    5px 0   #000000,
+    -5px -0   0   #000000,
+     5px -0   0   #000000,
+    -5px  0   0   #000000,
+     5px  0   0   #000000,
+    -1px -5px 0   #000000,
+     1px -5px 0   #000000,
+    -1px  5px 0   #000000,
+     1px  5px 0   #000000,
+    -5px -1px 0   #000000,
+     5px -1px 0   #000000,
+    -5px  1px 0   #000000,
+     5px  1px 0   #000000,
+    -2px -5px 0   #000000,
+     2px -5px 0   #000000,
+    -2px  5px 0   #000000,
+     2px  5px 0   #000000,
+    -5px -2px 0   #000000,
+     5px -2px 0   #000000,
+    -5px  2px 0   #000000,
+     5px  2px 0   #000000,
+    -3px -5px 0   #000000,
+     3px -5px 0   #000000,
+    -3px  5px 0   #000000,
+     3px  5px 0   #000000,
+    -5px -3px 0   #000000,
+     5px -3px 0   #000000,
+    -5px  3px 0   #000000,
+     5px  3px 0   #000000,
+    -4px -5px 0   #000000,
+     4px -5px 0   #000000,
+    -4px  5px 0   #000000,
+     4px  5px 0   #000000,
+    -5px -4px 0   #000000,
+     5px -4px 0   #000000,
+    -5px  4px 0   #000000,
+     5px  4px 0   #000000,
+    -5px -5px 0   #000000,
+     5px -5px 0   #000000,
+    -5px  5px 0   #000000,
+     5px  5px 0   #000000,
+    -5px -5px 0   #000000,
+     5px -5px 0   #000000,
+    -5px  5px 0   #000000,
+     5px  5px 0   #000000;
+}
+
+.main-action img {
+  position: absolute;
+  width: 147px;
+  height: 147px;
+  left: 127px;
+  top: 116px;
+}
+
+.main-btn {
+  background-color: #edc025;
+  width: 459px;
+  height: 49px;
+  font-family: Roboto;
+  color: #1b1b1b;
+  font-size: 28px; 
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.trigger-text {
+  font-family: DINRoundPro;
+  color:  #1b2c1a;
+  font-size: 19px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.trigger-line {
+  position: absolute;
+  top: 33px;
+  left: 128px;
+}
+
+.trigger-line2 {
+  position: absolute;
+  top: 99px;
+  left: 128px;
+}
+
+.trigger-line3 {
+  position: absolute;
+  top: 164px;
+  left: 128px;
+}
+
+.trigger-line4 {
+  position: absolute;
+  top: 229px;
+  left: 128px;
+}
+
+.trigger-text span {
+  color: #9b9b9b;
+}
+
+.trigger-text strong {
+  font-size: 30px;
+}
+
+.trigger-btn {
+  background-color:  #69d727;
+  width: 270px;
+  height: 49px;
+  color: #1b1b1b;
+  font-size: 22px; 
+  font-weight: bold;
+  text-align: center;
+  transform: scaleX(1.0031); 
+  margin-top: 8px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #4d9c1d;
+}
+
+/* features */ 
+
+.features {
+  text-align: center;
+  background: url(../img/features/bg-features.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.section-header {
+  margin: 0;
+}
+
+.section-header span {
+  color:  #cc001d;
+}
+
+.features-block {
+    margin-top: 30px;
+}
+
+.features-block h3 {
+    font-family: DINRoundPro-Medi;
+    color: #507022;
+    font-size: 21px; 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+/* offer */
+
+.price-block {
+  border-style: solid;
+  border-width: 2px;
+  border-color:  #dcdcdc;
+  box-sizing: border-box;
+  background-color:  #f5fbfb;
+  width: 279px;
+  height: 625px;
+  margin-top: 56px;  
+}
+
+.price-block h4 {
+  color: #7c5944;
+  font-size: 20px; 
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 15px;
+}
+
+
+.price-subtitle {
+  color: #7c5944;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.price-list {
+  color: #000000;
+  font-size: 16px; 
+  font-weight: normal;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.list-bg {
+    /*background-color: #e4f4f4;*/
+} 
+
+.price-tag {
+  font-family: DINRoundPro;
+  color: #be372e;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  background-color: #e4f4f4;
+}
+
+.price-tag p {
+  text-decoration: line-through;
+  color:  #c8cdcd;
+  font-weight: 500;
+}
+
+.offer-btn {
+  color: #7c5944;
+  font-size: 23px;  
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  width: 238px;
+  height: 42px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* quality */
+
+.quality {
+  padding-top: 0px;
+}
+
+.quality-block {
+  margin-top: 50px;
+}
+
+/* problems */
+
+.problems {
+  background: url(../img/problems/bg-problems.jpg) center center no-repeat;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.problems p {
+  font-family: DINRoundPro;
+  font-weight: 600; 
+  color: #4f7b10;
+  font-size: 17px;
+  text-align: left;
+  width: 540px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 40px;
+
+}
+
+
+.problems-btn {
+  font-family: DINRoundPro;
+  font-weight: 600; 
+  color: #7c5944;
+  font-size: 23px; 
+  text-transform: uppercase;
+  width: 312px;
+  height: 42px;
+  border-radius: 5px;
+}
+
+.problems-block {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.problems-block img {
+  height: 145px;
+}
+
+.problems-block h3 {
+  color: #ffffff;
+  font-size: 24px;
+  text-shadow: 0px 0px 4.25px rgba(0, 0, 0, 0.54);
+  text-transform: uppercase;
+}
+
+.problems-line {
+  background-color:  #ffffff;
+  width: 200px;
+  height: 3px;
+  margin: 0 auto;
+}
+
+.problems-block p {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.problems-block ul {
+  color: #ffffff;
+  text-align: left; 
+  font-size: 17px;
+  margin-left: 30px;
+  margin-top: 10px;
+  line-height: 18px;
+}
+
+/* product */ 
+
+.product {
+  padding-top: 0;
+}
+
+.product-block {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dcdcdc;
+    box-sizing: border-box;
+    background-color: #f5fbfb;
+    width: 367px;
+    height: 546px;
+    margin-top: 56px;
+}
+
+.product-akcia {
+  position: absolute;
+  left: 4px;
+  top: 42px;
+}
+
+.product h4 {
+    color: #7c5944;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 15px;
+}
+
+.product-tag {
+    font-family: DINRoundPro;
+    color: #be372e;
+    font-size: 43px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    background-color: #e4f4f4;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.product-tag p {
+    text-decoration: line-through;
+    color: #c8cdcd;
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.product-btn {
+    font-family: DINRoundPro;
+    font-weight: 600; 
+    color: #7c5944;
+    font-size: 23px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 238px;
+    height: 42px;
+    margin: 0 auto;
+    display: block;
+}
+
+.product2-block {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dcdcdc;
+    box-sizing: border-box;
+    background-color: #f5fbfb;
+    width: 307px;
+    height: 538px;
+    margin-top: 72px;
+}
+
+.product2-akcia {
+    position: absolute;
+    left: 4px;
+    top: 57px;
+}
+
+.product-btn-calc {
+    font-family: DINRoundPro;
+    font-weight: 600; 
+    color: #7c5944;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 5px;
+    width: 647px;
+    height: 42px;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+/* gallery */
+
+.gallery {
+    padding-bottom: 30px;
+}
+
+.gallery h2 {
+    margin-bottom: 29px;   
+}
+
+.gallery-btn {
+    font-family: DINRoundPro;
+    font-weight: 600; 
+    color: #7c5944;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 5px;
+    width: 425px;
+    height: 42px;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+
+/* reviews */ 
+
+.reviews {
+    background-color:  #f2f2f4;
+    padding-top: 30px;
+}
+
+.reviews-block {
+    margin-top: 51px;
+}
+
+.reviews-text {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #2a8b27;
+    border-style: solid;
+    background-color: #ffffff;
+}
+
+.reviews-text:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid transparent; 
+    border-right: 10px solid green;
+    left: -4px;
+    top: 55px;
+}
+
+.reviews-text:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid transparent; 
+    border-right: 10px solid #fff;
+    left: -3px;
+    top: 55px;
+}
+
+.reviews-text h4 {
+    font-size: 19px;
+    background-color:  #1f9d30;
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+}
+
+.reviews-text span {
+    font-size: 16px;
+}
+
+.reviews-text p {
+    color: #0a0a0a;
+    font-size: 15.65px;
+    text-align: left;
+    font-weight: 600;
+    margin: 10px;
+}
+
+/* footer */ 
+
+footer {
+  text-align: center;
+  color: #627e3b;
+}
+
+
+footer h4 {
+  font-weight: 600;
+  font-family: DINRoundPro;
+  font-size: 20px;
+}
+
+
+footer p {
+  font-family: DINRoundPro;
+  font-size: 20px;
+}
+
+.polit-btn {
+    color: #627e3b;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+    font-family: DINRoundPro;
+    font-weight: 600; 
+}
+
+/* Модальное окно */ 
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    position: fixed;
+    background: url(../img/form/bg-form.jpg) center 55px no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 6%;
+    background-color: #ffffff;
+    -webkit-transform: translatex(-50%);
+    transform: translatex(-50%);
+    padding: 20px 120px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+}
+
+.popup-korovka {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.korovka {
+    position: absolute;
+    left: 551px;
+    top: 312px;
+}
+
+.popup-header {
+    color: #507022;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.popup-close {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    color: #c4c4c4;
+}
+
+
+/* Политика */
+
+.modal-polit {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+} 
+
+.polit-close {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    color: #c4c4c4;
+}
+
+.modal-content {
+    position: relative;
+    left: 50%;
+    top: 6%;
+    background-color: #ffffff;
+    -webkit-transform: translatex(-50%);
+    transform: translatex(-50%);
+    padding: 20px 120px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+}
+
+
+.politbody {
+    overflow: hidden;
+}
+
+
+/* Страница благодарности */ 
+
+.thankyou {
+    background: url(../img/main/bg-main.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.thankyou h1 {
+    font-size: 40px;
+    font-family: DINRoundPro;
+    font-weight: 600; 
+    margin-top: 15%;
+    color: #fff;
+}
