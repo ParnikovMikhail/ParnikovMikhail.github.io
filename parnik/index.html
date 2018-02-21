@@ -67,14 +67,6 @@
 					<div class="col-lg-3 col-lg-offset-1">
 						<div class="wrap">
 							<div class="wrap-block header-contacts">
-								<div class="row">
-									<div class="col-lg-2">
-										<img src="img/header/phone-img.png" alt="phone-header">
-									</div>
-									<div class="col-lg-10">
-										<a class="phone-link" href="#">8 800 700 04 58</a>
-									</div>
-								</div>
 								<button class="button header-btn popup-btn">
 									Заказать звонок
 								</button>
@@ -92,7 +84,7 @@
 									<div class="col-lg-8">
 										<div class="main-offer">
 											<h1 class="main-title">
-												Супер нано парник со скидкой <br> до 50% только до 20 февраля
+												Супер нано парник со скидкой <br> до 50% только до <span id="my_span_tag"></span>
 											</h1>
 											<h3 class="main-subtitle">
 												остерегайтесь дешёвых китайских подделок
@@ -605,7 +597,9 @@
 	<!-- оставить заявку -->
 	<div class="popup">
 	<!-- Само (белое) модальное окно -->
-		<div class="popup-dialog">
+	</div>
+
+	<div class="popup-dialog">
 		<!-- Содержимое модального окно -->
 			<div class="popup-content">
 				<img src="img/form/bozhya_korovka.png" class="popup-korovka" alt="popup-korovka">
@@ -625,7 +619,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+
+
 
 	<!-- политика -->
 	<div class="modal-polit ">
@@ -816,17 +811,18 @@ IP адрес;<br>
 	</script>-->
 
 
-
+	<!-- модальное окно всплытие -->
     <script>
     	$(document).ready(function() {
     		$('.popup-btn').on('click', function(event) {
     		event.preventDefault();
-    		$('.popup').fadeIn();
+    		$('.popup-content, .popup').fadeIn();
     		});
-    		$('.popup-close').on('click', function(event) {
-    			event.preventDefault();
-    			$('.popup').fadeOut();
-    		});
+    		$('.popup-close, .popup').on('click', function(event) {
+    		event.preventDefault();
+    		$('.popup-content, .popup').fadeOut();
+    		});	
+
     		$('.polit-btn').on('click', function(event) {
     		event.preventDefault();
     		$('.modal-polit').fadeIn();
@@ -835,9 +831,27 @@ IP адрес;<br>
     		$('.polit-close').on('click', function(event) {
     		event.preventDefault();
     		$('.modal-polit').fadeOut();
-    		$("body").removeClasss("politbody");
+    		$("body").removeClass("politbody");
     		});
     	});	
+    </script>
+    <script>			
+    	 var months = ["январь","февраля","марта","апреля","май","июня","июля","августа","сентября","октября","ноября","декабря"];   
+
+		    function echo_date( date ) {
+		            echo_date = function(date){
+		                date = new Date( date );
+		                return {
+		                    "date" : date,
+		                    "month" : months[ date.getMonth() ],
+		                    "day_num" : date.getDate()
+		                };
+		            }
+		            return echo_date(date);  
+		        }; 
+		    var primer = echo_date( Date.now()+24*60*60*1000 );
+		    var result = primer.day_num+" "+primer.month;
+		    document.getElementById('my_span_tag').innerHTML = result;
     </script>
   </body>
 </html>
