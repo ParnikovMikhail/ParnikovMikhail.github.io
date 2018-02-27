@@ -1,0 +1,3 @@
+[27-Feb-2018 23:18:18 Europe/Moscow] PHP Warning:  filemtime(): stat failed for C:/server/OSPanel/domains/avtocten/img/feedback/??9.jpg/ in C:\server\OSPanel\domains\avtocten\admin\textolite.php on line 1
+[27-Feb-2018 23:18:18 Europe/Moscow] PHP Warning:  opendir(C:/server/OSPanel/domains/avtocten/img/feedback/??9.jpg/,C:/server/OSPanel/domains/avtocten/img/feedback/??9.jpg/): No error in C:\server\OSPanel\domains\avtocten\admin\textolite.php on line 1
+[27-Feb-2018 23:18:18 Europe/Moscow] PHP Warning:  opendir(C:/server/OSPanel/domains/avtocten/img/feedback/??9.jpg/): failed to open dir: No error in C:\server\OSPanel\domains\avtocten\admin\textolite.php on line 1
