@@ -368,26 +368,37 @@ li  {
   top: 1010%;
 }
 
-
-
-
 .prise-block {
   background: url(../img/prise/prisefon.png) no-repeat;
   height: 479px;
-  padding-top: 110px;
-  padding-left: 80px;
+  padding-top: 50px;
   margin-top: 90px;
+  text-align: center;
 }
 
+.prise-list {
+  margin-top: 30px;
+  height: 200px;
+}
 
 .prise-text h2 {
   color: #ce1324;
-  text-align: left;
+  text-align: center;
+  font-weight: bold;
+}
+
+.prise-text p {
+  margin-bottom: 0;
+}
+
+.prise-plus {
+  color: #ce1324;
+  font-weight: bold;
 }
 
 .prise-text  {
   color: #353535;
-  font-size: 27px;
+  font-size: 25px;
 }
 
 .prise-equality {
@@ -396,11 +407,32 @@ li  {
   color: #ce1324;
 }
 
+.prise-btn {
+  margin-top: 0;
+  width: 198px;
+}
+
+.buy-btn {
+  margin: 0 auto;
+  display: block;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.circle-prise {
+  position: absolute;
+  top: 21%;
+  left: 32%;
+  z-index: 1;
+  overflow:hidden;
+}
+
 
 /* блок footer */
 
 footer {
   background-color: #0f0e13;
+  padding-top: 50px;
 }
 
 form {
@@ -409,20 +441,18 @@ form {
   position: relative;
 }
 
-.footer-form   {
-  margin-top: 100px; 
+.footer-btn {
+  background: #0f0e13;
+  text-decoration: underline;
+  margin: 0 auto;
+  display: block;
+  font-size: 15px;
+  font-weight: 100;
+  border: none;
+  color: #fff;
 }
 
-.form-btn {
-  margin-top: 30px;
-  position: relative;
-  z-index: 2;
+.footer-text {
+  text-align: right;
 }
 
-.circle-form {
-  position: absolute;
-  top: 66%;
-  left: 23%;
-  z-index: 1;
-  overflow:hidden;
-}
