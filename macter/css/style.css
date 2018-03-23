@@ -1,0 +1,428 @@
+/* Fonts family */
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl500.eot');
+    src: url('../fonts/MuseoSansCyrl500.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl500.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl500.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl700.eot');
+    src: url('../fonts/MuseoSansCyrl700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl700.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl100.eot');
+    src: url('../fonts/MuseoSansCyrl100.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl100.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl100.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl100.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl300.eot');
+    src: url('../fonts/MuseoSansCyrl300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl300.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-900.eot');
+    src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-900.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-900.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* Colors */
+/* Basic setting */
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  overflow-x: hidden !important;
+}
+a {
+  text-decoration: underline;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+.button {
+  border-radius: 10px;
+  border-color: #b41120;
+  background-color:  #b41120;
+  width: 303px;
+  height: 70px;
+  font-family: Museo Sans Cyrl;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16.37px;
+  text-transform: uppercase;
+  -moz-box-shadow:inset 0px -8px 0px #960c1a;
+  -webkit-box-shadow:inset 0px -8px 0px #960c1a;
+  box-shadow:inset 0px -8px 0px #960c1a;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #d99a03;
+}
+
+/*оформление форм */
+.form {
+  /*поле для ввода*/
+  /*подписи к полям*/
+  /* кнопка отравить заявку */
+}
+.form-input,
+.form-textarea {
+  margin: 10px 0;
+  width: 326px;
+  height: 47px;
+  padding: 1rem;
+}
+
+/* Typography */
+section {
+  padding: 4rem 0;
+  background-color: #0f0e13;
+  color: #fff;
+}
+.section-header {
+  font-family: Museo Sans Cyrl;
+  color: #fff;
+  font-size: 40px; 
+  text-align: center;
+  font-weight: bold;
+}
+.section-header_subtitle {
+  color: #fff;
+  font-family: Museo Sans Cyrl;
+  font-weight: 300;
+  font-size: 25px; 
+  line-height: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+.section-header h2 {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-size: 3.6rem;
+}
+.section-header p {
+  font-size: ;
+}
+/* main */
+
+.logo {
+  margin-top: 47px;
+}
+
+.main {
+  background-color:  #0f0e13;
+  height: 800px;
+}
+
+.main-title h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 32px; 
+  line-height: 46px;
+  text-align: left;
+  margin-top: 106px;
+  border-bottom: solid 1px #ce1324;
+}
+
+.main-title p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 23px; 
+  line-height: 54px; 
+  text-align: left;
+  margin-top: 45px;
+}
+
+.button {
+  margin-top: 68px;
+  position: relative;
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  z-index: 1;
+  top: 302px;
+  left: 10px;
+}
+
+/* Блок features */
+
+.features {
+  background-color:  #0f0e13;
+}
+
+.features-list {
+  margin-top: 80px;
+}
+
+.features-block {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.features-block p {
+  margin-top: 38px;
+}
+
+.features2 {
+  margin-top: 146px;
+}
+
+/* блок program */
+
+.program-img {
+  text-align: center;
+}
+
+/* блок material */
+
+.material-block {
+  margin-top: 75px;
+}
+
+.material-list {
+  font-weight: 100;
+  color:  #fff;
+  font-size: 22px;
+  line-height: 48px;
+  margin-top: 200px;
+  margin-left: 30px;
+} 
+
+li  {
+  list-style-image: url(../img/table/table-img.png);
+  padding-left: 19px;
+}
+
+.list-li {
+  line-height: 30px;
+}
+
+
+/* блок WHO */
+
+.who-slider {
+  margin-top: 50px;
+}
+
+.who-slider h2 {
+  font-weight: 100;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.who-block {
+  margin-top: 90px;
+  margin-right: 20px;
+}
+
+.who-block h3 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px; 
+}
+
+.who-block  li {
+  font-weight: 100;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.insta {
+  margin-top: 60px;
+}
+
+.insta a {
+  color: #fff;
+  font-weight: 100;
+  margin-top: 50px;
+}
+
+
+/* блок review */
+
+.review-slider {
+  margin-top: 83px;
+}
+
+.media {
+  margin-top: 50px; 
+}
+
+.media-body span {
+  line-height: 20px; 
+
+}
+
+.video-player {
+  background: url('../img/review/videofon.png') no-repeat;
+  background-size: 80%;
+  position: relative;
+  width: 700px;
+  height: 400px;
+}
+
+.video  {
+  position: absolute;
+  left: 73px; 
+  top: 24px;
+}
+
+.review-img {
+  margin-top: 50px;
+}
+
+.review-img img {
+  float: left;
+}
+
+.review-img span {
+  vertical-align:middle;
+  line-height: 75px;
+  margin-left: 20px;
+}
+
+.review-text a {
+  color: #fff;
+}
+
+.review-slider-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  width: 40px;
+  height: 40px;
+  border: none; 
+  background-image: url(../img/review/prev.png);
+  background-size: cover;
+  background-color:  #0f0e13;
+
+}
+
+.review-next-btn {
+
+}
+
+.review-next-btn {
+  right: 40px;
+  background-image: url(../img/review/next.png);
+}
+
+/* Блок Prise */
+
+.prise:before {
+  content: '';
+  width: 139px;
+  height: 97px;
+  display: block;
+  position: absolute;
+  background: url(../img/prise/money.png) no-repeat;
+  left: 80%;
+}
+
+.prise:after {
+  content: '';
+  width: 138px;
+  height: 181px;
+  display: block;
+  position: absolute;
+  background: url(../img/prise/clock.png) no-repeat;
+  background-size: 80%;
+  left: 85%;
+  top: 1010%;
+}
+
+
+
+
+.prise-block {
+  background: url(../img/prise/prisefon.png) no-repeat;
+  height: 479px;
+  padding-top: 110px;
+  padding-left: 80px;
+  margin-top: 90px;
+}
+
+
+.prise-text h2 {
+  color: #ce1324;
+  text-align: left;
+}
+
+.prise-text  {
+  color: #353535;
+  font-size: 27px;
+}
+
+.prise-equality {
+  margin-top: 250px;
+  font-size: 100px;
+  color: #ce1324;
+}
+
+
+/* блок footer */
+
+footer {
+  background-color: #0f0e13;
+}
+
+form {
+  text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+.footer-form   {
+  margin-top: 100px; 
+}
+
+.form-btn {
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.circle-form {
+  position: absolute;
+  top: 66%;
+  left: 23%;
+  z-index: 1;
+  overflow:hidden;
+}
