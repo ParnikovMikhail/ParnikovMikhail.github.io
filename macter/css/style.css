@@ -1,4 +1,4 @@
-/* Fonts family */
+  /* Fonts family */
 @font-face {
     font-family: 'Museo Sans Cyrl';
     src: url('../fonts/MuseoSansCyrl500.eot');
@@ -60,7 +60,6 @@ html {
 }
 body {
   font-family: 'Museo Sans Cyrl', sans-serif;
-  overflow-x: hidden !important;
 }
 a {
   text-decoration: underline;
@@ -144,6 +143,7 @@ section {
 .main {
   background-color:  #0f0e13;
   height: 800px;
+  overflow: hidden;
 }
 
 .main-title h1 {
@@ -207,6 +207,10 @@ section {
 .program-img {
   text-align: center;
 }
+.program-block {
+  display: none;
+}
+
 
 /* блок material */
 
@@ -298,10 +302,12 @@ li  {
   height: 400px;
 }
 
-.video  {
+.video iframe  {
   position: absolute;
   left: 73px; 
   top: 24px;
+  width: 410px;
+  height: 260px;
 }
 
 .review-img {
@@ -329,18 +335,18 @@ li  {
   width: 40px;
   height: 40px;
   border: none; 
-  background-image: url(../img/review/prev.png);
   background-size: cover;
   background-color:  #0f0e13;
 
 }
 
-.review-next-btn {
-
+.review-prev-btn {
+  /*background-image: url(../img/review/prev.png);*/
+  left: 10px;
 }
 
-.review-next-btn {
-  right: 40px;
+.slick-next {
+ /* right: 40px;*/
   background-image: url(../img/review/next.png);
 }
 
@@ -455,4 +461,161 @@ form {
 .footer-text {
   text-align: right;
 }
+
+/*@media (min-width: 321px) and (max-width: 375px) {
+  .video iframe {
+    position: absolute;
+    left: 59px;
+    top: 14px;
+    width: 224px;
+    height: 139px;
+}
+
+}*/
+
+
+@media (max-width: 767px) {
+
+  .section-header {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  /* main */ 
+  .main-title h1 {
+    font-size: 28px;
+    border: none;
+  }
+
+  .main-title p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .bg-main {
+    display: none;
+  }
+
+  /* programm */
+  .program-img {
+    display: none;
+  }
+  .program-block {
+    display: block;
+  }
+
+  .program-text h2 {
+    color: #ce1324;
+    font-weight: bold;
+  }
+  
+   .program-text li {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 35px;
+   }
+
+  /* Material */ 
+
+  .section-header_subtitle {
+    margin-bottom: 30px;
+  }
+
+  .material-img {
+    display: none;
+  }
+
+  .material-block {
+    margin: 0;
+  }
+
+  .material-list {
+    margin: 0;
+    line-height: 35px;
+  }
+
+  /* who */
+
+  .who-block {
+    margin-top: 20px;
+  }
+
+
+  /* prise */ 
+
+  .prise-block {
+    width: 100%;
+    background-size: 100%;
+    margin: 0;
+  }
+
+  .prise-list {
+    font-size: 24px;
+  }
+
+  .block-right {
+    padding-top: 5px;
+  }
+  .prise-btn-right {
+    margin-top: 40px;
+  }
+  .prise:before {
+    display: none;
+  }
+
+  .prise:after {
+    display: none;
+  }
+
+  /* review */ 
+
+  .video-player {
+    background: url(../img/review/videofon.png) center center no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: contain;
+    height: 170px;
+}
+
+ 
+  .video iframe {
+    position: relative; */
+    /* left: 0; */
+    margin: 0 auto;
+    /* top: -150px; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 13px;
+    width: 227px;
+    height: 140px;
+  }  
+  .slick-next {
+    right: 15px!important;
+    z-index: 500!important;
+}
+.slick-prev {
+    left: 15px!important;
+    z-index: 500!important;
+}
+section.review {
+  overflow: hidden;
+}
+  /* footer */
+
+  footer {
+    text-align: center;
+  }
+  .footer-text {
+    text-align: center;
+  } 
+
+}
+
+
 
