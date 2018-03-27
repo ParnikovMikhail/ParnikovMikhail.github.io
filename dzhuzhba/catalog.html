@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<header class="_header _headerpages _headcataloge">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="_header_logo">
+						<a href="#"><img src="img/logo/logo2.png" alt=""></a>
+					</div>
+					
+				</div>
+				<div class="col-md-9 text-left">
+					<div class="_header_main ">
+						<div class="_header_callback">
+							<button>Заказать обратный звонок</button>
+						<a href="#">+7 (918) 256-09-03</a>
+						
+						</div>
+						<div class="_header_main_menu _catalogmenu">
+							<nav>
+								<ul>
+									<li><a href="dzhuzhba/index.html">Главная</a></li>
+									<li><a href="dzhuzhba/company.html">О компании</a></li>
+									<li><a href="dzhuzhba/news.html">Новости</a></li>
+									<li><a href="dzhuzhba/catalog.html">Каталог</a></li>
+									<li><a href="#">Прайс-лист</a></li>
+									<li><a href="dzhuzhba/contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="_about _catalog">
+		<div class="container">
+			<h2>Каталог</h2>
+			<div class="row _news_allbest ">
+				<div class="col-md-4 _news_allbest_padd"><div class="_news_allbest_block">
+					<a href="#"><img src="img/categories/bread.png" alt=""><span href="#">Хлеб</span></a>
+				</div>
+				<p>Хлеб является основным из продуктов, которые каждодневно употребляет каждый из нас. Люди с древних времён почитали хлеб 
+и старались употреблять его как можно чаще.<br><br>
+
+Нет исторических данных насчёт того, когда человек впервые испёк хлеб. Но, конечно, это произошло тогда, когда первобытные люди научились засевать поля зерном и получать урожай. Сначала древние люди употребляли зёрна сырыми, а уж потом научились делать из них хлеб.
+</p>		
+				</div>
+				<div class="col-md-4 _news_allbest_padd"><div class="_news_allbest_block">
+					<a href="#"><img src="img/categories/cakes.png" alt=""><span href="#">Торты, пирожные</span></a>
+				</div>
+				<p>Заказывая торт Вы хотите получить не только красивый торт, но и вкусный, и так что бы его хватило на всех Ваших гостей! <br><br>
+
+Все торты Leclair сделаны 
+в Курске по европейской технологии, кондитером 
+с большим опытом и стажем работы, который сможет сделать торт на Ваш вкус, даже если Вы его не увидели в нашей папке 
+с начинками!</p>
+				</div>
+				<div class="col-md-4 _news_allbest_padd"><div class="_news_allbest_block">
+					<a href="#"><img src="img/categories/cooperation.png" alt=""><span href="#">Булочки</span></a>
+				</div>
+				<p>Одним из видов сдобных хлебобулочных изделий есть булочки с изюмом. Изобрёл их Иван Филиппов – представитель известнейшей русской династии хлебопёков, владелец нескольких булочных. Имея хорошую коммерческую жилку, он в своё время стал зачинателем многих нововведений в пекарском деле.<br><br>
+
+К примеру, открыл хлебный магазин, то есть булочную, при собственной пекарне, где практически всегда можно было приобрести хлебушек и сдобу «прямо из печи»</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="_footer _pagefooter">
+		<div class="_footer_left">
+			
+			<span>© 2018. Джубга-хлеб.</span>
+		</div>
+		<div class="_footer_right">
+			<div class="_footer_right_menu">
+				<ul>
+					<li><a href="/index.html">Главная </a></li>
+					<li><a href="/company.html">О компании </a></li>
+					<li><a href="/news.html">Новости</a></li>
+					<li><a href="/catalog.html">Каталог </a></li>
+					
+				</ul>
+				<ul>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="/contacts.html">Контакты</a></li>
+				</ul>
+				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
+			</div>
+		</div>
+	</footer>
+	
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script>
+	
+$(function() {
+ 
+  $('ul.tabs__caption').on('click', 'li:not(.activve)', function() {
+
+    $(this)
+
+      .addClass('activve').siblings().removeClass('activve')
+      .closest('div.tabs').find('div.tabs__content').removeClass('activve').eq($(this).index()).addClass('activve');
+     $("._listgoods_slider").slick('setPosition'); 
+  });
+ 
+});
+
+</script>
+<script>
+	$('._listgoods_slider').slick({
+centerMode: true,		
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
+</script>
+
+<script>
+	$('._about_family').slick({		
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1
+});
+</script>
+<!--<script>
+	$(function () {
+    var location = window.location.href;
+    var cur_url = '/' + location.split('/').pop();
+ 
+    $('._header_main_menu li').each(function () {
+        var link = $(this).find('a').attr('href');
+ 
+        if (cur_url == link)
+        {
+            $(this).addClass('currentmenu');
+        }
+    });
+});
+</script>-->
+
+
+</body>
+</html>
