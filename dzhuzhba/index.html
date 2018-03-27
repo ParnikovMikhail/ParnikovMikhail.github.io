@@ -36,9 +36,9 @@
 							<nav>
 								<ul>
 									<li><a href="#">Главная</a></li>
-									<li><a href="#">О компании</a></li>
-									<li><a href="#">Новости</a></li>
-									<li><a href="#">Каталог</a></li>
+									<li><a href="/company.html">О компании</a></li>
+									<li><a href="/news.html">Новости</a></li>
+									<li><a href="/index.html">Каталог</a></li>
 									<li><a href="#">Прайс-лист</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
@@ -365,7 +365,21 @@ centerMode: true,
   slidesToScroll: 1
 });
 </script>
-
+<!--<script>
+	$(function () {
+    var location = window.location.href;
+    var cur_url = '/' + location.split('/').pop();
+ 
+    $('._header_main_menu li').each(function () {
+        var link = $(this).find('a').attr('href');
+ 
+        if (cur_url == link)
+        {
+            $(this).addClass('currentmenu');
+        }
+    });
+});
+</script>-->
 
 
 </body>
