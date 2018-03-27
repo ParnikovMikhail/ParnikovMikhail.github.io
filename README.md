@@ -7,7 +7,7 @@
 3. [Yaroslavl](https://parnikovmikhail.github.io/yaroslavl/){:target="_blank"}
 4. [nanoparnik](https://parnikovmikhail.github.io/parnik/){:target="_blank"}
 5. [macter](https://parnikovmikhail.github.io/macter/){:target="_blank"}
-
+6. [Сайт для "Джугба-хлеб](https://parnikovmikhail.github.io/dzhuzhba/){:target="_blank"} 
 
 
 
