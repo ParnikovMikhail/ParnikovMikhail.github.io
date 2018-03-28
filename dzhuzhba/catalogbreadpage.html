@@ -18,7 +18,7 @@
 
 <body>
 
-	<header class="_header _headerpages">
+	<header class="_header _headerpages _headcatalog_bread">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -34,7 +34,7 @@
 						<a href="#">+7 (918) 256-09-03</a>
 						
 						</div>
-						<div class="_header_main_menu _newsmenu">
+						<div class="_header_main_menu _catalogmenu">
 							<nav>
 								<ul>
 									<li><a href="/dzhuzhba/index.html">Главная</a></li>
@@ -50,49 +50,89 @@
 
 				</div>
 			</div>
+			<div class="_titlepage">
+				<h2>Каталог</h2>
+			</div>
+		</div>
+		<div class="_headcatalog_bread_pita">
+			<img src="img/breads/pita.png" alt="">
 		</div>
 	</header>
-	<section class="_about _news">
+	<section class="_breadcrumbs">
 		<div class="container">
-			<h2>Новости</h2>
-			<div class="row _about_info _news_info">
-				<div class="col-md-6 _news_info_block">
-					<p><b>Выпустили новую партию булочек с джемом.</b><br>
-Долго разрабатывали рецет, новая партия поступит на прилавки в течение недели.<br>
-Ждем Ваши отзывы, дорогие покупатели!</p>
-					<img src="img/news/news1.jpg" alt="">
+			<ul class="ul _breadcrumbs-catalog">
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="catalogbread.html">Хлеб</a></li>
+				<li><a href="#">Хлеб «Бородинский»</a></li>
+			</ul>
+			<img src="img/breads/header.png" alt="">
+		</div>
+	</section>
+	<section class="_catalogbread">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 _catalog_menu_list">
+					<div class="_catalogbread_list_breads">
+						<ul>
+							<a href="catalogbread.html"><li class="_catalog_menu_active">Хлеба</li></a>
+							<a href="catalogbreadpage.html"><li class="_catalog_page_active">Хлеб «Бородинский»</li></a>
+							<a href="#"><li>Хлеб «Столичный»</li></a>
+							<a href="#"><li>Хлеб «Особый»</li></a>
+						</ul>
+					</div>
+					<div class="_catalogbread_list_cakes">
+						<ul>
+							<a href="catalogcake.html"><li>Торты, пирожные</li></a>
+							<a href="catalogcakepage.html"><li>Торт «Панчо»</li></a>
+							<a href="#"><li>Торт «Картошка»</li></a>
+							<a href="#"><li>Торт «Горка»</li></a>
+						</ul>
+					</div>
+					<div class="_catalogbread_list_cakes">
+						<ul>
+							<a href="catalogbun.html"><li>Булочки</li></a>
+							<a href="catalogbunpage.html"><li>Булочка «Творожная»</li></a>
+							<a href="#"><li>Булочка «Особая»</li></a>
+							<a href="#"><li>Кекс с изюмом</li></a>
+							<a href="#"><li>Кекс с изюмом</li></a>
+							<a href="#"><li>Рожик с кремом</li></a>
+						</ul>
+					</div>
 				</div>
-				<div class="col-md-6 _news_info_block">
-					<p><b>Заработала новая печь, производства Италия.</b><br>
-Теперь у нас открылись новые возможноти и это чудо-профессии. Мы с легкостью сделаем для Вас самую вкусную выпечку из этой печи. Отдаем все самое лучшее Вам!</p>
-					<img src="img/news/news1.jpg" alt="">
+				<div class="col-md-9 _goods_info">
+					<div class="_goods_info_image">
+						<img src="img/breads/list/1.png" alt="">
+					</div>
+					<div class="_goods_info_block">
+						<h3>Хлеб «Бородинский»</h3>
+						<p>Торт является самым вкусным нашим 
+						тортом. Приходите к нам и Вы обязательно
+						узнаете, какие вкусеные у нас торты.</p>
+						<p><span>Состав:</span><br>Молоко, яйца свежие, сливки, сахар,
+						желатин, шоколад, какао, сметана.</p>
+					</div>
 				</div>
-			</div>
-			<h4>Все самое лучшее здесь</h4>
-			<div class="row _news_allbest">
-				<div class="col-md-4 _news_allbest_block"><a href="catalogbread.html"><img src="img/categories/bread.png" alt=""><span href="#">Хлеб</span></a></div>
-				<div class="col-md-4 _news_allbest_block"><a href="catalogcake.html"><img src="img/categories/cakes.png" alt=""><span href="#">Торты, пирожные</span></a></div>
-				<div class="col-md-4 _news_allbest_block"><a href="catalogbun.html"><img src="img/categories/cooperation.png" alt=""><span href="#">Булочки</span></a></div>
 			</div>
 		</div>
 	</section>
-	<footer class="_footer _pagefooter clearfix">
+	<footer class="_footer _pagefooter _catalogfooter">
 		<div class="_footer_left">
+			
 			<span>© 2018. Джубга-хлеб.</span>
 		</div>
 		<div class="_footer_right">
 			<div class="_footer_right_menu">
 				<ul>
-					<li><a href="/dzhuzhba/index.html">Главная </a></li>
-					<li><a href="/dzhuzhba/company.html">О компании </a></li>
-					<li><a href="/dzhuzhba/news.html">Новости</a></li>
-					<li><a href="/dzhuzhba/catalog.html">Каталог </a></li>
+					<li><a href="/main.html">Главная</a></li>
+					<li><a href="#">О компании </a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Каталог </a></li>
 					
 				</ul>
 				<ul>
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Прайс-лист</a></li>
-					<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
 				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
 			</div>
@@ -103,6 +143,8 @@
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/show-more-items.js"></script>
+
 	<script>
 	
 $(function() {
@@ -150,6 +192,14 @@ centerMode: true,
     });
 });
 </script>-->
+<script>
+	$(document).ready(function() {
+		$('body').showMoreItems({
+			count: 3
+		});
+	});
+
+</script>
 
 
 </body>

@@ -1251,39 +1251,107 @@ body {
       ._breadcrumbs ul li:last-child:after {
         display: none; }
       ._breadcrumbs ul li:last-child a {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #e88314; }
       ._breadcrumbs ul li a {
         font-size: 20px;
         color: #000000;
         font-family: timesreg;
         text-decoration: underline; }
 
+._catalog_menu_list {
+  padding-right: 0; }
+  ._catalog_menu_list ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px; }
+    ._catalog_menu_list ul li {
+      list-style: none;
+      text-decoration: underline;
+      font-family: timesreg;
+      padding-left: 40px;
+      line-height: 1.2; }
+    ._catalog_menu_list ul a {
+      color: #000000;
+      font-size: 20px; }
+      ._catalog_menu_list ul a:hover {
+        color: #8f0000; }
+      ._catalog_menu_list ul a:first-child {
+        text-decoration: none; }
+        ._catalog_menu_list ul a:first-child:hover {
+          color: black; }
+      ._catalog_menu_list ul a:first-child li {
+        text-decoration: none;
+        width: 100%;
+        background-color: #ffc246;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        -webkit-border-radius: 20px;
+                border-radius: 20px;
+        margin-bottom: 8px; }
+
+._catalog_menu_active {
+  background-color: #7d1400 !important;
+  color: #ffc246 !important; }
+
+._catalog_page_active {
+  color: #8f0000; }
+
+._goods_info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  ._goods_info_block {
+    padding-left: 75px; }
+  ._goods_info img {
+    padding-left: 30px; }
+  ._goods_info h3 {
+    font-size: 30px;
+    color: #7d1400;
+    font-family: timesreg;
+    margin-bottom: 30px;
+    margin-top: 0px; }
+  ._goods_info p {
+    font-size: 16px;
+    color: black;
+    font-family: timesreg;
+    line-height: 1.2;
+    padding-bottom: 10px; }
+    ._goods_info p span {
+      font-family: timesbd; }
+
 /*START BREAD CATALOG*/
-._headcatalog_bread {
+._headcatalog_bread, ._headcatalog_cakes, ._headcatalog_bun {
   background-image: url("../img/breads/fon-catalog.jpg");
   padding-bottom: 116px; }
-  ._headcatalog_bread .container {
+  ._headcatalog_bread .container, ._headcatalog_cakes .container, ._headcatalog_bun .container {
     top: auto; }
-  ._headcatalog_bread:after {
+  ._headcatalog_bread:after, ._headcatalog_cakes:after, ._headcatalog_bun:after {
     bottom: -225px;
     -webkit-transform: skew(0deg, -12deg);
         -ms-transform: skew(0deg, -12deg);
             transform: skew(0deg, -12deg);
     height: 100px;
     background-color: #e6d5c5; }
-  ._headcatalog_bread_pita img {
+  ._headcatalog_bread_pita img, ._headcatalog_cakes_pita img, ._headcatalog_bun_pita img {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto; }
 
-._catalogbread {
+._catalogbread, ._catalogcake, ._catalogbun {
   background-color: white;
   padding-top: 65px;
   position: relative;
   padding-bottom: 80px; }
-  ._catalogbread_goods {
+  ._catalogbread .item-list, ._catalogcake .item-list, ._catalogbun .item-list {
+    padding-top: 50px; }
+  ._catalogbread_goods, ._catalogcake_goods, ._catalogbun_goods {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1297,33 +1365,33 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 90px;
-    padding-right: 50px;
+    padding-right: 70px;
     padding-bottom: 50px; }
-    ._catalogbread_goods:nth-child(1) {
+    ._catalogbread_goods:nth-child(1), ._catalogcake_goods:nth-child(1), ._catalogbun_goods:nth-child(1) {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-    ._catalogbread_goods:nth-child(3) {
+    ._catalogbread_goods:nth-child(3), ._catalogcake_goods:nth-child(3), ._catalogbun_goods:nth-child(3) {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-    ._catalogbread_goods img {
+    ._catalogbread_goods img, ._catalogcake_goods img, ._catalogbun_goods img {
       width: 100%; }
-    ._catalogbread_goods a {
+    ._catalogbread_goods a, ._catalogcake_goods a, ._catalogbun_goods a {
       display: block;
       text-align: center;
       font-family: timesreg;
       font-size: 20px;
       color: black;
       text-decoration: underline; }
-    ._catalogbread_goods_bigleft {
+    ._catalogbread_goods_bigleft, ._catalogcake_goods_bigleft, ._catalogbun_goods_bigleft {
       -webkit-transform: translateX(-25%);
           -ms-transform: translateX(-25%);
               transform: translateX(-25%);
       position: relative; }
-      ._catalogbread_goods_bigleft a {
+      ._catalogbread_goods_bigleft a, ._catalogcake_goods_bigleft a, ._catalogbun_goods_bigleft a {
         position: absolute;
         left: 0;
         right: 0;
@@ -1335,12 +1403,12 @@ body {
         padding-bottom: 10px;
         -webkit-border-radius: 15px;
                 border-radius: 15px; }
-    ._catalogbread_goods_bigright {
+    ._catalogbread_goods_bigright, ._catalogcake_goods_bigright, ._catalogbun_goods_bigright {
       -webkit-transform: translateX(25%);
           -ms-transform: translateX(25%);
               transform: translateX(25%);
       position: relative; }
-      ._catalogbread_goods_bigright a {
+      ._catalogbread_goods_bigright a, ._catalogcake_goods_bigright a, ._catalogbun_goods_bigright a {
         position: absolute;
         left: 0;
         right: 0;
@@ -1378,7 +1446,51 @@ body {
 .item-list li {
   display: none; }
 
+._catalog_page_active a {
+  color: red; }
+
 /*END BREAD CATALOG*/
+/*START CAKES CATALOG*/
+._headcatalog_cakes {
+  background-image: url("../img/cakes/fon-catalog.jpg"); }
+  ._headcatalog_cakes:after {
+    background-color: #f2ebe2; }
+
+._catalogcake_goods_bigleft {
+  -webkit-transform: translateX(-20%);
+      -ms-transform: translateX(-20%);
+          transform: translateX(-20%); }
+
+._catalogcake_goods_bigright {
+  -webkit-transform: translateX(20%);
+      -ms-transform: translateX(20%);
+          transform: translateX(20%); }
+
+/*END CAKES CATALOG*/
+/*START BUN CATALOG*/
+._headcatalog_bun {
+  background-image: url("../img/bun/fon-catalog.jpg"); }
+  ._headcatalog_bun:after {
+    display: none; }
+
+._catalogbun_goods_bigleft {
+  -webkit-transform: translateX(-20%);
+      -ms-transform: translateX(-20%);
+          transform: translateX(-20%); }
+
+._catalogbun_goods_bigright {
+  -webkit-transform: translateX(20%);
+      -ms-transform: translateX(20%);
+          transform: translateX(20%); }
+
+._headcatalog_bun ._catalogmenu li:nth-child(4) {
+  background-color: rgba(248, 134, 0, 0.5); }
+
+/*END BUN CATALOG*/
+._header_main_menu nav ul {
+  position: relative;
+  z-index: 9999; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
