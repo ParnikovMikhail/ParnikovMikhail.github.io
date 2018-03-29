@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'timesbd';
   src: url("../fonts/timesbd.ttf"); }
@@ -1490,6 +1491,29 @@ body {
 ._header_main_menu nav ul {
   position: relative;
   z-index: 9999; }
+
+.tabs__price {
+  display: none;
+  /* по умолчанию прячем все блоки */ }
+
+.tabs__price.active_price {
+  display: block;
+  /* по умолчанию показываем нужный блок */ }
+
+._listgoods_price {
+  width: 260px; }
+
+._ourbakery {
+  background-color: #f4efeb; }
+
+._listgoods_block_item {
+  background-color: #e8dacc; }
+
+._listgoods .slick-prev, ._listgoods .slick-next {
+  background-color: #e8dacc; }
+
+._listgoods_block.slick-center ._listgoods_block_item {
+  background-color: #f0e7dd; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
