@@ -1,4 +1,4 @@
-/dzhuzhba/<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -21,6 +21,24 @@
 	<header class="_header _headerpages _headcatalog_bread">
 		<div class="container">
 			<div class="row">
+				<div class="_header_hide">
+					<button class="_header_hide_button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="_header_hide_menu">
+						<div class="_header_hide_menu_close">X</div>
+						<ul>
+							<li><a href="/dzhuzhba/index.html">Главная</a></li>
+							<li><a href="/dzhuzhba/company.html">О компании</a></li>
+							<li><a href="/dzhuzhba/news.html">Новости</a></li>
+							<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
+							<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
+							<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="col-md-3">
 					<div class="_header_logo">
 						<a href="#"><img src="img/logo/logo2.png" alt=""></a>
@@ -37,12 +55,12 @@
 						<div class="_header_main_menu _catalogmenu">
 							<nav>
 								<ul>
-									<li><a href="/dzhuzhba/index.html">Главная</a></li>
-									<li><a href="/dzhuzhba/company.html">О компании</a></li>
-									<li><a href="/dzhuzhba/news.html">Новости</a></li>
-									<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
-									<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
-									<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="company.html">О компании</a></li>
+									<li><a href="news.html">Новости</a></li>
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="price/allprice.txt" download>Прайс-лист</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -72,11 +90,16 @@
 			<div class="row">
 				<div class="col-md-3 _catalog_menu_list">
 					<div class="_catalogbread_list_breads">
-						<ul>
+						<ul class="catalogs-list">
 							<a href="catalogbread.html"><li class="_catalog_menu_active">Хлеба</li></a>
 							<a href="catalogbreadpage.html"><li>Хлеб «Бородинский»</li></a>
 							<a href="#"><li>Хлеб «Столичный»</li></a>
 							<a href="#"><li>Хлеб «Особый»</li></a>
+							<a href="#"><li>Хлеб «Особый»</li></a>
+
+							<button class="_seemore more-trigger2">
+						Смотреть больше
+							</button>
 						</ul>
 					</div>
 					<div class="_catalogbread_list_cakes">
@@ -87,7 +110,7 @@
 							<a href="#"><li>Торт «Горка»</li></a>
 						</ul>
 					</div>
-					<div class="_catalogbread_list_cakes">
+					<div class="_catalogbread_list_bun">
 						<ul>
 							<a href="catalogbun.html"><li>Булочки</li></a>
 							<a href="catalogbunpage.html"><li>Булочка «Творожная»</li></a>
@@ -220,6 +243,19 @@
 				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
 			</div>
 		</div>
+		<div class="_footer_right _page_footer_hide">
+			<h4>Где нас найти?</h4>
+			<span>п. Джубга,<br>              
+				ул. Советская, 5</span>
+			<div class="_footer_right_contacts">
+			<span>Тел.: +7 (918) 56-09-02</span>
+			<span>E-mail: <a href="#">dgubga-hleb@dh.ru</a></span>
+			</div>
+			<div>
+				<span class="_copy_hide">© 2018. Джубга-хлеб.</span>
+				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
+			</div>
+		</div>
 	</footer>
 	
 	<link rel="stylesheet" href="css/main.css">
@@ -281,9 +317,31 @@ centerMode: true,
 			count: 3
 		});
 	});
-
 </script>
-
-
+<script>
+	$(document).ready(function() {
+		$('body').showMoreList({
+			count: 4
+		});
+	});
+</script>
+<script>
+		$(function() {
+			$('._header_hide_button').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeIn("slow");
+			});
+			$('._header_hide_menu_close').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeOut("slow");
+			});
+		});
+		$(document).mouseup(function (e) {
+			var container = $("._header_hide_menu");
+		if (container.has(e.target).length === 0){
+			container.fadeOut();
+			}
+		});
+</script>
 </body>
 </html>

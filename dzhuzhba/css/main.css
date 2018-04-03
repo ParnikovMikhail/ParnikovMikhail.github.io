@@ -1515,22 +1515,873 @@ body {
 ._listgoods_block.slick-center ._listgoods_block_item {
   background-color: #f0e7dd; }
 
+._kolosya {
+  display: none; }
+
+._header_mobile_sub {
+  display: none; }
+
+._header_hide {
+  display: none; }
+
+._ourbakery_hide_desc2 {
+  display: none; }
+
+._ourbakery_hide_desc {
+  display: block; }
+
+._ourbakery_listhide {
+  display: none; }
+
+._footer_right_menu ._copy_hide {
+  display: none; }
+
+.tabs__price.prices_hide {
+  display: none; }
+
+._news_allbest_padd:last-child p {
+  display: none; }
+
+._pagefooter ._page_footer_hide {
+  display: none; }
+
+._news_info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+._news_info_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+._catalog_menu_list ._seemore {
+  display: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  ._header_callback {
+    padding-left: 0; }
+  ._ourbakery_block img {
+    width: 100%; }
+  ._header_main_menu nav ul {
+    -webkit-background-size: contain;
+            background-size: contain; }
+    ._header_main_menu nav ul li {
+      padding-left: 8px;
+      padding-right: 8px; }
+  ._ourbakery_list ul {
+    padding-right: 80px; }
+  ._listgoods_block.slick-center ._listgoods_block_item {
+    background-color: #e8dacc; }
+  ._listgoods_price {
+    right: -70px; }
+  ._footer_right {
+    background-position: inherit; }
+  ._about_family .slick-prev {
+    left: 40%; }
+  ._about_family .slick-prev {
+    right: 40%; }
+  ._about_img img {
+    width: 100%; }
+  ._about .container {
+    padding-right: 50px;
+    padding-left: 50px; }
+  ._catalog .container {
+    padding-bottom: 100px; }
+  ._breadcrumbs img {
+    right: 0;
+    width: 40%; }
+  ._headcatalog_bread_pita img, ._headcatalog_cakes_pita img, ._headcatalog_bun_pita img {
+    width: 45%; }
+  ._catalog_menu_list ul li {
+    padding-left: 30px; }
+  ._goods_info img {
+    max-width: 400px; }
+  ._goods_info_block {
+    padding-left: 35px; }
+  ._catalogbread_goods, ._catalogcake_goods, ._catalogbun_goods {
+    padding-left: 0;
+    padding-right: 0; }
+  ._catalogbread_goods_bigleft, ._catalogcake_goods_bigleft, ._catalogbun_goods_bigleft {
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit; }
+  ._catalogbread_goods_bigright, ._catalogcake_goods_bigright, ._catalogbun_goods_bigright {
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit; }
+  ._catalogbread_goods img, ._catalogcake_goods img, ._catalogbun_goods img {
+    max-width: 350px; }
+  ._about h2 {
+    text-align: center;
+    left: 0;
+    right: 0; } }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /**/ }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  ._header_top {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  ._header_callback button {
+    display: block; }
+  ._header_callback {
+    text-align: center; }
+  ._header {
+    background-position: inherit; }
+  ._header_main {
+    text-align: center; }
+  ._header_main_special {
+    margin: 0 auto;
+    margin-top: 60px; }
+  ._header {
+    padding-bottom: 70px; }
+  ._ourbakery_title h3 {
+    text-align: center; }
+  ._ourbakery {
+    padding-top: 30px; }
+  ._ourbakery_descr {
+    margin-bottom: 50px;
+    margin-top: 25px; }
+  ._ourbakery {
+    padding-bottom: 0; }
+    ._ourbakery .container .row:nth-child(2) {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+  ._ourbakery_block p {
+    -webkit-transform: translate(-50%, -40%);
+        -ms-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+    padding-left: 10px;
+    padding-right: 10px; }
+  ._ourbakery_boottom {
+    padding-top: 80px; }
+  ._listgoods .slick-prev, ._listgoods .slick-next {
+    top: 50%; }
+  ._listgoods_price {
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: auto;
+    margin-bottom: 30px; }
+  .tabs__caption {
+    margin-bottom: 30px; }
+  ._footer_right h4 {
+    margin-top: 40px;
+    font-size: 42px; }
+  ._footer_right_contacts {
+    margin-top: 30px; }
+  ._footer_right {
+    padding-left: 50px; }
+  ._footer_right small {
+    bottom: 34px; }
+  ._listgoods {
+    padding-bottom: 40px; }
+  ._listgoods {
+    padding-top: 40px; }
+  ._ourbakery_boottom img {
+    top: 0;
+    height: 100%;
+    opacity: 0.5; }
+  ._ourbakery_boottom {
+    background-color: rgba(255, 255, 255, 0.5); }
+  ._ourbakery_title_right {
+    right: 10px;
+    top: -75px; }
+  ._ourbakery_title_left h4 {
+    font-size: 105px; }
+  ._ourbakery_title_right h4 {
+    font-size: 160px; }
+  ._about .container {
+    position: initial; }
+  ._headerpages {
+    text-align: center; }
+  ._headerpages ._header_callback a {
+    padding-left: 0; }
+  ._headerpages ._header_callback button {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px; }
+  ._headerpages ._header_main {
+    padding-top: 30px; }
+  ._headerpages:after {
+    display: none; }
+  ._headerpages ._header_logo {
+    padding-top: 30px; }
+  ._pagefooter {
+    margin-top: 0; }
+  ._about_info p {
+    padding-right: 0px;
+    font-size: 18px; }
+  ._about_img img {
+    height: auto; }
+  ._about h4 {
+    text-align: center; }
+  ._about_family .slick-next {
+    right: 40%; }
+  ._about_family .slick-prev {
+    left: 40%; }
+  ._pagefooter ._footer_right small {
+    left: 0;
+    bottom: 32px; }
+  ._news_allbest_block span {
+    font-size: 24px; }
+  ._about h4 {
+    margin-top: 0; }
+  ._news_allbest_padd p {
+    padding-left: 20px;
+    font-size: 18px;
+    margin-top: 40px; }
+  ._catalog .container {
+    padding-bottom: 50px; }
+  ._contacts_block_form form input {
+    width: 100%; }
+  ._contacts_block_form h4 {
+    text-align: left; }
+  ._headcatalog_bread_pita img, ._headcatalog_cakes_pita img, ._headcatalog_bun_pita img {
+    display: none; }
+  ._header .container ._titlepage h2 {
+    position: initial;
+    margin-top: 0; }
+  ._headcatalog_bread, ._headcatalog_cakes, ._headcatalog_bun {
+    padding-bottom: 15px; }
+  .catalogs-list li {
+    display: none; }
+  ._catalog_menu_list ._seemore {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+  ._catalog_menu_list ul {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  ._catalogbread ._catalogbread_list_cakes ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogbread ._catalogbread_list_bun ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogcake ._catalogcake_list_breads ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogcake ._catalogcake_list_bun ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogbun ._catalogbun_list_breads ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogbun ._catalogbun_list_cakes ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalog_menu_list ul li {
+    padding-top: 20px; } }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /**/ }
+@media only screen and (max-width: 767px) {
+  ._header_hide_menu ul li a {
+    display: block; }
+  ._header_top {
+    display: inherit; }
+  ._header_main_special {
+    margin: 0 auto;
+    margin-top: 30px; }
+  ._header_logo img {
+    display: block;
+    margin: 0 auto; }
+  ._header_callback {
+    text-align: center; }
+    ._header_callback button {
+      display: block;
+      margin: 0 auto;
+      border-color: #825d2e; }
+  ._header_main_menu nav ul {
+    background-image: none; }
+    ._header_main_menu nav ul li {
+      display: block; }
+  ._header_main_sub {
+    display: none; }
+  ._header_main_special {
+    display: none; }
+  ._header_mobile_sub {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    ._header_mobile_sub ._header_main_special, ._header_mobile_sub ._header_main_sub {
+      display: block; }
+  ._header_callback {
+    margin-top: 30px; }
+  ._header {
+    background-position: top left;
+    padding-bottom: 50px;
+    -webkit-background-size: auto auto;
+            background-size: auto; }
+  ._ourbakery {
+    padding-top: 0; }
+    ._ourbakery_title {
+      padding-top: 0; }
+      ._ourbakery_title h3 {
+        color: #5d1210;
+        font-size: 30px;
+        text-align: center; }
+  ._header_hide {
+    display: block;
+    position: relative; }
+    ._header_hide button {
+      width: 45px;
+      height: 45px;
+      background-color: #f68c00;
+      border: 0;
+      position: absolute;
+      right: 0;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      z-index: 999; }
+      ._header_hide button span {
+        display: block;
+        height: 2px;
+        width: 25px;
+        background-color: white;
+        margin-top: 2px;
+        margin-bottom: 2px; }
+    ._header_hide_menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f68c00;
+      width: 50%;
+      z-index: 9999;
+      padding-bottom: 10px; }
+      ._header_hide_menu ul {
+        padding: 0;
+        margin: 0; }
+        ._header_hide_menu ul li {
+          list-style: none;
+          padding-left: 30px;
+          padding-right: 30px; }
+          ._header_hide_menu ul li:hover {
+            background-color: white; }
+            ._header_hide_menu ul li:hover a {
+              color: #6f0f09; }
+          ._header_hide_menu ul li a {
+            font-family: timesital;
+            font-size: 19px;
+            width: 100%;
+            color: white;
+            text-decoration: none; }
+      ._header_hide_menu_close {
+        text-align: right;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        z-index: 999;
+        padding-right: 10px; }
+  ._header_main_menu {
+    display: none; }
+  ._ourbakery_hide_desc {
+    display: none; }
+  ._ourbakery_hide_desc2 {
+    display: block; }
+  ._ourbakery_block {
+    margin-bottom: 10px; }
+  ._ourbakery_block img {
+    width: 100%;
+    max-height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  ._ourbakery_block p {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  ._ourbakery_title h3 {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  ._ourbakery_descr p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px; }
+    ._ourbakery_descr p:before {
+      display: none; }
+  ._listgoods .slick-prev, ._listgoods .slick-next {
+    display: none !important; }
+  ._listgoods_cont {
+    padding-left: 0;
+    padding-right: 0; }
+  .tabs__caption {
+    display: none; }
+  ._ourbakery_title_hide {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  ._ourbakery_title_left h4 {
+    font-size: 72px;
+    color: #800c04; }
+  ._ourbakery_title_right {
+    position: initial;
+    margin-top: -40px; }
+    ._ourbakery_title_right h4 {
+      color: #f68c00;
+      font-size: 200px; }
+      ._ourbakery_title_right h4 span {
+        font-size: 48px;
+        color: #800c04;
+        padding-top: 10px; }
+  ._ourbakery_list_border {
+    display: none; }
+  ._ourbakery_boottom {
+    padding-top: 0; }
+  ._ourbakery_boottom img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    top: auto;
+    height: 120%; }
+  ._ourbakery_descr {
+    margin-bottom: 45px; }
+  ._ourbakery_list {
+    display: none; }
+  ._ourbakery_listhide {
+    display: block; }
+  ._listgoods {
+    padding-top: 20px; }
+  ._ourbakery_list ul {
+    padding-left: 50px;
+    padding-right: 50px; }
+  ._listgoods_block.slick-center ._listgoods_block_item {
+    background-color: #e8dacc; }
+  ._ourbakery {
+    padding-bottom: 80px; }
+  .tabs__content {
+    display: block;
+    height: auto; }
+  ._listgoods_price {
+    position: inherit;
+    margin: 0 auto; }
+  .active_price {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center; }
+  ._footer_left {
+    width: 100%; }
+  ._footer_right {
+    width: 100%; }
+  ._listgoods_tabs .tabs__price {
+    display: none; }
+  ._listgoods {
+    padding-bottom: 10px; }
+  ._footer_right {
+    padding-left: 30px;
+    padding-bottom: 40px; }
+  ._footer_right_contacts {
+    margin-top: 0; }
+  ._footer_right h4 {
+    font-size: 30px; }
+  ._footer_right span {
+    font-size: 14px; }
+  ._footer_right_menu ul {
+    display: none; }
+  ._footer_right_menu small {
+    position: inherit;
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%); }
+  ._footer_right h4 {
+    margin-bottom: 10px;
+    margin-top: 30px; }
+  ._listgoods {
+    overflow: hidden; }
+  ._footer_right {
+    min-height: auto; }
+  ._footer_left span {
+    display: none; }
+  ._footer_right_menu ._copy_hide {
+    display: block;
+    margin-bottom: -23px;
+    margin-left: -20px;
+    padding-top: 30px; }
+  .tabs__price.prices_hide {
+    display: block; }
+  ._about .container {
+    position: initial;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px; }
+  ._headerpages:after {
+    display: none; }
+  ._headerpages ._header_callback a {
+    padding-left: 0; }
+  ._headerpages ._header_callback button {
+    display: none; }
+  ._headerpages ._header_main {
+    padding-top: 0; }
+  ._about h2 {
+    font-size: 30px;
+    top: -80px;
+    padding-left: 10px; }
+  ._headerpages {
+    padding-bottom: 70px; }
+  ._news_allbest_block img {
+    max-width: 368px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 120px;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  ._news_allbest_block span {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  ._news_allbest_block span:after {
+    display: none; }
+  ._news_allbest_padd p {
+    display: none; }
+  ._news_allbest_padd:last-child {
+    margin-top: 15px; }
+    ._news_allbest_padd:last-child p {
+      display: block;
+      position: relative;
+      margin-top: 0; }
+      ._news_allbest_padd:last-child p:before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 85px;
+        top: 5px;
+        background-color: #fe8a00;
+        position: absolute;
+        left: 0; }
+  ._news_allbest_padd {
+    padding-left: 20px;
+    padding-right: 20px; }
+  ._catalog .container {
+    padding-bottom: 30px;
+    overflow: hidden; }
+  ._pagefooter {
+    margin-top: 0; }
+  ._pagefooter ._footer_left {
+    display: none; }
+  ._pagefooter ._footer_right {
+    display: none;
+    background-image: url(../img/bg/fon-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center center; }
+  ._pagefooter ._page_footer_hide {
+    display: block; }
+    ._pagefooter ._page_footer_hide ._footer_right_contacts {
+      margin-top: 15px;
+      padding-bottom: 20px; }
+    ._pagefooter ._page_footer_hide ._copy_hide {
+      margin-left: -20px; }
+    ._pagefooter ._page_footer_hide small {
+      text-align: left;
+      color: white;
+      left: auto;
+      right: 0;
+      width: 50%;
+      bottom: 25px;
+      line-height: 1.2; }
+      ._pagefooter ._page_footer_hide small a {
+        color: white; }
+  ._about_img {
+    display: none; }
+  ._about_info {
+    padding-left: 35px;
+    padding-right: 15px;
+    padding-top: 10px; }
+    ._about_info p {
+      padding-right: 0; }
+  ._about_info p:nth-child(1):before {
+    top: 44%; }
+  ._about h4 {
+    font-size: 30px;
+    text-align: center; }
+  ._pagefooter {
+    min-height: auto; }
+  ._about_family_item img {
+    width: auto;
+    margin: 0 auto; }
+  ._about_family_item {
+    padding-left: 20px;
+    padding-right: 20px; }
+  ._about_family .slick-prev {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transform: translateX(-60%);
+        -ms-transform: translateX(-60%);
+            transform: translateX(-60%);
+    background-color: white;
+    background-blend-mode: luminosity; }
+    ._about_family .slick-prev:hover {
+      background-blend-mode: none;
+      background-color: transparent; }
+  ._about_family .slick-next {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transform: translateX(60%);
+        -ms-transform: translateX(60%);
+            transform: translateX(60%);
+    background-color: white;
+    background-blend-mode: luminosity; }
+    ._about_family .slick-next:hover {
+      background-blend-mode: none;
+      background-color: transparent; }
+  ._about_family .slick-prev, ._about_family .slick-next {
+    bottom: -13px; }
+  ._about .container {
+    padding-bottom: 30px; }
+  ._about_family {
+    padding-bottom: 30px; }
+  ._about .container {
+    overflow: hidden; }
+  ._about_family .slick-prev, ._about_family .slick-next {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    top: 30%; }
+  ._about_family .slick-prev {
+    left: 0;
+    right: auto; }
+  ._about_family .slick-next {
+    right: 0;
+    left: auto; }
+  ._about h2 {
+    padding-left: 0; }
+  ._news_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  ._news h4 {
+    display: none; }
+  ._news_info_block:nth-child(2) p {
+    padding-left: 0; }
+    ._news_info_block:nth-child(2) p:before {
+      left: -15px; }
+  ._about_info p:nth-child(1):before {
+    left: -15px; }
+  ._news_info {
+    padding-left: 0; }
+  ._news_info_block {
+    padding-left: 35px; }
+  ._news_info_block p:before {
+    height: 50%;
+    top: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  ._about_info p:nth-child(1):before {
+    height: 50%;
+    top: 5px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  ._contacts_map {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    ._contacts_map .ymaps-2-1-56-map {
+      height: 390px !important; }
+  ._contacts .container ._contacts_block {
+    padding-left: 35px;
+    padding-right: 15px; }
+  ._contacts .container {
+    padding-bottom: 0; }
+  ._contacts_block_form form input {
+    width: 100%; }
+  ._contacts_block_form form button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 20px; }
+  ._headcatalog_bread_pita img, ._headcatalog_cakes_pita img, ._headcatalog_bun_pita img {
+    display: none; }
+  ._breadcrumbs img {
+    display: none; }
+  ._header .container ._titlepage h2 {
+    position: initial;
+    margin-top: 0;
+    text-align: center;
+    font-size: 34px; }
+  ._headcatalog_bread, ._headcatalog_cakes, ._headcatalog_bun {
+    padding-bottom: 15px; }
+  .catalogs-list li {
+    display: none; }
+  ._catalog_menu_list ._seemore {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+  ._catalog_menu_list ul {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  ._catalogbread ._catalogbread_list_cakes ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogbread ._catalogbread_list_bun ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogcake ._catalogcake_list_breads ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogcake ._catalogcake_list_bun ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogbun ._catalogbun_list_breads ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalogbun ._catalogbun_list_cakes ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalog_menu_list ul li {
+    padding-top: 20px; }
+  ._breadcrumbs {
+    padding: 0; }
+    ._breadcrumbs .container {
+      padding: 0; }
+  ._breadcrumbs ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    ._breadcrumbs ul li {
+      width: 50%;
+      text-align: center;
+      padding: 50px 0; }
+      ._breadcrumbs ul li:nth-child(2) {
+        background-color: #fcac4e; }
+  ._breadcrumbs ul li:after {
+    display: none; }
+  ._breadcrumbs ul li:nth-child(2) a {
+    color: white;
+    text-decoration: none; }
+  ._catalog_menu_list ul a:first-child {
+    color: white; }
+    ._catalog_menu_list ul a:first-child:hover {
+      color: white; }
+  ._catalog_menu_list ul {
+    width: 310px; }
+  ._catalog_menu_list {
+    padding-right: 0;
+    padding-left: 0; }
+  ._seemore {
+    width: 228px;
+    margin-left: 30px; }
+  ._catalogbread_goods, ._catalogcake_goods, ._catalogbun_goods {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .item-list {
+    display: none; }
+  .more-trigger {
+    display: none; }
+  ._catalogbread, ._catalogcake, ._catalogbun {
+    padding-bottom: 20px; }
+  ._catalog_menu_list ul {
+    margin-bottom: 15px; }
+  ._catalog_menu_list ul li {
+    padding-top: 25px; }
+  ._breadcrumbs ul li:nth-child(3) {
+    display: none; }
+  ._goods_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    ._goods_info img {
+      width: 100%;
+      padding-left: 0;
+      margin: 0 auto;
+      display: block;
+      margin-top: 30px; }
+    ._goods_info ._goods_info_block {
+      padding-left: 0;
+      margin-top: 30px; }
+  ._goods_info h3 {
+    text-align: center; }
+  ._header_main_special {
+    width: 290px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/ }
+  ._ourbakery_title h3 {
+    margin-top: 0px;
+    margin-bottom: 25px; }
+  ._header_mains:after {
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #f4efeb;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: skew(0deg, -8deg);
+        -ms-transform: skew(0deg, -8deg);
+            transform: skew(0deg, -8deg);
+    -webkit-transform-origin: 100%;
+        -ms-transform-origin: 100%;
+            transform-origin: 100%; }
+  ._ourbakery_list ul {
+    padding-left: 80px;
+    padding-right: 50px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

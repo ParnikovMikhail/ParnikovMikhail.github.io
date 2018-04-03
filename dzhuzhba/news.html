@@ -21,6 +21,24 @@
 	<header class="_header _headerpages">
 		<div class="container">
 			<div class="row">
+				<div class="_header_hide">
+					<button class="_header_hide_button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="_header_hide_menu">
+						<div class="_header_hide_menu_close">X</div>
+						<ul>
+							<li><a href="/dzhuzhba/index.html">Главная</a></li>
+							<li><a href="/dzhuzhba/company.html">О компании</a></li>
+							<li><a href="/dzhuzhba/news.html">Новости</a></li>
+							<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
+							<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
+							<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="col-md-3">
 					<div class="_header_logo">
 						<a href="#"><img src="img/logo/logo2.png" alt=""></a>
@@ -37,12 +55,12 @@
 						<div class="_header_main_menu _newsmenu">
 							<nav>
 								<ul>
-									<li><a href="/dzhuzhba/index.html">Главная</a></li>
-									<li><a href="/dzhuzhba/company.html">О компании</a></li>
-									<li><a href="/dzhuzhba/news.html">Новости</a></li>
-									<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
-									<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
-									<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="company.html">О компании</a></li>
+									<li><a href="news.html">Новости</a></li>
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="price/allprice.txt" download>Прайс-лист</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -56,13 +74,13 @@
 		<div class="container">
 			<h2>Новости</h2>
 			<div class="row _about_info _news_info">
-				<div class="col-md-6 _news_info_block">
+				<div class="col-md-6 col-sm-6 col-xs-12 _news_info_block">
 					<p><b>Выпустили новую партию булочек с джемом.</b><br>
 Долго разрабатывали рецет, новая партия поступит на прилавки в течение недели.<br>
 Ждем Ваши отзывы, дорогие покупатели!</p>
 					<img src="img/news/news1.jpg" alt="">
 				</div>
-				<div class="col-md-6 _news_info_block">
+				<div class="col-md-6 col-sm-6 col-xs-12 _news_info_block">
 					<p><b>Заработала новая печь, производства Италия.</b><br>
 Теперь у нас открылись новые возможноти и это чудо-профессии. Мы с легкостью сделаем для Вас самую вкусную выпечку из этой печи. Отдаем все самое лучшее Вам!</p>
 					<img src="img/news/news1.jpg" alt="">
@@ -70,9 +88,9 @@
 			</div>
 			<h4>Все самое лучшее здесь</h4>
 			<div class="row _news_allbest">
-				<div class="col-md-4 _news_allbest_block"><a href="catalogbread.html"><img src="img/categories/bread.png" alt=""><span href="#">Хлеб</span></a></div>
-				<div class="col-md-4 _news_allbest_block"><a href="catalogcake.html"><img src="img/categories/cakes.png" alt=""><span href="#">Торты, пирожные</span></a></div>
-				<div class="col-md-4 _news_allbest_block"><a href="catalogbun.html"><img src="img/categories/cooperation.png" alt=""><span href="#">Булочки</span></a></div>
+				<div class="col-md-4 col-sm-4 _news_allbest_block"><a href="catalogbread.html"><img src="img/categories/bread.png" alt=""><span href="#">Хлеб</span></a></div>
+				<div class="col-md-4 col-sm-4 _news_allbest_block"><a href="catalogcake.html"><img src="img/categories/cakes.png" alt=""><span href="#">Торты, пирожные</span></a></div>
+				<div class="col-md-4 col-sm-4 _news_allbest_block"><a href="catalogbun.html"><img src="img/categories/cooperation.png" alt=""><span href="#">Булочки</span></a></div>
 			</div>
 		</div>
 	</section>
@@ -94,6 +112,19 @@
 					<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
 					<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
 				</ul>
+				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
+			</div>
+		</div>
+		<div class="_footer_right _page_footer_hide">
+			<h4>Где нас найти?</h4>
+			<span>п. Джубга,<br>              
+				ул. Советская, 5</span>
+			<div class="_footer_right_contacts">
+			<span>Тел.: +7 (918) 56-09-02</span>
+			<span>E-mail: <a href="#">dgubga-hleb@dh.ru</a></span>
+			</div>
+			<div>
+				<span class="_copy_hide">© 2018. Джубга-хлеб.</span>
 				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
 			</div>
 		</div>
@@ -150,7 +181,24 @@ centerMode: true,
     });
 });
 </script>-->
-
+<script>
+		$(function() {
+			$('._header_hide_button').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeIn("slow");
+			});
+			$('._header_hide_menu_close').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeOut("slow");
+			});
+		});
+		$(document).mouseup(function (e) {
+			var container = $("._header_hide_menu");
+		if (container.has(e.target).length === 0){
+			container.fadeOut();
+			}
+		});
+</script>
 
 </body>
 </html>

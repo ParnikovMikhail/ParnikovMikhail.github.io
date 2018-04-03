@@ -21,6 +21,25 @@
 	<header class="_header _headerpages _headcataloge">
 		<div class="container">
 			<div class="row">
+				<div class="_header_hide">
+					<button class="_header_hide_button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="_header_hide_menu">
+						<div class="_header_hide_menu_close">X</div>
+						<ul>
+							<li><a href="/dzhuzhba/index.html">Главная</a></li>
+							<li><a href="/dzhuzhba/company.html">О компании</a></li>
+							<li><a href="/dzhuzhba/news.html">Новости</a></li>
+							<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
+							<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
+							<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+
+				</div>
 				<div class="col-md-3">
 					<div class="_header_logo">
 						<a href="#"><img src="img/logo/logo2.png" alt=""></a>
@@ -56,7 +75,7 @@
 		<div class="container">
 			<h2>Каталог</h2>
 			<div class="row _news_allbest ">
-				<div class="col-md-4 _news_allbest_padd"><div class="_news_allbest_block">
+				<div class="col-sm-4 col-xs-12 _news_allbest_padd"><div class="_news_allbest_block">
 					<a href="catalogbread.html"><img src="img/categories/bread.png" alt=""><span >Хлеб</span></a>
 				</div>
 				<p>Хлеб является основным из продуктов, которые каждодневно употребляет каждый из нас. Люди с древних времён почитали хлеб 
@@ -65,7 +84,7 @@
 Нет исторических данных насчёт того, когда человек впервые испёк хлеб. Но, конечно, это произошло тогда, когда первобытные люди научились засевать поля зерном и получать урожай. Сначала древние люди употребляли зёрна сырыми, а уж потом научились делать из них хлеб.
 </p>		
 				</div>
-				<div class="col-md-4 _news_allbest_padd"><div class="_news_allbest_block">
+				<div class="col-sm-4 col-xs-12 _news_allbest_padd"><div class="_news_allbest_block">
 					<a href="catalogcake.html"><img src="img/categories/cakes.png" alt=""><span >Торты, пирожные</span></a>
 				</div>
 				<p>Заказывая торт Вы хотите получить не только красивый торт, но и вкусный, и так что бы его хватило на всех Ваших гостей! <br><br>
@@ -75,19 +94,25 @@
 с большим опытом и стажем работы, который сможет сделать торт на Ваш вкус, даже если Вы его не увидели в нашей папке 
 с начинками!</p>
 				</div>
-				<div class="col-md-4 _news_allbest_padd"><div class="_news_allbest_block">
+				<div class="col-sm-4 col-xs-12 _news_allbest_padd"><div class="_news_allbest_block">
 					<a href="catalogbun.html"><img src="img/categories/cooperation.png" alt=""><span >Булочки</span></a>
 				</div>
 				<p>Одним из видов сдобных хлебобулочных изделий есть булочки с изюмом. Изобрёл их Иван Филиппов – представитель известнейшей русской династии хлебопёков, владелец нескольких булочных. Имея хорошую коммерческую жилку, он в своё время стал зачинателем многих нововведений в пекарском деле.<br><br>
 
 К примеру, открыл хлебный магазин, то есть булочную, при собственной пекарне, где практически всегда можно было приобрести хлебушек и сдобу «прямо из печи»</p>
 				</div>
+				<div class="col-md-4 col-xs-12 _news_allbest_padd">
+				<p>Хлеб является основным из продуктов, которые каждодневно употребляет каждый из нас. Люди с древних времён почитали хлеб 
+и старались употреблять его как можно чаще.<br><br>
+
+Нет исторических данных насчёт того, когда человек впервые испёк хлеб. Но, конечно, это произошло тогда, когда первобытные люди научились засевать поля зерном и получать урожай. Сначала древние люди употребляли зёрна сырыми, а уж потом научились делать из них хлеб.
+</p>	
+				</div>
 			</div>
 		</div>
 	</section>
 	<footer class="_footer _pagefooter">
 		<div class="_footer_left">
-			
 			<span>© 2018. Джубга-хлеб.</span>
 		</div>
 		<div class="_footer_right">
@@ -107,6 +132,21 @@
 				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
 			</div>
 		</div>
+		<div class="_footer_right _page_footer_hide">
+			<h4>Где нас найти?</h4>
+			<span>п. Джубга,<br>              
+				ул. Советская, 5</span>
+			<div class="_footer_right_contacts">
+			<span>Тел.: +7 (918) 56-09-02</span>
+			<span>E-mail: <a href="#">dgubga-hleb@dh.ru</a></span>
+			</div>
+			<div>
+				<span class="_copy_hide">© 2018. Джубга-хлеб.</span>
+				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
+			</div>
+		</div>
+		
+
 	</footer>
 	
 	<link rel="stylesheet" href="css/main.css">
@@ -160,7 +200,20 @@ centerMode: true,
     });
 });
 </script>-->
-
+<script>
+		
+		$(function() {
+			$('._header_hide_button').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeIn("slow");
+			});
+			$('._header_hide_menu_close').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeOut("slow");
+			});
+		});
+	
+	</script>
 
 </body>
 </html>

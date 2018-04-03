@@ -41,3 +41,48 @@
     count: 6
   };
 })(jQuery);
+
+(function($) {
+  $.fn.showMoreList = function(options) {
+
+    var $totalItems = $('.catalogs-list li').length,
+        $visibleItems = $('.catalogs-list li:visible').length,
+        settings = $.extend({}, $.fn.showMoreItems.defaults, options),
+        i = settings.count,
+        countLess = settings.count - 1;
+
+    $('.catalogs-list li:lt(' + settings.count + ')').css('display', 'flex');
+
+    $('.more-trigger2').click(function(el) {
+      el.preventDefault();
+
+      if ($visibleItems !== $totalItems) {
+        if(i + settings.count <= $totalItems) {
+          $visibleItems = i += settings.count;
+          $('.catalogs-list li:lt('+ i +')').show().css('display', 'flex');
+
+          if(i == $totalItems) {
+            $('.more-trigger2').text("Смотреть меньше");
+          }
+
+        } else if (i !== $totalItems) {
+          $('.catalogs-list li:gt(' + countLess + ')').show().css('display', 'flex');
+          $('.more-trigger2').text("Смотреть меньше");
+          $visibleItems = $totalItems;
+          i = $totalItems;
+        }
+      } else if($visibleItems === $totalItems) {
+        $('.catalogs-list li:gt(' + countLess + ')').hide();
+        $('.more-trigger2').text("Смотреть больше");
+        $visibleItems = settings.count;
+        i = settings.count;
+      }
+
+    });
+  }
+
+  $.fn.showMoreItems.defaults = {
+    count: 6
+  };
+})(jQuery);
+

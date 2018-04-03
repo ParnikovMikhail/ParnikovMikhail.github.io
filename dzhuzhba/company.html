@@ -21,6 +21,24 @@
 	<header class="_header _headerpages">
 		<div class="container">
 			<div class="row">
+				<div class="_header_hide">
+					<button class="_header_hide_button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="_header_hide_menu">
+						<div class="_header_hide_menu_close">X</div>
+						<ul>
+							<li><a href="/dzhuzhba/index.html">Главная</a></li>
+							<li><a href="/dzhuzhba/company.html">О компании</a></li>
+							<li><a href="/dzhuzhba/news.html">Новости</a></li>
+							<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
+							<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
+							<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="col-md-3">
 					<div class="_header_logo">
 						<a href="#"><img src="img/logo/logo2.png" alt=""></a>
@@ -37,12 +55,12 @@
 						<div class="_header_main_menu">
 							<nav>
 								<ul>
-									<li><a href="/dzhuzhba/index.html">Главная</a></li>
-									<li><a href="/dzhuzhba/company.html">О компании</a></li>
-									<li><a href="/dzhuzhba/news.html">Новости</a></li>
-									<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
-									<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
-									<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="company.html">О компании</a></li>
+									<li><a href="news.html">Новости</a></li>
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="price/allprice.txt" download>Прайс-лист</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -56,13 +74,13 @@
 		<div class="container">
 			<h2>О компании</h2>
 			<div class="row _about_info">
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6">
 					<p><b>Пекарня «Джубга-хлеб»</b> — это пекарня у дома предлагающая по доступным ценам свежий хлеб, горячие пироги и вкусную выпечку из натуральных продуктов. </p>
 					<p>Шаговая доступность пекарни позволяет предлагать только свежую качественную продукцию, произведенную здесь же.</p>
 					<p><b>Пекарня «Джубга-хлеб»</b> — это пекарня у дома предлагающая по доступным ценам свежий хлеб, горячие пироги и вкусную выпечку из натуральных продуктов. </p>
 					<p>Шаговая доступность пекарни позволяет предлагать только свежую качественную продукцию, произведенную здесь же.</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6">
 					<div class="_about_img">
 						<img src="img/about/info.jpg" alt="">
 					</div>
@@ -187,6 +205,19 @@
 				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
 			</div>
 		</div>
+		<div class="_footer_right _page_footer_hide">
+			<h4>Где нас найти?</h4>
+			<span>п. Джубга,<br>              
+				ул. Советская, 5</span>
+			<div class="_footer_right_contacts">
+			<span>Тел.: +7 (918) 56-09-02</span>
+			<span>E-mail: <a href="#">dgubga-hleb@dh.ru</a></span>
+			</div>
+			<div>
+				<span class="_copy_hide">© 2018. Джубга-хлеб.</span>
+				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
+			</div>
+		</div>
 	</footer>
 	
 	<link rel="stylesheet" href="css/main.css">
@@ -222,7 +253,36 @@ centerMode: true,
 	$('._about_family').slick({		
   infinite: true,
   slidesToShow: 5,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+   {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 </script>
 <!--<script>
@@ -240,7 +300,24 @@ centerMode: true,
     });
 });
 </script>-->
-
+<script>
+		$(function() {
+			$('._header_hide_button').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeIn("slow");
+			});
+			$('._header_hide_menu_close').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeOut("slow");
+			});
+		});
+		$(document).mouseup(function (e) {
+			var container = $("._header_hide_menu");
+		if (container.has(e.target).length === 0){
+			container.fadeOut();
+			}
+		});
+</script>
 
 </body>
 </html>

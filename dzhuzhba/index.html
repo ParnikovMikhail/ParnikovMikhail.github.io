@@ -18,12 +18,40 @@
 
 <body>
 
-	<header class="_header">
+	<header class="_header _header_mains">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="_header_hide">
+					<button class="_header_hide_button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="_header_hide_menu">
+						<div class="_header_hide_menu_close">X</div>
+						<ul>
+							<li><a href="/dzhuzhba/index.html">Главная</a></li>
+							<li><a href="/dzhuzhba/company.html">О компании</a></li>
+							<li><a href="/dzhuzhba/news.html">Новости</a></li>
+							<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
+							<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
+							<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 _header_top">
 					<div class="_header_logo">
-						<a href="#"><img src="img/logo/main_logo_header.jpg" alt=""></a>
+						<a href="#">
+							<img src="img/logo/main_logo_header.jpg" alt="">
+						</a>
+						<div class="_header_mobile_sub">
+							<div class="_header_main_sub"><a href="#">Подписывайтесь!</a></div>
+							<div class="_header_main_special">
+								<a href="#"><span>Спецпредложение</span>
+									<p>для здравниц, санаториев 
+									и детских лагерей</p></a>
+							</div>
+						</div>
 					</div>
 					<div class="_header_callback">
 						<a href="#">+7 (918) 256-09-03</a>
@@ -35,12 +63,12 @@
 						<div class="_header_main_menu">
 							<nav>
 								<ul>
-									<li><a href="/dzhuzhba/index.html">Главная</a></li>
-									<li><a href="/dzhuzhba/company.html">О компании</a></li>
-									<li><a href="/dzhuzhba/news.html">Новости</a></li>
-									<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
-									<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
-									<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="company.html">О компании</a></li>
+									<li><a href="news.html">Новости</a></li>
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="price/allprice.txt" download>Прайс-лист</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -66,33 +94,36 @@
 						<h3>Наша пекарня</h3>
 					</div>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-8 _ourbakery_hide_desc">
 					<div class="_ourbakery_descr">
 						<p><span>Пекарня «Джубга-хлеб»</span> — это пекарня у дома предлагающая по доступным ценам свежий хлеб, горячие пироги и вкусную выпечку из натуральных продуктов. Шаговая доступность пекарни позволяет предлагать только свежую качественную продукцию, произведенную здесь же.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-12">
 					<div class="_ourbakery_block">
 						<a href="#"><img src="img/categories/bread.png" alt=""></a>
 						<p href="#">Хлебные<br>
 						<span>новинки</span></p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-12">
 					<div class="_ourbakery_block">
 						<a href="#"><img src="img/categories/cakes.png" alt=""></a>
 						<p href="#">Торты, пирожные<br>
 						<span>новинки</span></p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-12">
 					<div class="_ourbakery_block">
 						<a href="#"><img src="img/categories/cooperation.png" alt=""></a>
 						<p href="#">Сотрудничество<br>
 						<span>с нами</span></p>
 					</div>
+				</div>
+				<div class="col-xs-12 _ourbakery_descr _ourbakery_hide_desc2">
+						<p><span>Пекарня «Джубга-хлеб»</span> — это пекарня у дома предлагающая по доступным ценам свежий хлеб, горячие пироги и вкусную выпечку из натуральных продуктов. Шаговая доступность пекарни позволяет предлагать только свежую качественную продукцию, произведенную здесь же.</p>
 				</div>
 			</div>
 			<div class="row _ourbakery_boottom">
@@ -112,9 +143,7 @@
 					</div>
 					
 				</div>
-
-			</div>
-			<div class="_ourbakery_title col-md-10 col-md-offset-1">
+			<div class="_ourbakery_title _ourbakery_title_hide col-md-10 col-md-offset-1">
 						<div class="_ourbakery_title_left">
 							<h4>Более</h4>
 						</div>
@@ -123,9 +152,22 @@
 							<h4>65<span>позиций</span></h4>
 						</div>
 			</div>
+			</div>
+			
 		</div>
 	</section>
 	<section class="_listgoods">
+		<div class="_ourbakery_list _ourbakery_listhide">
+			<div class="_ourbakery_list_border "></div>
+				<ul>
+					<li>Всегда конкурентные 
+			<span>Цены</span></li>
+					<li>Всегда <span>Натуральные</span>
+			продукты</li>
+					<li>Всегда свежий хлеб
+			всегда <span>Вкусно</span></li>
+				</ul>
+		</div>
 		<div class="container _listgoods_cont tabs">
 
 		<div class="row">
@@ -137,17 +179,17 @@
 				</ul>
 				<div class="tabs__price active_price">
 					<div class="_listgoods_price">
-						<a href="/dzhuzhba/price/breadprice.txt" download>Скачать прайс-лист «Хлеб»</a >
+						<a href="price/breadprice.txt" download>Скачать прайс-лист «Хлеб»</a >
 					</div>
 				</div>
 				<div class="tabs__price">
 					<div class="_listgoods_price">
-						<a href="/dzhuzhba/price/bunprice.txt" download>Скачать прайс-лист «Булочки»</a >
+						<a href="price/bunprice.txt" download>Скачать прайс-лист «Булочки»</a >
 					</div>
 				</div>
 				<div class="tabs__price">
 					<div class="_listgoods_price">
-						<a href="/dzhuzhba/price/cakeprice.txt" download>Скачать прайс-лист «Торты»</a >
+						<a href="price/cakeprice.txt" download>Скачать прайс-лист «Торты»</a >
 					</div>
 				</div>
 			</div>
@@ -207,7 +249,11 @@
 					</div>
 				</div>
 			</div>
-
+			<div class="tabs__price active_price prices_hide">
+					<div class="_listgoods_price">
+						<a href="price/breadprice.txt" download>Скачать прайс-лист «Хлеб»</a >
+					</div>
+				</div>
 			<div class="tabs__content">
 				<div class="row _listgoods_slider">
 					<div class="_listgoods_block">
@@ -261,7 +307,11 @@
 					</div>
 				</div>
 			</div>
-
+			<div class="tabs__price active_price prices_hide">
+					<div class="_listgoods_price">
+						<a href="price/bunprice.txt" download>Скачать прайс-лист «Булочки»</a >
+					</div>
+				</div>
 			<div class="tabs__content">
 				<div class="row _listgoods_slider">
 					<div class="_listgoods_block">
@@ -314,6 +364,11 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="tabs__price active_price prices_hide">
+					<div class="_listgoods_price">
+						<a href="price/cakeprice.txt" download>Скачать прайс-лист «Торты»</a >
+					</div>
 			</div>
 			
 		</div>
@@ -344,6 +399,7 @@
 					<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
 					<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
 				</ul>
+				<span class="_copy_hide">© 2018. Джубга-хлеб.</span>
 				<small>Разработано в <a href="#">Студии Татьяны Кравец.</a></small>
 			</div>
 		</div>
@@ -389,7 +445,36 @@ $(function() {
 centerMode: true,		
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+   {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 </script>
 <!--<script>
@@ -407,7 +492,24 @@ centerMode: true,
     });
 });
 </script>-->
-
+<script>
+		$(function() {
+			$('._header_hide_button').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeIn("slow");
+			});
+			$('._header_hide_menu_close').on('click', function(event) {
+				event.preventDefault();
+				$('._header_hide_menu').fadeOut("slow");
+			});
+		});
+		$(document).mouseup(function (e) {
+			var container = $("._header_hide_menu");
+		if (container.has(e.target).length === 0){
+			container.fadeOut();
+			}
+		});
+</script>
 
 </body>
 </html>
