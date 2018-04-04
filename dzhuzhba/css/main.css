@@ -1572,6 +1572,42 @@ body {
 ._catalog_menu_list ._seemore {
   display: none; }
 
+._header_callback button {
+  border-color: #966231; }
+
+._ourbakery_block p:after {
+  content: '';
+  bottom: -20px;
+  display: block;
+  width: 170px;
+  height: 3px;
+  background-color: #e88314;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+._ourbakery_block p {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+._header_spec ._header_main_menu nav ul li:nth-child(2) {
+  background-color: transparent; }
+
+._headerpages ._header_main_menu nav ul li:nth-child(2) {
+  background-color: rgba(249, 128, 0, 0.37); }
+
+._newsmenu li:nth-child(3) {
+  background-color: rgba(249, 128, 0, 0.37); }
+
+._catalogmenu li:nth-child(4) {
+  background-color: rgba(249, 128, 0, 0.37); }
+
+._contactsmenu li:nth-child(6) {
+  background-color: rgba(249, 128, 0, 0.37); }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1795,10 +1831,14 @@ body {
   ._catalogbun ._catalogbun_list_cakes ul a:not(:nth-child(1)) {
     display: none; }
   ._catalog_menu_list ul li {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  ._ourbakery_block p {
+    font-size: 24px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+  ._ourbakery_block p:after {
+    display: none; }
   ._header_hide_menu ul li a {
     display: block; }
   ._header_top {

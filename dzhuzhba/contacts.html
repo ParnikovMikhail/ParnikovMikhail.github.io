@@ -55,12 +55,12 @@
 						<div class="_header_main_menu _contactsmenu">
 							<nav>
 								<ul>
-									<li><a href="index.html">Главная</a></li>
-									<li><a href="company.html">О компании</a></li>
-									<li><a href="news.html">Новости</a></li>
-									<li><a href="catalog.html">Каталог</a></li>
-									<li><a href="price/allprice.txt" download>Прайс-лист</a></li>
-									<li><a href="contacts.html">Контакты</a></li>
+									<li><a href="/dzhuzhba/index.html">Главная</a></li>
+									<li><a href="/dzhuzhba/company.html">О компании</a></li>
+									<li><a href="/dzhuzhba/news.html">Новости</a></li>
+									<li><a href="/dzhuzhba/catalog.html">Каталог</a></li>
+									<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
+									<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -115,7 +115,7 @@ Viber: +7 918 680-09-03</span>
 					
 				</ul>
 				<ul>
-					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="/dzhuzhba/spec.html">Спецпредложения</a></li>
 					<li><a href="/dzhuzhba/price/allprice.txt" download>Прайс-лист</a></li>
 					<li><a href="/dzhuzhba/contacts.html">Контакты</a></li>
 				</ul>
@@ -205,6 +205,17 @@ centerMode: true,
 			container.fadeOut();
 			}
 		});
+</script>
+<script>
+	 $(document).ready(function () {
+ $('input,textarea').focus(function(){
+   $(this).data('placeholder',$(this).attr('placeholder'))
+   $(this).attr('placeholder','');
+ });
+ $('input,textarea').blur(function(){
+   $(this).attr('placeholder',$(this).data('placeholder'));
+ });
+ });
 </script>
 
 </body>
