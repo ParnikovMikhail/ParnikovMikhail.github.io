@@ -99,11 +99,17 @@
 						</ul>
 					</div>
 					<div class="_catalogcake_list_cakes">
-						<ul>
+						<ul class="catalogs-list">
 							<a href="/dzhuzhba/catalogcake.html"><li class="_catalog_menu_active">Торты, пирожные</li></a>
 							<a href="/dzhuzhba/catalogcakepage.html"><li class="_catalog_page_active">Торт «Панчо»</li></a>
 							<a href="#"><li>Торт «Картошка»</li></a>
 							<a href="#"><li>Торт «Горка»</li></a>
+
+							<a href="#"><li>Торт «Горка»</li></a>
+							<a href="#"><li>Торт «Горка»</li></a>
+							<button class="_seemore more-trigger2">
+						Смотреть больше
+							</button>
 						</ul>
 					</div>
 					<div class="_catalogcake_list_bun">
@@ -230,6 +236,13 @@ centerMode: true,
 		});
 	});
 
+</script>
+<script>
+	$(document).ready(function() {
+		$('body').showMoreList({
+			count: 3
+		});
+	});
 </script>
 <script>
 		$(function() {

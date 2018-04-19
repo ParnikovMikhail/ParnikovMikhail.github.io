@@ -100,11 +100,13 @@
 					<div class="_catalogcake_list_cakes">
 						<ul class="catalogs-list">
 							<a href="/dzhuzhba/catalogcake.html"><li class="_catalog_menu_active">Торты, пирожные</li></a>
-							<a href="/dzhuzhba/catalogcakepage.html"><li>Торт «Панчо»</li></a>
-							<a href="#"><li>Торт «Картошка»</li></a>
-							<a href="#"><li>Торт «Горка»</li></a>
-							<a href="#"><li>Торт «Горка»</li></a>
-							<a href="#"><li>Торт «Горка»</li></a>
+							<a href="/dzhuzhba/catalogcakepage.html">
+								<img src="img/cakes/list/2.png" alt="">
+								<li>Торт «Панчо»</li></a>
+							<a href="#"><img src="img/cakes/list/2.png" alt=""><li>Торт «Картошка»</li></a>
+							<a href="#"><img src="img/cakes/list/2.png" alt=""><li>Торт «Горка»</li></a>
+							<a href="#"><img src="img/cakes/list/2.png" alt=""><li>Торт «Горка»</li></a>
+							<a href="#"><img src="img/cakes/list/2.png" alt=""><li>Торт «Горка»</li></a>
 							<button class="_seemore more-trigger2">
 						Смотреть больше
 							</button>
@@ -292,10 +294,21 @@ centerMode: true,
 <script>
 	$(document).ready(function() {
 		$('body').showMoreList({
-			count: 4
+			count: 2
 		});
 	});
 </script>
+<script>
+	$(document).ready(function() {
+		if(window.matchMedia('(max-width: 768px)').matches)
+		{
+		$('body').showMoreList2({
+			count: 2
+		});
+		}
+	});
+</script>
+
 <script>
 		$(function() {
 			$('._header_hide_button').on('click', function(event) {

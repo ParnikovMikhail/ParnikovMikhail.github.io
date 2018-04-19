@@ -107,12 +107,29 @@
 					</div>
 					<div class="_catalogbun_list_bun">
 						<ul class="catalogs-list">
-							<a href="/dzhuzhba/catalogbun.html"><li class="_catalog_menu_active">Булочки</li></a>
-							<a href="/dzhuzhba/catalogbunpage.html"><li>Булочка «Творожная»</li></a>
-							<a href="#"><li>Булочка «Особая»</li></a>
-							<a href="#"><li>Кекс с изюмом</li></a>
-							<a href="#"><li>Кекс с изюмом</li></a>
-							<a href="#"><li>Рожик с кремом</li></a>
+							<a href="/dzhuzhba/catalogbun.html">
+								<li class="_catalog_menu_active">Булочки</li>
+							</a>
+							<a href="/dzhuzhba/catalogbunpage.html">
+								<img src="img/bun/list/3.png" alt="">
+								<li>Булочка «Творожная»</li>
+							</a>
+							<a href="#">
+								<img src="img/bun/list/3.png" alt="">
+								<li>Булочка «Особая»</li>
+							</a>
+							<a href="#">
+								<img src="img/bun/list/3.png" alt="">
+								<li>Кекс с изюмом</li>
+							</a>
+							<a href="#">
+								<img src="img/bun/list/3.png" alt="">
+								<li>Кекс с изюмом</li>
+							</a>
+							<a href="#">
+								<img src="img/bun/list/3.png" alt="">
+								<li>Рожик с кремом</li>
+							</a>
 							<button class="_seemore more-trigger2">
 						Смотреть больше
 							</button>
@@ -290,10 +307,21 @@ centerMode: true,
 <script>
 	$(document).ready(function() {
 		$('body').showMoreList({
-			count: 4
+			count: 2
 		});
 	});
 </script>
+<script>
+	$(document).ready(function() {
+		if(window.matchMedia('(max-width: 768px)').matches)
+		{
+		$('body').showMoreList2({
+			count: 2
+		});
+		}
+	});
+</script>
+
 <script>
 		$(function() {
 			$('._header_hide_button').on('click', function(event) {

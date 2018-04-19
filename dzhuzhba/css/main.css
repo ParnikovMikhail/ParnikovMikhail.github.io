@@ -2492,7 +2492,40 @@ body {
   ._ourbakery_news_item {
     margin-bottom: 20px; }
   ._ourbakery_hide_desc2 {
-    display: none; } }
+    display: none; }
+  .catalogs-list img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px; }
+  ._catalog_menu_list ul a {
+    color: #6f0f09; }
+  ._catalog_menu_active {
+    -webkit-box-pack: left !important;
+    -webkit-justify-content: left !important;
+        -ms-flex-pack: left !important;
+            justify-content: left !important;
+    padding-left: 30px !important; }
+  ._catalog_menu_list ul a:first-child li {
+    padding-left: 30px !important;
+    text-align: left !important;
+    font-size: 20px !important; }
+  ._catalog_menu_list ul li {
+    padding-left: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    padding-top: 20px; }
+  .catalogs-list img {
+    display: none; }
+  ._catalog_menu_list ._seemore {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  ._catalog_menu_list ul a:first-child li {
+    display: block !important; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -2520,6 +2553,12 @@ body {
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   /**/ }
+
+@media screen and (min-width: 768px) {
+  .catalogs-list a img {
+    display: none; }
+  .catalogs-list a img {
+    display: none !important; } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */

@@ -91,11 +91,20 @@
 				<div class="col-md-3 _catalog_menu_list">
 					<div class="_catalogbread_list_breads">
 						<ul class="catalogs-list">
-							<a href="/dzhuzhba/catalogbread.html"><li class="_catalog_menu_active">Хлеба</li></a>
-							<a href="/dzhuzhba/catalogbreadpage.html"><li>Хлеб «Бородинский»</li></a>
-							<a href="#"><li>Хлеб «Столичный»</li></a>
-							<a href="#"><li>Хлеб «Особый»</li></a>
-							<a href="#"><li>Хлеб «Особый»</li></a>
+							<a href="/dzhuzhba/catalogbread.html">
+								<li class="_catalog_menu_active">Хлеба</li></a>
+							<a href="/dzhuzhba/catalogbreadpage.html">
+								<img src="img/breads/list/2.png" alt="">
+								<li>Хлеб «Бородинский»</li></a>
+							<a href="#">
+								<img src="img/breads/list/2.png" alt="">
+								<li>Хлеб «Столичный»</li></a>
+							<a href="#">
+								<img src="img/breads/list/2.png" alt="">
+								<li>Хлеб «Особый»</li></a>
+							<a href="#">
+								<img src="img/breads/list/2.png" alt="">
+								<li>Хлеб «Особый»</li></a>
 
 							<button class="_seemore more-trigger2">
 						Смотреть больше
@@ -321,10 +330,21 @@ centerMode: true,
 <script>
 	$(document).ready(function() {
 		$('body').showMoreList({
-			count: 4
+			count: 2
 		});
 	});
 </script>
+<script>
+	$(document).ready(function() {
+		if(window.matchMedia('(max-width: 768px)').matches)
+		{
+		$('body').showMoreList2({
+			count: 2
+		});
+		}
+	});
+</script>
+
 <script>
 		$(function() {
 			$('._header_hide_button').on('click', function(event) {
