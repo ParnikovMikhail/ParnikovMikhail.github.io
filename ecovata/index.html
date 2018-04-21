@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/fotorama.css">
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
@@ -22,7 +23,7 @@
 		<div class="_header_top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-lg-4 col-md-3">
 						<div class="_header_top_logo">
 							<a href="#">
 								<img src="img/logo.png" alt="">
@@ -32,13 +33,18 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<nav class="_header_top_menu">
-							<ul>
-								<li><a href="#">Что это такое</a></li>
-								<li><a href="#">Преимущества эковаты</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Как мы работаем</a></li>
+					<div class="col-lg-6 col-md-7 col-xs-12">
+						<nav class="_header_top_menu" >
+							<button type="button" class="navbar-toggle">
+					    		<span class="icon-bar"></span>
+					    		<span class="icon-bar"></span>
+					    		<span class="icon-bar"></span>
+							</button>
+							<ul id="main_menu">
+								<li><a href="#videos">Что это такое</a></li>
+								<li><a href="#_why">Преимущества эковаты</a></li>
+								<li><a href="#_reviews">Отзывы</a></li>
+								<li><a href="#_howwork">Как мы работаем</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -65,7 +71,7 @@
 							<form action="" >
 								<input type="text" placeholder="Ваше имя">
 								<input type="text" placeholder="Ваш телефон">
-								<button>Узнать стоимость</button>
+								<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">Узнать стоимость</button>
 							</form>
 						</div>
 
@@ -80,29 +86,29 @@
 				<div class="col-md-12"><h4>коротко о нас</h4>
 				</div>
 			</div>
-			<div class="row">	
-				<div class="col-md-3"><div class="_about_block"><img src="img/icons/7.png" alt=""></div></div>
-				<div class="col-md-3"><div class="_about_block"><img src="img/icons/973.png" alt=""></div></div>
-				<div class="col-md-3"><div class="_about_block"><img src="img/icons/2432.png" alt=""></div></div>
-				<div class="col-md-3"><div class="_about_block"><img src="img/icons/2919.png" alt=""></div></div>
+			<div class="row _about_list">	
+				<div class="_about_block"><img src="img/icons/7.png" alt=""></div>
+				<div class="_about_block"><img src="img/icons/973.png" alt=""></div>
+				<div class="_about_block"><img src="img/icons/2432.png" alt=""></div>
+				<div class="_about_block"><img src="img/icons/2919.png" alt=""></div>
 			</div>
 		</div>
 	</section>
-	<section class="_video">
+	<section id="videos" class="_video">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="_video_block">
 						<h4>Видео</h4>
 						<p>Что такое Эковата и как мы с ней работаем</p>
-						<button>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
 							Смотреть видео
 						</button>
 					</div>
 					
 				</div>
 				<div class="col-md-10 col-md-offset-1 text-right">
-					<button class="_video_story">История эковаты</button>
+					<button class="_video_story" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">История эковаты</button>
 				</div>
 			</div>
 		</div>
@@ -120,12 +126,12 @@
 						<p>Экологически безопасный утеплитель - эковата отличное решение Ваших проблем!</p>
 
 						<p>Эковата монтируется под давлением, заполняя все щели и пустоты, даже в самых сложных строениях. Имеет прекрасную адгезию, не дает трещин и усадки.</p>
-					<button>Заказать утепление</button>
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">Заказать утепление</button>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="_why">
+	<section id="_why" class="_why">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -208,7 +214,7 @@
 								<td>Цена за кв.м под ключ</td>
 								<td>500 рублей</td>
 								<td>380 рублей</td>
-								<td>300 рублей</td>
+								<td><span>300 рублей</span></td>
 							</tr>
 							<tr>
 								<td>Срок действия</td>
@@ -276,11 +282,317 @@
 			</div>
 		</div>
 	</section>
-	
+	<section class="_explore">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="_explore_title">
+						<h4>Летом в доме жарко как в бункере? Зимой холодно и дует? </h4>
+						<p>Узнайте как добиться оптимального микроклимата в вашем доме</p>
+					</div>
+					<div class="_explore_block">
+						<form class="_explore_form">
+							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="Ваш телефон">
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">Узнать</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="_advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h4>Почему стоить выбирать НАС?</h4>
+				</div>
+				<div class="col-lg-10 col-lg-offset-1 col-md-8 col-sm-8">
+					<ul>
+						<li>7 лет на рынке</li>
+						<li>973 утепленных объектов</li>
+						<li>Мы сотрудничаем напрямую с производителем</li>
+						<li>50% всей нашей работы, это переделка за другими монтажниками </li>
+						<li>Мы работаем только с самым эффективным и сертифицированным материалом. 
+						<br><span>Наша эковата высочайшего качества. </span></li>
+						<li>При работе мы используем специальную выдувную установку с высокой мощностью. </li>
+						<li>Благодаря нашей работе вы сэкономите за сезон на отопление в 2 раза</li>
+					</ul>
+				</div>
+			</div>
+			<img class="techcar" src="img/techcar.png" alt="">
+		</div>
+	</section>
+	<section id="_reviews" class="_reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h4>Отзывы наших довольных клиентов</h4>
+				</div>
+			</div>
+			<div class="row _reviews_slider">
+				<div class="_reviews_slide">
+					<div class="col-md-6 " >
+						<div class="_reviews_slider_left fotorama" data-nav="thumbs">
+							<img src="img/reviews/slide1.jpg" alt="">
+							<img src="img/reviews/slide1.jpg" alt="">
+							<img src="img/reviews/slide1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="_reviews_right">
+							<p>Объект: г. Краснодар, ул. Рашпилевская, д.104</p>
+							<p>Площадь: <span>104 кв.м.</span></p>
+							<p>Выполнен за: <span>1 день</span></p>
+							<p>Особенности: <span>Замена старого утеплителя стекловаты</span></p>
+							<div class="_reviews_right_client">
+								<img src="img/reviews.png" alt="">
+								<p>Заказчик <br>Дубаева Ольга</p>
+							</div>
+							<div class="_reviews_right_block">
+								<p>Долго думали над выбором утеплителя, и остановились на эковате. Материал экологичный, и вторую зиму у нас в доме тепло.</p>
+								
+								<p>Так что не прогадали, и по цене дешевле вышло чем базальтовая плита. В целом очень довольны всем 
+								рекомендую</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="_reviews_slide">
+					<div class="col-md-6 " >
+						<div class="_reviews_slider_left fotorama" data-nav="thumbs">
+							<img src="img/reviews/slide1.jpg" alt="">
+							<img src="img/reviews/slide1.jpg" alt="">
+							<img src="img/reviews/slide1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="_reviews_right">
+							<p>Объект: г. Краснодар, ул. Рашпилевская, д.104</p>
+							<p>Площадь: <span>104 кв.м.</span></p>
+							<p>Выполнен за: <span>1 день</span></p>
+							<p>Особенности: <span>Замена старого утеплителя стекловаты</span></p>
+							<div class="_reviews_right_client">
+								<img src="img/reviews.png" alt="">
+								<p>Заказчик <br>Дубаева Ольга</p>
+							</div>
+							<div class="_reviews_right_block">
+								<p>Долго думали над выбором утеплителя, и остановились на эковате. Материал экологичный, и вторую зиму у нас в доме тепло.</p>
+								
+								<p>Так что не прогадали, и по цене дешевле вышло чем базальтовая плита. В целом очень довольны всем 
+								рекомендую</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="_reviews_slide">
+					<div class="col-md-6 " >
+						<div class="_reviews_slider_left fotorama" data-nav="thumbs">
+							<img src="img/reviews/slide1.jpg" alt="">
+							<img src="img/reviews/slide1.jpg" alt="">
+							<img src="img/reviews/slide1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="_reviews_right">
+							<p>Объект: г. Краснодар, ул. Рашпилевская, д.104</p>
+							<p>Площадь: <span>104 кв.м.</span></p>
+							<p>Выполнен за: <span>1 день</span></p>
+							<p>Особенности: <span>Замена старого утеплителя стекловаты</span></p>
+							<div class="_reviews_right_client">
+								<img src="img/reviews.png" alt="">
+								<p>Заказчик <br>Дубаева Ольга</p>
+							</div>
+							<div class="_reviews_right_block">
+								<p>Долго думали над выбором утеплителя, и остановились на эковате. Материал экологичный, и вторую зиму у нас в доме тепло.</p>
+								
+								<p>Так что не прогадали, и по цене дешевле вышло чем базальтовая плита. В целом очень довольны всем 
+								рекомендую</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="_howwork" class="_howwork">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h4>Как мы работаем</h4>
+				</div>
+
+			</div>
+			<div class="_howwork_list">
+				<div class="_howwork_list_block">
+					<span>1</span>
+					<img src="img/howwork1.png" alt="">
+					<p>Вы оставляете заявку <br>
+на сайте</p>
+				</div>
+				<div class="_howwork_list_block">
+					<span>2</span>
+					<img src="img/howwork2.png" alt="">
+					<p>Мы вам перезвоним <br>
+и уточним детали</p>
+				</div>
+				<div class="_howwork_list_block">
+					<span>3</span>
+					<img src="img/howwork3.png" alt="">
+					<p>Выезд на ваш объект<br>
+и монтаж</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="_issues">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>Остались еще вопросы?<br> 
+Устали выводить плесень, насекомых и мышей?</h4>
+					<p>Оставьте заявку и наши менеджеры свяжутся и проконсультируют вас</p>
+					<form action="#">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш телефон">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">перезвоните</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="_footer_left">
+						<h4>Контакты</h4>
+						<span>ооо «эковайбер», ИНН 6141050894</span>
+						<p>Краснодарский край г. Краснодар ул. Дербентская 111</p>
+						<p>Ваши отзывы и пожелания <br>
+				можете отправить на e-mail: kydom@yandex.ru</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="_footer_right">
+						<span>Все вопросы вы можете задать по единому номеру:</span>
+						<a href="#">8 (988) 954-96-20</a>
+						<p>Мы в социальных сетях: </p>
+						<a href="https://vk.com/public164173415"><i class="fa fa-vk"></i></a>
+						<a href="https://www.instagram.com/ecovata_23_123_93"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href='#' class="footercopy">Пользовательское соглашение</a>
+			<a href="https://vk.com/id4707022" class="footerwho">Сайт разработан Парниковым М.</a>
+		</div>
+	</footer>
+<!--ALL MODALS-->
+<!-- Modal-1 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/cross.png" alt=""></span></button>
+    	<h4>Спасибо за заявку!</h4>
+    	<p>Наши менеджеры свяжутся с вами в ближайщее время</p>
+    </div>
+  </div>
+</div>
+<!-- Modal-1 end -->
+
+<!-- Modal-2 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/cross.png" alt=""></span></button>
+    	<h4>Закажите звонок — мы перезвоним Вам через 3 минуты</h4>
+    	<form action="#">
+    		<input type="text" placeholder="Ваше имя">
+    		<input type="text" placeholder="Ваш телефон">
+    		<button>Узнать стоимость</button>
+    	</form>
+    	<span>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</span>
+    </div>
+  </div>
+</div>
+<!-- Modal-2 end -->	
+<!-- Modal-3 -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/cross.png" alt=""></span></button>
+    	<div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/xkgP4-doVNM?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</div>
+<!-- Modal-3 end -->
+<!-- Modal-4 -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/cross.png" alt=""></span></button>
+    	<h4>История эковаты</h4>
+    	<p>Впервые начали массово производить утеплитель из переработанной целлюлозы в Германии с 1928 года. Позже, уже в 50-е годы, когда начался бум строительства каркасных домов в Северной Америке, Европе, производство эковаты приобрело огромные масштабы. Страны, в которых целлюлозная вата в качестве утеплителя получила наибольшую популярность – это Канада, США, Финляндия, Германия, Австрия, и очень широко этот материал применяют, как ни казалось странным, в Японии. Целлюлозная вата в России получила название "эковата".
+Причиной такой популярности в использовании целлюлозной ваты, стало следующее:
+<br>- при влажном климате и отрицательных температурах воздуха строения, утепленные экологическим утеплителем, служат гораздо дольше, нежели синтетическими;
+<br>- снижаются затраты на ремонт и обслуживание помещений по замене утеплительного материала;
+<br>- такой утеплитель выполняет функции термоса: зимой сохраняет тепло, а летом в жаркое время – прохладу, также защищает все строения от микроорганизмов и грызунов, которые являются бичом строительных материалов.</p>
+    	<p>В России распространение целлюлозной ваты началось лишь в начале 90-х годов. И общее число предприятий, выпускающих эковату, и число потребителей ее неуклонно растет в геометрической прогрессии. Потому что потребители смогли убедиться в положительных качествах целлюлозы и эффекта, получаемого от ее использования. А самое главное - это доступность и низкая стоимость сырья для ее производства.
+Структура и состав эковаты, и ее отличительные особенности
+Эковата представляет собой утеплитель, имеющий капиллярно-пористую рыхлую структуру. Он состоит из:
+<br>- целлюлозного волокна – 81%;
+<br>- антипиренов (для защиты от горения) – 12%
+<br>- нелетучих антисептических материалов (борной кислоты) – 7%.
+Вырабатывается эковата преимущественно из переработанного целлюлозного волокна, а именно <br>- макулатуры.
+Утеплитель эковата имеет серый или светло-серый оттенок.
+Существуют и другие виды утеплителей, аналогичных по своей структуре, это:
+<br>- минеральная вата;
+<br>- базальтовая вата;
+<br>- стекловата;
+<br>- пенополистирол.
+Все эти синтетические утеплители имеют в своем составе фенольные соединения, которые являются ядовитыми для человека веществами. При нагревании данных материалов до температуры 250 градусов Цельсия из них полностью улетучивается связующее вещество, что делает дальнейшее использование материала невозможным. Также большим недостатком такого вида утеплителей является то, что они произведены из синтетических материалов, которые не впитывают влагу, оставшуюся на поверхности волокон. 
+В конечном итоге это приводит к образованию таких проблем с утеплителями, как:
+<br>- образование конденсата на поверхности;
+<br>- размножение на поверхности грибковых образований и заплесневение;
+<br>- образование «холодных швов» в утеплителе.</p>
+    </div>
+  </div>
+</div>
+<!-- Modal-4 end -->
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/fotorama.js"></script>
+	<script>
+		$('._reviews_slider').slick({
+		});
+	</script>
+	<script>	
+		$(document).ready(function(){
+			$("#main_menu").on("click","a", function (event) {
+				//отменяем стандартную обработку нажатия по ссылке
+				event.preventDefault();
 
+				//забираем идентификатор бока с атрибута href
+				var id  = $(this).attr('href'),
+
+				//узнаем высоту от начала страницы до блока на который ссылается якорь
+					top = $(id).offset().top;
+				
+				//анимируем переход на расстояние - top за 1500 мс
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.navbar-toggle').on('click', function(event) {
+				event.preventDefault();
+				$('._header_top_menu ul').slideToggle();
+				
+			});
+		});
+	</script>
 </body>
 </html>
