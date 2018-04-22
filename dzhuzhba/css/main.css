@@ -1856,8 +1856,6 @@ body {
     margin-top: 0; }
   ._headcatalog_bread, ._headcatalog_cakes, ._headcatalog_bun {
     padding-bottom: 15px; }
-  .catalogs-list li {
-    display: none; }
   ._catalog_menu_list ._seemore {
     display: block;
     margin-bottom: 30px;
@@ -1880,6 +1878,8 @@ body {
     display: none; }
   ._catalog_menu_list ul li {
     padding-top: 20px; }
+  .catalogs-list a:nth-child(1n + 2) li {
+    display: none; }
   ._ourbakery_block p {
     font-size: 24px; }
   ._ourbakery_descr {
