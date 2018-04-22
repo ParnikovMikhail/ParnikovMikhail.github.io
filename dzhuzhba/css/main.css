@@ -2525,7 +2525,19 @@ body {
     margin-top: 25px;
     margin-bottom: 25px; }
   ._catalog_menu_list ul a:first-child li {
-    display: block !important; } }
+    display: block !important; }
+  ._catalog_bread_page ._catalogbread_list_breads ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalog_bread_page ._seemore {
+    display: none; }
+  ._catalog_cakes_page ._catalogcake_list_cakes ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalog_cakes_page ._seemore {
+    display: none; }
+  ._catalog_bun_page ._catalogbun_list_bun ul a:not(:nth-child(1)) {
+    display: none; }
+  ._catalog_bun_page ._seemore {
+    display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
