@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
@@ -48,7 +49,7 @@
 				<div class="col-md-9 text-left">
 					<div class="_header_main ">
 						<div class="_header_callback">
-							<button>Заказать обратный звонок</button>
+							<button type="button"  data-toggle="modal" data-target="#myModa1">Заказать обратный звонок</button>
 						<a href="#">+7 (918) 256-09-03</a>
 						
 						</div>
@@ -175,12 +176,26 @@
 			</div>
 		</div>
 	</footer>
-	
+	<div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close.png" alt=""></span></button>
+      <h4>Заказать обратный звонок</h4>
+			<form action="#" class="main_form">
+				<input required type="text" placeholder="Ваше имя*:" name="username">
+				<input required type="text" placeholder="Ваш телефон*:" name="phone">
+				<div class="g-recaptcha" data-sitekey="6LclD1UUAAAAAHw1LMnlcnMwVTb3VjTVc5-2XrAW"></div>
+				<button onclick="sendMessage()">ОТПРАВИТЬ</button>
+			</form>
+    </div>
+  </div>
+</div>
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/show-more-items.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 
 	<script>
 	
@@ -262,6 +277,29 @@ centerMode: true,
 			}
 		});
 </script>
-
+<script>
+		function sendMessage(){		
+		$('.main_form').validate({
+		    submitHandler: function(form) {
+		        $.ajax({
+					url:     'sendMessage.php', 
+					type:     "POST", //����� ��������
+					dataType: "html", //������ ������
+					data: $('.main_form input').serialize(),  // ����������� ������
+					success: function(response) { //������ ���������� �������
+						console.log('success');
+						$('#myModa1').modal('hide');
+						$('.main_form')[0].reset();
+					},
+					error: function(response) { 
+						console.log('not success');// ������ �� ����������
+					}
+				});
+		    }
+		});
+		return false;
+		}
+	</script>
+	
 </body>
 </html>

@@ -1656,6 +1656,93 @@ body {
 ._ourbakery_boottom {
   padding-top: 200px; }
 
+.modal-content {
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+#myModa1 {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999; }
+  #myModa1 h4 {
+    font-family: timesital;
+    font-size: 30px;
+    color: #ec7d0b;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 30px; }
+  #myModa1 .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 400;
+    box-shadox: none;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 1; }
+  #myModa1 .modal-dialog {
+    max-width: 370px;
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  #myModa1 .modal-open .modal {
+    background: rgba(0, 0, 0, 0.7); }
+  #myModa1 form input {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    height: 36px;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid #625f5c;
+    padding-left: 10px;
+    outline: none;
+    color: white; }
+  #myModa1 form input::-webkit-input-placeholder {
+    color: #898989;
+    font-size: 16px;
+    font-family: timesreg; }
+  #myModa1 form input:-moz-placeholder {
+    color: #898989;
+    font-size: 16px;
+    font-family: timesreg; }
+  #myModa1 form input::-moz-placeholder {
+    color: #898989;
+    font-size: 16px;
+    font-family: timesreg; }
+  #myModa1 form input:-ms-input-placeholder {
+    color: #898989;
+    font-size: 16px;
+    font-family: timesreg; }
+  #myModa1 form button {
+    text-transform: uppercase;
+    background-color: #ec7d0b;
+    color: white;
+    border: 0;
+    width: 110px;
+    height: 33px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: timesreg;
+    margin-top: 25px; }
+  #myModa1 input {
+    outline: none; }
+  #myModa1 .error {
+    border-color: red !important;
+    border: 1px solid red !important;
+    color: red; }
+  #myModa1 form label {
+    display: none !important; }
+
+._header_callback button {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  outline: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2537,7 +2624,18 @@ body {
   ._catalog_bun_page ._catalogbun_list_bun ul a:not(:nth-child(1)) {
     display: none; }
   ._catalog_bun_page ._seemore {
-    display: none; } }
+    display: none; }
+  #myModa1 .modal-dialog {
+    width: auto;
+    margin: 0 auto; }
+  #myModa1 .modal-content {
+    padding-left: 10px;
+    padding-right: 10px; }
+  #myModa1 .close {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    right: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
