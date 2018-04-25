@@ -357,8 +357,16 @@ centerMode: true,
 </script>
 <script>
 		function sendMessage(){		
-		$('.main_form').validate({
-		    submitHandler: function(form) {
+			var captcha = grecaptcha.getResponse();
+		$('.main_form').submit(function(e) {
+		if (!captcha.length) {
+			  // Выводим сообщение об ошибке
+			  $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
+			} else {
+			  // получаем элемент, содержащий капчу
+			  $('#recaptchaError').text('');
+			}	
+				if (captcha.length) {
 		        $.ajax({
 					url:     'sendMessage.php', 
 					type:     "POST", //����� ��������
@@ -368,12 +376,21 @@ centerMode: true,
 						console.log('success');
 						$('#myModa1').modal('hide');
 						$('.main_form')[0].reset();
+						grecaptcha.reset();
 					},
 					error: function(response) { 
 						console.log('not success');// ������ �� ����������
 					}
 				});
 		    }
+		    return false;
+		     if (!captcha.length) {
+			  // Выводим сообщение об ошибке
+			  $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
+			} else {
+			  // получаем элемент, содержащий капчу
+			  $('#recaptchaError').text('');
+			}
 		});
 		return false;
 		}

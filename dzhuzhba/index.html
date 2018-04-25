@@ -423,6 +423,7 @@
 				<input required type="text" placeholder="Ваше имя*:" name="username">
 				<input required type="text" placeholder="Ваш телефон*:" name="phone">
 				<div class="g-recaptcha" data-sitekey="6LclD1UUAAAAAHw1LMnlcnMwVTb3VjTVc5-2XrAW"></div>
+				<div class="text-danger" id="recaptchaError"></div>
 				<button onclick="sendMessage()">ОТПРАВИТЬ</button>
 			</form>
     </div>
@@ -537,8 +538,16 @@ centerMode: true,
 </script>
 <script>
 		function sendMessage(){		
-		$('.main_form').validate({
-		    submitHandler: function(form) {
+			var captcha = grecaptcha.getResponse();
+		$('.main_form').submit(function(e) {
+		if (!captcha.length) {
+			  // Выводим сообщение об ошибке
+			  $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
+			} else {
+			  // получаем элемент, содержащий капчу
+			  $('#recaptchaError').text('');
+			}	
+				if (captcha.length) {
 		        $.ajax({
 					url:     'sendMessage.php', 
 					type:     "POST", //����� ��������
@@ -548,12 +557,21 @@ centerMode: true,
 						console.log('success');
 						$('#myModa1').modal('hide');
 						$('.main_form')[0].reset();
+						grecaptcha.reset();
 					},
 					error: function(response) { 
 						console.log('not success');// ������ �� ����������
 					}
 				});
 		    }
+		    return false;
+		     if (!captcha.length) {
+			  // Выводим сообщение об ошибке
+			  $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
+			} else {
+			  // получаем элемент, содержащий капчу
+			  $('#recaptchaError').text('');
+			}
 		});
 		return false;
 		}
