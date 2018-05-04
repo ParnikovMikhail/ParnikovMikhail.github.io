@@ -9,7 +9,7 @@
 5. [macter](https://parnikovmikhail.github.io/macter/){:target="_blank"}
 6. [Сайт для "Джугба-хлеб](https://parnikovmikhail.github.io/dzhuzhba/){:target="_blank"} 
 7. [Сайт эковата](https://parnikovMikhail.github.io/ecovata/){:target="_blank"} 
-8. [Сайт туртаганай](https://parnikovmikhail.github.io/turtaganai//){:target="_blank"} 
+8. [Сайт туртаганай](https://parnikovmikhail.github.io/turtaganai/){:target="_blank"} 
 
 
 
