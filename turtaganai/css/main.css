@@ -2029,6 +2029,9 @@ body {
     line-height: 38.46px; }
 
 /*END PAGE BLOG*/
+._direction_block a {
+  text-decoration: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
