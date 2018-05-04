@@ -1,0 +1,1523 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+// Пользовательские стили
+
+._header
+	
+	&_top
+		padding-top: 20px
+		padding-bottom: 20px
+		background-color: rgba(0, 5, 49, .4)
+		.row
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+		&_menu
+			ul
+				padding: 0
+				margin: 0
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: space-between
+				padding-left: 50px
+				padding-right: 50px
+				li
+					list-style: none
+					display: inline-block
+
+					a
+						text-transform: uppercase
+						text-decoration: underline
+						font-size: 17px
+						color: white
+						font-family: OpenSans-Bold
+
+						&:hover
+							color: #00ff1a
+							text-decoration: none
+		&_contacts
+			padding-left: 0
+			padding-right: 0
+			text-align: right
+			a
+				font-size: 16px
+				font-family: OpenSans-Bold
+				color: white
+				text-decoration: none
+				span
+					font-size: 24px
+			button
+				width: 174px
+				height: 27px
+				background-color: #252ae7
+				font-size: 12px
+				color: white
+				font-family: OpenSans-Bold
+				border: 0		
+	&_main
+		padding-top: 210px
+		padding-bottom: 155px
+		&_block
+			padding-left: 80px
+			span
+				font-size: 30px
+				color: white
+				text-transform: uppercase
+				font-family: OpenSans-Bold
+			h2
+				margin-top: 0
+				margin-bottom: 0
+				font-size: 98px
+				font-family: RonduitCapitals-Light
+				color: white
+			p
+				color: white
+				font-size: 19px
+				font-family: OpenSans-Regular
+				line-height: 29.17px
+				padding-top: 8px
+			button
+				width: 165px
+				height: 46px
+				background-color: #00ff1a	
+				font-size: 17px
+				text-transform: uppercase
+				color: black
+				font-family: OpenSans-Bold
+				border: 0	
+				margin-top: 70px
+		.slick-slide
+			outline: none
+		.slick-prev:before, .slick-next:before
+			font-family: FontAwesome;
+			content: "\f104";
+			font-size: 38px
+			color: #ffffff	
+			z-index: 9999	
+			
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+		.slick-next:before
+			content: "\f105";
+		.slick-prev, .slick-next
+			width: 50px
+			height: 50px
+			border-radius: 50%
+			z-index: 999	
+			&:hover
+				background-color: rgba(255,255,255, .2)
+		.slick-dots li
+			width: 15px
+			height: 15px	
+			background-color: rgba(255,255,255, .3)	
+			border-radius: 50%
+		.slick-dots li.slick-active
+			background-color: white
+		.slick-dots li button:before
+			display: none
+		.slick-dots
+			bottom: -130px
+		.slick-prev, .slick-next
+			top: 32%	
+
+._direction
+	background-image: url(../img/bg/fon2.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding-bottom: 65px
+	
+	h4
+		color: #151515
+		font-size: 27px
+		text-transform: uppercase
+		font-family: OpenSans-Bold
+		text-align: center
+		margin-top: 50px
+
+		&:after
+			content: url('../img/icon/men.png')	
+			padding-left: 5px
+	&_block
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.07)
+		margin-top: 40px
+		margin-bottom: 60px
+		&_title		
+			position: relative
+			transition: all .3s
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				background-color: rgba(0, 54, 130, 0.66)
+				position: absolute
+				top: 0
+
+			&_item
+				padding: 10px
+				&:after
+
+				
+			img
+				&:nth-child(1)
+					position: absolute
+					width: 100%
+					height: 100%
+			&_bord
+				z-index: 9999
+				position: relative
+				padding-left: 55px
+				padding-right: 55px
+				border: 5px solid #ffffff
+				
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				img
+					&:nth-child(1)
+						position: static
+						width: auto
+						height: auto
+						padding-top: 45px
+
+				margin: 0 auto
+				text-align: center
+				span
+					display: block
+					font-size: 21px
+					font-family: OpenSans-Bold
+					text-transform: uppercase
+					color: white
+					line-height: 23.05px
+					padding-top: 15px
+				p
+					font-size: 21px
+					font-family: OpenSans-Bold
+					color: white
+					line-height: 23.05px
+					padding-top: 15px
+					padding-bottom: 20px
+		&_info
+			h5
+				margin-top: 0
+				margin-bottom: 0
+				font-size: 20px
+				font-family: OpenSans-Bold
+				color: black
+				text-align: center
+				margin-top: 25px
+			ul
+				padding: 0
+				margin: 0
+				padding-left: 50px
+				padding-top: 25px
+				padding-bottom: 10px
+				li
+					display: block
+					font-size: 17px
+					font-family: OpenSans-Italic
+					color: black
+					line-height: 25.31px
+					position: relative
+					&:nth-child(1)
+						&:before
+							position: absolute
+							content: url('../img/icon/hard.png')
+							left: -25px
+					&:nth-child(2)
+						&:before
+							content: url('../img/icon/days.png')
+							position: absolute	
+							left: -25px
+					&:nth-child(3)
+						&:before
+							content: url('../img/icon/type.png')
+							position: absolute	
+							left: -25px	
+
+					&:nth-child(4)
+						&:before
+							content: url('../img/icon/km.png')
+							position: absolute	
+							left: -25px		
+.btn-load-more
+	width: 225px
+	height: 46px
+	background-color: #005ad7	
+	font-size: 17px
+	color: white
+	text-transform: uppercase
+	font-family: OpenSans-Bold
+	display: block
+	margin: 0 auto
+	border: 0							
+._direction_block_title:hover
+	&:after
+		background-color: rgba(0, 54, 130, 0)
+
+._reviews
+	background-image: url(../img/bg/fon3.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding-top: 60px
+	padding-bottom: 130px
+	&_slider_block
+		padding-left: 65px
+		padding-right: 65px
+	.slick-slide
+			outline: none
+	.slick-prev:before, .slick-next:before
+		font-family: FontAwesome;
+		content: "\f104";
+		font-size: 38px
+		color: #ffffff	
+		z-index: 9999	
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+	.slick-next:before
+		content: "\f105";
+	.slick-prev, .slick-next
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		z-index: 999	
+		&:hover
+			background-color: rgba(255,255,255, .2)
+	.slick-dots li
+		width: 15px
+		height: 15px	
+		background-color: rgba(255,255,255, .3)	
+		border-radius: 50%
+	.slick-dots li.slick-active
+		background-color: white
+	.slick-dots li button:before
+		display: none
+	.slick-dots
+		bottom: -170px		
+	&_title
+		margin-bottom: 60px
+		h4
+			font-size: 27px
+			text-transform: uppercase
+			color: white
+			font-family: OpenSans-Bold
+		span
+			font-family: OpenSans-SemiBold
+			font-size: 20px
+			color: white
+	&_block
+		background-color: white
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		
+		padding: 42px 60px
+		&_left
+		&_right
+			padding-left: 35px
+			padding-right: 35px
+			h5
+				margin-top: 0
+				margin-bottom: 0
+				font-size: 20px
+				font-family: OpenSans-Bold
+				color: #232323
+				margin-top: 10px
+			span
+				color: #858585
+				font-size: 17px
+				font-family: OpenSans-Bold
+				color: #858585
+				display: block
+				margin-top: -5px
+				margin-bottom: 17px
+
+			p
+				font-family: OpenSans-Italic
+				font-size: 15px
+				color: #232323
+				line-height: 1.2
+				padding-bottom: 30px
+			a
+				height: 25px
+				width: 25px
+				border-radius: 50%
+				background-color: #005ad6
+				display: inline-block
+				text-align: center
+				i
+					color: white
+					font-size: 15px	
+	&_want
+		width: 225px
+		height: 46px
+		background-color: #005ad7
+		display: block
+		margin: 0 auto
+		font-size: 17px
+		text-transform: uppercase
+		color: white
+		font-family: OpenSans-Bold
+		border: 0
+		margin-top: 25px
+	.slick-slide
+		outline: none
+._form
+	background-image: url(../img/bg/fon4.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding-top: 65px
+	padding-bottom: 65px
+	.container
+		padding-left: 95px
+		padding-right: 95px
+	&_bag
+		position: absolute	
+		bottom: -120px
+		right: -170px
+		z-index: 9999
+	&_block
+		background-color: white
+		padding-bottom: 40px
+		position: relative
+		&_title
+			h4
+				text-transform: uppercase
+				color: black
+				font-size: 28px
+				font-family: OpenSans-Bold
+				padding-top: 35px
+				margin-bottom: 5px
+			span
+				color: black
+				font-size: 20px
+				font-family: OpenSans-SemiBold	
+		&_sell
+			form
+				padding-top: 40px
+				input, textarea
+					max-width: 580px
+					width: 100%
+					height: 47px
+					border: 1px solid #000000	
+					display: block
+					margin: 0 auto	
+					padding-left: 10px
+					outline: none
+					margin-bottom: 15px
+				textarea
+					height: 145px
+					padding-top: 10px	
+				input::-webkit-input-placeholder 
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular
+				input:-moz-placeholder /* Firefox 18- */
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular 
+				input::-moz-placeholder   /* Firefox 19+ */
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular  
+				input:-ms-input-placeholder  
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular 	
+				textarea::-webkit-input-placeholder 
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular
+				textarea:-moz-placeholder /* Firefox 18- */
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular 
+				textarea::-moz-placeholder   /* Firefox 19+ */
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular  
+				textarea:-ms-input-placeholder  
+					color: #9e9e9e
+					font-size: 17px
+					font-family: OpenSans-Regular 	
+				button
+					width: 243px
+					height: 48px
+					background-color: #00ff1a
+					font-size: 17px
+					text-transform: uppercase
+					color: black
+					font-family: OpenSans-Bold
+					border: 0
+					margin-top: 20px
+._guides
+	padding-top: 95px
+	background-color: #f4f4f4
+	padding-bottom: 75px
+	&_block
+		border: 3px solid #d6d6d6
+		text-align: center
+		position: relative
+		padding-top: 70px
+		padding-left: 100px
+		padding-right: 100px
+		padding-bottom: 30px
+		h4
+			font-size: 27px
+			text-transform: uppercase
+			color: black
+			font-family: OpenSans-Bold
+			text-align: center
+			top: -18px
+			padding-left: 25px
+			padding-right: 25px
+			background-color: #f4f4f4
+			position: absolute
+			left: 50%
+			transform: translate(-50%)
+			
+			margin: 0 auto
+
+
+		&_list
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			text-align: center
+			justify-content: space-between
+			&_item
+				img
+					margin-bottom: 10px
+				span
+					display: block
+					font-size: 17px
+					color: black
+					font-family: OpenSans-Bold
+					margin-bottom: -10px
+				p
+					color: black
+					font-size: 17px
+					font-family: OpenSans-Italic			
+._aboutautor
+	margin-bottom: -400px
+	.container
+		padding-left: 30px
+		padding-right: 30px
+	.row
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.07)
+	&_block
+		background-color: white
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		
+		padding: 42px 60px
+		padding-top: 60px
+		padding-bottom: 200px
+		&_left
+		&_right
+			padding-left: 45px
+			padding-right: 35px
+			h5
+				margin-top: 0
+				margin-bottom: 0
+				font-size: 27px
+				font-family: OpenSans-Bold
+				color: #232323
+				margin-top: 5px
+				margin-bottom: 5px
+			span
+				color: #858585
+				font-size: 17px
+				font-family: OpenSans-Bold
+				color: #858585
+				display: block
+				margin-top: -5px
+				margin-bottom: 17px
+
+			p
+				font-family: OpenSans-Italic
+				font-size: 15px
+				color: #232323
+				line-height: 1.2
+				padding-bottom: 10px
+				z-index: 9999
+				position: relative	
+			a
+				height: 25px
+				width: 25px
+				border-radius: 50%
+				background-color: #005ad6
+				display: inline-block
+				text-align: center
+				z-index: 9999
+				position: relative	
+				i
+					color: white
+					font-size: 15px	
+			button
+				border: 0
+				font-size: 17px
+				text-transform: uppercase
+				color: white
+				font-family: OpenSans-Bold
+				width: 225px
+				height: 46px
+				background-color: #005ad7
+				display: block	
+				margin-top: 25px
+				z-index: 9999
+				position: relative	
+._bottom_wrapper
+	
+	background-color: #f4f4f4
+._footer
+	background-image: url(../img/bg/fon7.png)
+	background-size: cover
+	background-position: top
+	background-repeat: no-repeat
+	padding-bottom: 280px
+	padding-top: 450px
+	position: relative
+		
+		
+	&_block
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		padding-left: 100px
+		padding-right: 100px
+		h5
+			color: white
+			font-size: 17px
+			text-transform: uppercase
+			font-family: OpenSans-Bold
+			margin-bottom: 25px
+		&_contacts
+			a
+				color: white
+				font-size: 14px
+				font-family: OpenSans-Regular
+				display: block
+				padding-left: 20px
+				
+				position: relative
+				margin-bottom: 12px
+				&:before
+					font-family: FontAwesome;
+					content: "\f095";
+					font-size: 12px
+					color: white
+					padding-right: 5px
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translateY(-50%)
+				&:nth-child(2)
+					&:before
+						content: '\f0e0'	
+				&:nth-child(4)
+					&:before
+						content: '\f041'		
+
+		&_social
+			h5
+				margin-bottom: 30px
+			a
+				color: white
+				font-size: 14px
+				font-family: OpenSans-Regular	
+				text-transform: uppercase
+				display: block
+				text-decoration: underline
+				position: relative
+				padding-left: 35px
+
+				margin-bottom: 20px
+				&:before
+					content: url('../img/icon/fb.png')
+					position: absolute
+					left: 0
+					top: 70%
+					transform: translateY(-50%)	
+				&:nth-child(3)
+					&:before
+						content: url('../img/icon/vk.png')
+.navbar-toggle
+	display: none
+._header
+	background-image: url('../img/bg/fon1.jpg')
+	background-position: center
+	background-size: cover
+
+._header
+	position: relative		
+._header_top
+	z-index: 9999
+	position: relative
+/*START PAGE TUR LIST*/
+._tur_list
+	background-image: none	
+	background-color: #f4f4f4
+	margin-bottom: -84px;
+	z-index: 9999;
+	position: relative;
+	padding-bottom: 0
+	padding-top: 10px
+	._direction_block
+		margin-bottom: 5px
+	.btn-load-more
+		margin-top: 55px
+	.btn-load-more:nth-child(3)
+		display: none
+			
+._footer_turlist
+	background-color: #f4f4f4
+._header_turlist
+	background-image: url('../img/bg/fon_tur.jpg')
+	._header_main
+		padding-top: 52px
+		padding-bottom: 62px
+		p
+			a
+				color: white
+				font-size: 19px
+				text-decoration: underline
+		._header_main_block button
+			margin-top: 28px		
+	h2
+		font-size: 98px
+		color: white
+		font-weight: 300;
+/*END PAGE TUR LIST*/
+/*START PAGE TURINFO*/
+._turinfo
+	padding-top: 43px
+	margin-bottom: -130px
+	position: relative
+	z-index: 9
+	.row
+		background-color: white
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+		margin-bottom: 10px
+	&_main
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		padding: 35px
+		&_slider
+			max-width: 780px
+		.slick-slide
+			outline: none
+		.slick-prev:before, .slick-next:before
+			font-family: FontAwesome;
+			content: "\f104";
+			font-size: 38px
+			color: #ffffff	
+			z-index: 9999	
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+		.slick-next:before
+			content: "\f105";
+		.slick-prev, .slick-next
+			width: 50px
+			height: 50px
+			border-radius: 50%
+			z-index: 999	
+			background-color: rgba(255,255,255, .3)
+		.slick-next
+			right: 15px
+		.slick-prev
+			left: 15px	
+				
+
+		
+		&_block
+			padding-left: 33px
+			h5
+				color: black
+				font-size: 21px;
+				text-transform: uppercase
+				font-family: OpenSans-Bold
+				margin-top: 0
+				span
+					color: #1c6cdb;
+					text-transform: none
+					display: block
+					margin-top: 5px
+			ul
+				padding: 0
+				margin: 0
+				margin-top: 20px
+				
+				li
+					display: block
+					font-size: 21px
+					font-family: OpenSans-Italic
+					color: black
+					line-height: 25.31px
+					position: relative
+					padding-left: 30px
+					padding-bottom: 5px
+					span
+						font-weight: 700
+					&:nth-child(1)
+						&:before
+							position: absolute
+							content: url('../img/icon/hard1.png')
+							left: 0px
+					&:nth-child(2)
+						&:before
+							content: url('../img/icon/days1.png')
+							position: absolute	
+							left: 0px
+					&:nth-child(3)
+						&:before
+							content: url('../img/icon/type1.png')
+							position: absolute	
+							left: 0px	
+
+					&:nth-child(4)
+						&:before
+							content: url('../img/icon/km1.png')
+							position: absolute	
+							left: 0px	
+			&_set
+				font-size: 20px
+				color: #005ad7;
+				font-family: OpenSans-Bold
+				display: block
+				margin-top: 12px
+			&_cost
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: space-between
+				padding-top: 40px
+				p
+					font-size: 20px
+					color: #232323;
+					font-family: OpenSans-Bold		
+				span
+					font-size: 20px
+					color: #1c6cdb;
+					font-family: OpenSans-Bold	
+			button
+				width: 264px;
+				height: 46px;
+				background-color: #005ad7;
+				color: white
+				text-transform: uppercase
+				font-family: OpenSans-Bold
+				font-size: 17px	
+				border: 0
+				margin-top: -5px	
+	&_descr
+		padding: 35px 68px 25px 68px
+		h5
+			margin-bottom: 0
+			margin-top: 0
+			font-size: 18px
+			text-transform: uppercase
+			font-family: OpenSans-Bold
+			color: black
+			span
+				color: #1c6cdb;
+				text-transform: none
+		p
+			font-size: 17px
+			font-family: OpenSans-Regular
+			color: black
+			line-height: 20px;
+			padding-top: 22px
+	&_program
+		padding: 35px 68px 50px 68px
+		h5
+			margin-bottom: -10px
+			margin-top: 5px
+			font-size: 18px
+			text-transform: uppercase
+			font-family: OpenSans-Bold
+			color: black
+		span
+			color: #1c6cdb;
+			font-size: 17px
+			font-family: OpenSans-Bold
+			margin-top: 15px
+			display: block
+			margin-bottom: -5px
+			span
+				color: black
+				display: inline-block
+		p
+			font-size: 17px
+			font-family: OpenSans-Regular
+			color: black
+			line-height: 20px;
+			
+		&_images
+			margin-top: 15px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex	
+			justify-content: space-between
+	&_value
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		
+		
+		h5
+			font-size: 18px
+			color: black
+			text-transform: uppercase
+			font-family: OpenSans-Bold
+			span
+				font-size: 21px
+				color: #1c6cdb;
+				padding-left: 5px
+				text-transform: none
+		&_cost
+			padding: 30px 0px 40px 68px
+			
+			ul
+				padding: 0
+				margin: 0
+				padding-top: 10px
+				padding-right: 90px
+				li
+					list-style: none
+					color: black
+					font-size: 17px
+					font-family: OpenSans-Regular
+					line-height: 20px
+					span
+						font-family: OpenSans-SemiBold
+			&_list
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: left
+			button
+				width: 227px;
+				height: 46px;
+				background-color: #005ad7;
+				color: white
+				text-transform: uppercase
+				font-size: 17px
+				font-family: OpenSans-Bold
+				border: 0	
+				margin-top: 30px		
+		&_info
+			border-left: 10px solid #f4f4f4	
+			padding-top: 30px
+			padding-left: 30px
+			padding-right: 20px
+			max-width: 400px
+
+
+			p
+				font-size: 17px
+				color: black
+				font-family: OpenSans-Regular
+				line-height: 20px
+				padding-top: 12px
+	&_faq	
+		padding: 35px 70px
+		p
+			font-size: 18px
+			text-transform: uppercase
+			color: #005ad7;
+			font-family: OpenSans-Bold
+			cursor: pointer
+			margin-bottom: 0
+			position: relative
+			padding-left: 20px
+			span
+				font-family: OpenSans-Regular
+				text-transform: none	
+		ul
+			padding: 0
+			margin: 0
+			padding-left: 20px
+			padding-top: 20px
+
+			li
+				list-style: none
+				font-size: 17px
+				font-family: OpenSans-Regular
+				line-height: 1.2
+				a
+					font-size: 17px
+					font-family: OpenSans-Regular
+					color: #005ad7
+					text-decoration: underline
+					cursor: pointer
+					border: 0
+		.arrow-r
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			border-top: 7px solid transparent
+			border-left: 7px solid #a7a7a7	
+			border-bottom: 7px solid transparent	
+		.arrow-d	
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			border-right: 7px solid transparent
+			border-left: 7px solid transparent
+			border-top: 7px solid #a7a7a7	
+	.row._turinfo_attention
+		background-color: transparent
+		box-shadow: none
+		padding-top: 23px
+		padding-left: 50px
+		h5
+			color: #000000;
+			font-size: 18px
+			font-family: OpenSans-Bold
+			text-transform: uppercase
+		p
+			color: #000000;
+			font-size: 17px
+			font-family: OpenSans-Regular
+			padding-top: 10px
+			margin-bottom: 0
+		span
+			margin-top: -5px
+			display: block	
+		ul
+			padding: 0
+			margin: 0
+			padding-top: 20px
+			li
+				list-style: none
+				color: #000000;
+				font-size: 17px
+				line-height: 1.2
+				font-family: OpenSans-Regular			
+/*END PAGE TURINFO*/
+/*START MODAL 1*/
+#myModa1, #myModa2, #myModa3, #myModa4
+	.modal-dialog
+		max-width: 1000px
+		width: 100%
+	.modal-content
+		padding: 50px 105px
+		position: relative
+		h5
+			color: black
+			font-size: 28px
+			text-transform: uppercase
+			font-family: OpenSans-SemiBold
+			margin-top: 50px
+		p
+			font-family: OpenSans-Regular
+			font-size: 20px
+			line-height: 1.2
+			color: black	
+			padding-top: 15px
+			text-align: justify
+	
+.close
+	font-size: 50px
+	position: absolute
+	right: 20px
+	top: 20px
+#myModa1
+	z-index: 9999
+
+
+/*START MODAL 1*/
+/*START MODAL 5*/
+#myModa5
+	z-index: 9999
+
+	.close
+		font-size: 50px
+		position: absolute
+		right: 20px
+		top: 20px
+	.modal-dialog
+		max-width: 1000px
+		width: 100%
+	.modal-content
+		padding: 50px 100px
+		position: relative
+	h5
+		text-transform: uppercase
+		font-size: 28px
+		color: black
+		font-family: OpenSans-SemiBold
+		text-align: center
+		margin-top: 0
+	p
+		color: black
+		font-size: 20px
+		line-height: 1.2
+		font-family: OpenSans-Regular
+		text-align: justify
+		padding-top: 15px
+	form
+		padding-top: 38px
+		input
+			display: block
+			width: 100%
+			height: 47px
+			border: 0
+			background-color: transparent
+			border: 1px solid #000000;
+			margin-bottom: 13px
+			padding-left: 15px
+		textarea	
+			display: block
+			padding-left: 15px
+			width: 100%
+			height: 97px
+			border: 0
+			background-color: transparent
+			border: 1px solid #000000;
+			margin-bottom: 13px	
+			padding-top: 15px
+		select
+			display: block
+			width: 100%
+			height: 47px
+			border: 0
+			background-color: transparent
+			border: 1px solid #000000;
+			margin-bottom: 13px
+			padding-left: 60px
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			cursor: pointer
+
+		button
+			width: 243px;
+			height: 48px;
+			background-color: #00ff1a;
+			display: block
+			margin: 0 auto
+			color: black
+			font-size: 17px
+			text-transform: uppercase
+			font-family: OpenSans-Bold
+			border: 0	
+			margin-top: 40px
+		input::-webkit-input-placeholder 
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+		input:-moz-placeholder /* Firefox 18- */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular 
+		input::-moz-placeholder   /* Firefox 19+ */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular 
+		input:-ms-input-placeholder  
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+		textarea::-webkit-input-placeholder 
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+		textarea:-moz-placeholder /* Firefox 18- */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular 
+		textarea::-moz-placeholder   /* Firefox 19+ */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular  
+		textarea:-ms-input-placeholder
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+		.styled-select 
+			overflow: hidden;
+			background: url(../img/select.jpg) no-repeat left top;
+			background-position-y: 1px;
+			background-size: auto
+			position: relative
+		textarea:nth-child(4)
+			height: 47px
+/*END MODAL 5*/
+/*START PAGE SPECTUR*/
+._header_spec
+	background-image: url(../img/bg/fon_spec_tur.jpg)
+	background-position: bottom;
+	background-size: auto;
+	._header_main_block h2
+		font-size: 60px
+		font-weight: 700
+	._header_main
+		padding-top: 112px;
+		padding-bottom: 124px;
+._spec_tur
+	margin-bottom: -430px
+	.container
+		overflow-y: hidden;
+	.row
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.07)
+		margin-left: 70px
+		margin-right: 70px
+		margin-top: 66px
+		padding: 45px 90px
+		padding-bottom: 250px
+		z-index: 9;
+		position: relative;
+
+	h5
+		text-transform: uppercase
+		font-size: 28px
+		color: black
+		font-family: OpenSans-SemiBold
+		text-align: center
+		margin-top: 0
+	p
+		color: black
+		font-size: 20px
+		line-height: 1.2
+		font-family: OpenSans-Regular
+		text-align: justify
+		padding-top: 15px
+	form
+		padding-top: 30px
+		input
+			display: block
+			width: 100%
+			height: 47px
+			border: 0
+			background-color: transparent
+			border: 1px solid #000000;
+			margin-bottom: 14px
+			padding-left: 15px
+		textarea	
+			display: block
+			padding-left: 15px
+			width: 100%
+			height: 87px
+			border: 0
+			background-color: transparent
+			border: 1px solid #000000;
+			margin-bottom: 14px	
+			padding-top: 15px
+			text-align: left
+			padding-right: 90px
+
+		button
+			width: 243px;
+			height: 48px;
+			background-color: #00ff1a;
+			display: block
+			margin: 0 auto
+			color: black
+			font-size: 17px
+			text-transform: uppercase
+			font-family: OpenSans-Bold
+			border: 0	
+			margin-top: 50px
+		input::-webkit-input-placeholder 
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+		input:-moz-placeholder /* Firefox 18- */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular 
+		input::-moz-placeholder   /* Firefox 19+ */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular 
+		input:-ms-input-placeholder  
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+		textarea::-webkit-input-placeholder 
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular
+		textarea:-moz-placeholder /* Firefox 18- */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular 
+		textarea::-moz-placeholder   /* Firefox 19+ */
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular  
+		textarea:-ms-input-placeholder
+			color: #9e9e9e;
+			font-size: 17px
+			font-family: OpenSans-Regular			
+/*END PAGE SPECTUR*/
+/*START PAGE BLOG*/
+
+._header_blog
+	background-image: url(../img/bg/fon_blog.jpg)
+	._header_main_block 
+		h2
+			font-size: 98px
+			font-weight: 400
+		p
+			span
+				color: white;
+				font-size: 19px;
+				font-family: OpenSans-Regular;
+				line-height: 29.17px;
+				text-transform: none
+				display: block
+	._header_main
+		padding-top: 90px;
+		padding-bottom: 125px;	
+._blog
+	padding-top: 55px
+	margin-bottom: -85px;
+	&_wrapper
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex	
+		padding-right: 150px
+		position: relative
+		z-index: 999
+	&_menu
+		padding-left: 20px	
+		padding-right: 30px
+		ul
+			padding: 0
+			margin: 0
+			li
+				list-style: none
+				display: block
+				width: 122px;
+				height: 32px;
+				border: 2px solid #005ad7;
+				background-color: transparent
+				color: #005ad7;
+				font-size: 12px
+				font-family: OpenSans-SemiBold
+				text-align: center
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-bottom: 8px
+	&_list
+		position: relative
+		&_item
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+			background-color: #ffffff;
+			
+			padding-top: 25px
+			padding-left: 32px
+			padding-right: 40px
+			padding-bottom: 20px
+			margin-bottom: 30px
+			h5
+				margin-top: 0
+				margin-bottom: 0
+				font-size: 21px
+				color: black
+				text-transform: uppercase
+				font-family: OpenSans-Bold
+				a
+					text-decoration: none
+					color: black
+
+			span
+				color: #8f8f8f;
+				font-size: 16px		
+				font-family: OpenSans-Bold
+			p
+				color: black
+				font-size: 16px
+				font-family: OpenSans-Regular
+				line-height: 1.2
+				padding-top: 30px
+			
+			img
+				margin-top: 10px
+				
+			&_social
+				margin-top: 5px
+				a
+					height: 25px
+					width: 25px
+					border-radius: 50%
+					background-color: #005ad6
+					display: inline-block
+					text-align: center
+					i
+						color: white;
+						font-size: 15px;	
+						text-align: center	
+		&_btn
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between	
+			padding-top: 30px	
+		.btn-load-more
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			bottom: -60px
+			z-index: 999
+._blog_list_btn	
+	button
+		width: 122px;
+		height: 32px;
+		background-color: #005ad7;	
+		border: 0
+		color: white
+		font-size: 12px
+		font-family: OpenSans-Regular						
+._blog_travel
+	._blog_menu ul a 
+		&:nth-child(1) li
+			background-color: #005ad7;
+			color: white	
+
+._blog_page
+	margin-bottom: -137px
+	._blog_list_item 
+		margin-right: 150px
+		.slick-slide
+			outline: none
+	._blog_list
+		width: 100%
+	._blog_list_slider_item img
+		width: 100%	
+	._blog_list_item
+		padding-left: 30px
+		padding-right: 30px
+	._blog_list_btn
+		padding-top: 85px
+	&_video
+		margin-top: 30px
+		margin-bottom: 35px
+	._blog_list_item p
+		margin-bottom: 0
+		margin-top: 24px
+		padding-top: 0
+		line-height: 1.2	
+	._blog_list_item img
+		margin-bottom: 12px	
+	.slick-prev:before, .slick-next:before
+		font-family: FontAwesome;
+		content: "\f104";
+		font-size: 38px
+		color: #ffffff	
+		z-index: 9999	
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+	.slick-next:before
+		content: "\f105";
+	.slick-prev, .slick-next
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		z-index: 999	
+		&:hover
+			background-color: rgba(255,255,255, .2)	
+	.slick-next
+		right: 15px	
+	.slick-prev
+		left: 15px
+._blog_page
+	overflow: hidden	
+._header_top_menu 
+	&_main ul li 
+		&:nth-child(1) a
+			color: #00ff1a;
+			text-decoration: none;
+._header_turlist 
+	._header_top_menu ul li 
+		&:nth-child(2) a
+			color: #00ff1a;
+			text-decoration: none;
+._header_spec		
+	._header_top_menu ul li 
+		&:nth-child(4) a
+			color: #00ff1a;
+			text-decoration: none;
+._header_blog				
+	._header_top_menu ul li 
+		&:nth-child(3) a
+			color: #00ff1a;
+			text-decoration: none;
+._header_main_block h2
+	word-wrap: break-word;	
+._header_main_block_info
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	text-align: right
+	flex-wrap: wrap;
+	span
+		line-height: 38.46px;	
+/*END PAGE BLOG*/
+@import "media" // Всегда в конце

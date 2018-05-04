@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	
+
+</head>
+
+<body>
+
+	<header class="_header _header_spec">
+		<div class="_header_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"><div class="_header_top_logo"><a href="#"><img src="img/logo/logo.png" alt=""></a></div></div>
+					<div class="col-md-8"><div class="_header_top_menu">
+						<nav>
+							<button type="button" class="navbar-toggle">
+					    		<span class="icon-bar"></span>
+					    		<span class="icon-bar"></span>
+					    		<span class="icon-bar"></span>
+							</button>
+							<ul id="main_menu">
+								<li><a href="/turtaganai/index.html">Главная</a></li>
+								<li><a href="/turtaganai/tur.html">туры</a></li>
+								<li><a href="/turtaganai/blog.html">БЛОГ</a></li>
+								<li><a href="/turtaganai/spectur.html">индивидуальный тур</a></li>
+								<li><a href="#contacts">контакты</a></li>
+							</ul>
+						</nav>
+					</div></div>
+					
+						<div class="col-md-2 _header_top_contacts">
+							<a href="#">+7 (922) <span>505-09-91</span></a>
+							<button>Заказать звонок</button>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="_header_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+							<div class="_header_main_block">
+								<h2>индивидуальный<br>
+тур</h2>
+							</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="_bottom_wrapper">
+	<section class="_spec_tur">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h5>Добрый день дорогой друг!</h5>
+				      <p>Если у вас появилось желание путешествовать индивидуально или в кругу своих близких, а не в составе большой группы, то мы с удовольствием поможем вам в организации вашего отдыха, для этого необходимо заполнить данную таблицу.</p>
+				      <form action="">
+				      	<input type="text" placeholder="Как к вам обращаться?">
+				      	<input type="text" placeholder="Страна посещения">
+				      	<textarea name="" id="" cols="30" rows="10" placeholder="Маршрут, напишите название, или места которые, вы хотели бы посетить."></textarea>
+				      	<input type="text" placeholder="Количество человек">
+				      	<input type="text" placeholder="Бюджет на поездку">
+				      	<textarea name="" id="" cols="30" rows="10" placeholder="Ваши пожелания, укажите как вы хотите предвигаться, уровень комфорта жилья  и другие предпочтения"></textarea>
+				      	<input type="text" placeholder="Способ связи для ответа">
+				      	<button>отправить заявку</button>
+				      </form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+		<footer class="_footer _footer_turlist" id="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="_footer_block">
+							<div class="_footer_block_contacts">
+								<h5>КОНТАКТЫ</h5>
+								<a href="#">souz18@mail.ru</a>
+								<a href="#">+7 (922) 505-00-91</a>
+								<a href="#">Москва, дом 210 оф. 9</a>
+							</div>
+							<div class="_footer_block_social">
+								<h5>Мы в соц. сетях</h5>
+								<a href="#">Facebook</a>
+								<a href="#">Вконтакте</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/loadMoreResults.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+  $('.loadMore').loadMoreResults({
+    displayedItems: 2,
+    button: {
+      'class': 'btn-load-more',
+      'text': 'ПОКАЗАТЬ ВСЕ'
+    }
+  });
+  if(window.matchMedia('(max-width: 768px)').matches)
+{
+  $('.loadMore').loadMoreResults({
+    displayedItems: 1
+  });
+}
+})
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.navbar-toggle').on('click', function(event) {
+				event.preventDefault();
+				$('._header_top_menu ul').slideToggle();
+				
+			});
+		});
+	
+	</script>
+</body>
+</html>
