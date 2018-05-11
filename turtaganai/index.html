@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 	
 
@@ -24,7 +25,7 @@
 		<div class="_header_top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2"><div class="_header_top_logo"><a href="#"><img src="img/logo/logo.png" alt=""></a></div></div>
+					<div class="col-md-2"><div class="_header_top_logo"><a href="/turtaganai/index.html"><img src="img/logo/logo.png" alt=""></a></div></div>
 					<div class="col-md-8"><div class="_header_top_menu">
 						<nav class="_header_top_menu_main">
 							<button type="button" class="navbar-toggle">
@@ -37,14 +38,14 @@
 								<li><a href="/turtaganai/turlist.html">туры</a></li>
 								<li><a href="/turtaganai/blog.html">БЛОГ</a></li>
 								<li><a href="/turtaganai/spectur.html">индивидуальный тур</a></li>
-								<li><a href="#contacts">контакты</a></li>
+								<li><a href="#contacts_footer">контакты</a></li>
 							</ul>
 						</nav>
 					</div></div>
 					
 						<div class="col-md-2 _header_top_contacts">
-							<a href="#">+7 (922) <span>505-09-91</span></a>
-							<button>Заказать звонок</button>
+							<a href="tel:+79225050991">+7 (922) <span>505-09-91</span></a>
+							<button data-toggle="modal" data-target="#Modacallback">Заказать звонок</button>
 						</div>
 					
 				</div>
@@ -604,8 +605,8 @@
 									<span>предприниматель, 27 лет. </span>
 									<h5>Камчатка.</h5>
 									<p>Самая большая частная компания, работающая с термоядерным синтезом, — это Lockheed Martin, производящая военные самолёты для армии США. В конце прошлого года Lockheed Martin заявила, что собирается создать прототип термоядерного реактора к 2019г, — и не просто термоядерного реактора, а портативного, размером с грузовик. Для удержания горячего газа, то есть плазмы, реактор Lockheed Martin будет использовать магнитное поле: оно создаётся с помощью набора сверхпроводящих катушек.</p>
-									<a href="#"><i class="fa fa-vk"></i></a>
-									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-vk"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
 								</div>
 							</div>
 						</div>
@@ -619,8 +620,8 @@
 									<span>предприниматель, 27 лет. </span>
 									<h5>Камчатка.</h5>
 									<p>Самая большая частная компания, работающая с термоядерным синтезом, — это Lockheed Martin, производящая военные самолёты для армии США. В конце прошлого года Lockheed Martin заявила, что собирается создать прототип термоядерного реактора к 2019г, — и не просто термоядерного реактора, а портативного, размером с грузовик. Для удержания горячего газа, то есть плазмы, реактор Lockheed Martin будет использовать магнитное поле: оно создаётся с помощью набора сверхпроводящих катушек.</p>
-									<a href="#"><i class="fa fa-vk"></i></a>
-									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-vk"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
 								</div>
 							</div>
 						</div>
@@ -634,15 +635,15 @@
 									<span>предприниматель, 27 лет. </span>
 									<h5>Камчатка.</h5>
 									<p>Самая большая частная компания, работающая с термоядерным синтезом, — это Lockheed Martin, производящая военные самолёты для армии США. В конце прошлого года Lockheed Martin заявила, что собирается создать прототип термоядерного реактора к 2019г, — и не просто термоядерного реактора, а портативного, размером с грузовик. Для удержания горячего газа, то есть плазмы, реактор Lockheed Martin будет использовать магнитное поле: оно создаётся с помощью набора сверхпроводящих катушек.</p>
-									<a href="#"><i class="fa fa-vk"></i></a>
-									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-vk"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-12">
-					<button class="_reviews_want text-center">Хочу с вами</button>
+					<button class="_reviews_want text-center" data-toggle="modal" data-target="#Modacallback">Хочу с вами</button>
 				</div>
 			</div>
 		</div>
@@ -654,14 +655,15 @@
 				<div class="col-md-12 text-center">
 					<div class="_form_block_title">
 						<h4>Расчитаем тур который подойдёт именно вам?!</h4>
-						<span>Мы перезвоним вам уже сегодня.</span>
+						<span>Мы ответим вам уже сегодня.</span>
 					</div>
 					<div class="_form_block_sell">
-						<form action="#">
-							<input type="text" placeholder="Ваше имя *">
-							<input type="text" placeholder="Ваш E-mail *">
-							<input type="text" placeholder="Количество участников *">
-							<textarea name="" id="" cols="30" rows="10" placeholder="Вопросы и пожелания по туру *"></textarea>
+						<form class="_form_block_callback">
+							<input type="text" placeholder="Ваше имя *" required name="Имя">
+							<input type="text" placeholder="Ваш E-mail *" required name="E-mail">
+							<input type="text" placeholder="Количество участников *" required name="Количество участников">
+							<textarea id="" cols="30" rows="10" placeholder="Вопросы и пожелания по туру *" required name="Вопросы и пожелания"></textarea>
+							<input type="hidden" name="Форма" value="Мы ответим вам уже сегодня(форма на главной)">
 							<button>отправить заявку</button>
 						</form>
 					</div>
@@ -720,15 +722,15 @@
 							<span>директор, автор блога</span>
 							
 							<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
-							<a href="#"><i class="fa fa-vk"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<button>перейти в блог</button>
+							<a href="#"><i class="fab fa-vk"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="/turtaganai/blog.html" class="_aboutautor_block_right_btn">перейти в блог</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer class="_footer" id="contacts">
+		<footer class="_footer" id="contacts_footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -736,13 +738,14 @@
 							<div class="_footer_block_contacts">
 								<h5>КОНТАКТЫ</h5>
 								<a href="#">souz18@mail.ru</a>
-								<a href="#">+7 (922) 505-00-91</a>
+								<a href="tel:+79225050991">+7 (922) 505-00-91</a>
 								<a href="#">Москва, дом 210 оф. 9</a>
 							</div>
 							<div class="_footer_block_social">
 								<h5>Мы в соц. сетях</h5>
-								<a href="#">Facebook</a>
-								<a href="#">Вконтакте</a>
+								<a href="https://www.facebook.com/soyuztravel"><i class="fab fa-facebook-f"></i>Facebook</a>
+								<a href="https://vk.com/clubsoyz "><i class="fab fa-vk"></i>Вконтакте</a>
+								<a href="https://www.instagram.com/vitaly_kazak_off"><i class="fab fa-instagram"></i>Instagram</a>
 							</div>
 						</div>
 					</div>
@@ -750,7 +753,38 @@
 			</div>
 		</footer>
 	</div>
-	
+
+	<!--START Modalcallback -->
+<div class="modal fade" id="Modacallback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	<p>Заполните форму контактов и мы 
+перезвоним в ближайшее время</p>
+		<form class="_modacallback">
+			<input type="text" placeholder="Ваше имя" required name="Имя">
+			<input type="text" placeholder="Ваш телефон" required name="Телефон">
+			<input type="hidden" name="Форма" value="Перезвоните мне (popup)">
+			<button>Перезвоните мне</button>
+		</form>
+    </div>
+  </div>
+</div>
+<!-- END Modalcallback -->
+<!--START Modalthank -->
+<div class="modal fade" id="Modalthank" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	<h4>
+    		Спасибо за заявку!
+    	</h4>
+    	<p>Наши менеджеры свяжутся <br>с вами в ближайщее время</p>
+		
+    </div>
+  </div>
+</div>
+<!-- END Modalthank -->
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -758,53 +792,6 @@
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/loadMoreResults.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		$(function() {
-			
-		var $slider = $('._header_main_slider').slick({
-			dots: true,
-			adaptiveHeight: true
-		});
-		var bgs = [
-		'fon1',   //фон при переходе на 1 слайдер
-		'fon_slider_1', //фон при переходе на 2 слайдер
-		'fon_slider_2',  //фон при переходе на 3 слайдер
-		'fon_slider_3',  //фон при переходе на 4 слайдер
-		'fon_slider_4',  //фон при переходе на 5 слайдер
-		'fon_slider_5',  //фон при переходе на 6 слайдер
-		// .....
-		];
-
-		$slider.on('afterChange', function(e, slick, index) {
-		$('._header').css('background-image', 'url(https://parnikovmikhail.github.io/turtaganai/img/bg/' + bgs[index] +   '.jpg)');;
-		});
-		});	
-</script>
-<script>
-		$('._reviews_slider').slick({
-			dots: true
-		});
-</script>
-	<script>
-		$(document).ready(function() {
-  $('.loadMore').loadMoreResults({
-    displayedItems: 1,
-    button: {
-      'class': 'btn-load-more',
-      'text': 'ПОКАЗАТЬ ВСЕ'
-    }
-  });
-})
-	</script>
-	<script>
-		$(document).ready(function() {
-			$('.navbar-toggle').on('click', function(event) {
-				event.preventDefault();
-				$('._header_top_menu ul').slideToggle();
-				
-			});
-		});
 	
-	</script>
 </body>
 </html>

@@ -2,7 +2,6 @@
 @import "libs"
 @import "base"
 @import "vars"
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
 // Пользовательские стили
 
 ._header
@@ -584,7 +583,12 @@
 				i
 					color: white
 					font-size: 15px	
-			button
+			._aboutautor_block_right_btn
+				border-radius: 0
+				display: flex
+				align-items: center
+				justify-content: center
+				text-decoration: none
 				border: 0
 				font-size: 17px
 				text-transform: uppercase
@@ -592,8 +596,7 @@
 				font-family: OpenSans-Bold
 				width: 225px
 				height: 46px
-				background-color: #005ad7
-				display: block	
+				background-color: #005ad7	
 				margin-top: 25px
 				z-index: 9999
 				position: relative	
@@ -663,24 +666,34 @@
 				display: block
 				text-decoration: underline
 				position: relative
-				padding-left: 35px
-
+				padding-left: 40px
 				margin-bottom: 20px
-				&:before
-					content: url('../img/icon/fb.png')
+				i
+					width: 30px
+					height: 30px
+					background-color: white
+					border-radius: 50%
+					color: #5C95AF
 					position: absolute
 					left: 0
-					top: 70%
+					top: 50%
 					transform: translateY(-50%)	
-				&:nth-child(3)
-					&:before
-						content: url('../img/icon/vk.png')
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					justify-content: center
+					font-size: 16px
+						
 .navbar-toggle
 	display: none
 ._header
 	background-image: url('../img/bg/fon1.jpg')
-	background-position: center
+	background-repeat: no-repeat
 	background-size: cover
+	background-position: center;
 
 ._header
 	position: relative		
@@ -1424,15 +1437,29 @@
 			right: 0
 			bottom: -60px
 			z-index: 999
-._blog_list_btn	
-	button
-		width: 122px;
-		height: 32px;
-		background-color: #005ad7;	
-		border: 0
-		color: white
-		font-size: 12px
-		font-family: OpenSans-Regular						
+
+._blog_list_btn_travel
+	width: 122px;
+	height: 32px;
+	background-color: #005ad7;	
+	border: 0
+	color: white
+	font-size: 12px
+	font-family: OpenSans-Regular	
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex		
+	align-items: center
+	justify-content: center
+	text-decoration: none
+	transition: all .3s
+	&:hover
+		background-color: white
+		color: #005ad7	
+		border: 1px solid 	#005ad7
+		text-decoration: none
 ._blog_travel
 	._blog_menu ul a 
 		&:nth-child(1) li
@@ -1523,4 +1550,114 @@
 ._direction_block
 	a
 		text-decoration: none
+._header_main_block h2
+	font-size: 65px
+._header_main_block span
+	font-size: 28px
+._header_main
+	padding-bottom: 130px
+._header_main .slick-dots
+	bottom: -100px
+#Modacallback
+	z-index: 9999
+	.modal-dialog
+		max-width: 420px
+		width: 100%
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		margin: 0
+		.modal-content	
+			background-color: #005ad7
+			padding-top: 40px
+			padding-bottom: 35px
+			.close
+				top: 0
+				right: 10px
+			p
+
+				font-family: OpenSans-Regular
+				color: white
+				font-size: 20px
+				line-height: 1.2
+				text-align: center
+			form
+				input
+					width: 240px
+					display: block
+					margin: 0 auto
+					padding-left: 20px
+					height: 45px
+					margin-top: 12px
+					color: #b8b8b8
+					font-size: 20px
+					font-family: OpenSans-Regular 
+					border: 0
+				button
+					width: 240px
+					display: block
+					margin: 0 auto	
+					height: 45px	
+					margin-top: 20px
+					background-color: #00ff1a
+					color: #010101
+					font-size: 17px
+					font-family: OpenSans-Bold
+					border: 0
+					text-transform: uppercase
+				input::-webkit-input-placeholder 
+					color: #b8b8b8
+					font-size: 20px
+					font-family: OpenSans-Regular
+				input:-moz-placeholder /* Firefox 18- */
+					color: #b8b8b8
+					font-size: 20px
+					font-family: OpenSans-Regular 
+				input::-moz-placeholder   /* Firefox 19+ */
+					color: #b8b8b8
+					font-size: 20px
+					font-family: OpenSans-Regular  
+				input:-ms-input-placeholder  
+					color: #b8b8b8
+					font-size: 20px
+					font-family: OpenSans-Regular
+	
+#Modalthank	 
+	z-index: 9999
+	.modal-dialog
+		max-width: 420px
+		width: 100%
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		margin: 0
+		.modal-content	
+			background-color: #005ad7
+			padding-top: 88px
+			padding-bottom: 90px
+			.close
+				top: 0
+				right: 10px
+			p
+				font-family: OpenSans-Regular
+				color: white
+				font-size: 20px
+				line-height: 1.2
+				text-align: center
+				padding-top: 25px	
+			h4
+				font-size: 30px
+				margin: 0
+				color: white
+				font-family: OpenSans-Bold
+				text-align: center	
+._tur_list .btn-load-more:nth-child(4)
+	display: none!important	
+._blog_list_item_social a
+	transition: all .3s
+	&:hover
+		background-color: white
+		i
+			color: #005ad6
+	
 @import "media" // Всегда в конце

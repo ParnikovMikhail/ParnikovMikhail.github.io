@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/collapsible.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 	
 
@@ -25,7 +26,7 @@
 		<div class="_header_top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2"><div class="_header_top_logo"><a href="#"><img src="img/logo/logo.png" alt=""></a></div></div>
+					<div class="col-md-2"><div class="_header_top_logo"><a href="/turtaganai/index.html"><img src="img/logo/logo.png" alt=""></a></div></div>
 					<div class="col-md-8"><div class="_header_top_menu">
 						<nav>
 							<button type="button" class="navbar-toggle">
@@ -44,8 +45,8 @@
 					</div></div>
 					
 						<div class="col-md-2 _header_top_contacts">
-							<a href="#">+7 (922) <span>505-09-91</span></a>
-							<button>Заказать звонок</button>
+							<a href="tel:+79225050991">+7 (922) <span>505-09-91</span></a>
+							<button data-toggle="modal" data-target="#Modacallback">Заказать звонок</button>
 						</div>
 					
 				</div>
@@ -57,8 +58,8 @@
 					<div class="col-md-12 text-center">
 							<div class="_header_main_block">
 								<h2>ТУРЫ</h2>
-								<p>Мы подберём тур даже для самого взыскательного туриста, а если вы не нашли подходящего для вас  предложения, то мы  можем подготовить  для вас <a href="#">индивидуальный тур</a></p>
-								<button>подобрать</button>
+								<p>Мы подберём тур даже для самого взыскательного туриста, а если вы не нашли подходящего для вас  предложения, то мы  можем подготовить  для вас <a href="/turtaganai/spectur.html">индивидуальный тур</a></p>
+								<a href="/turtaganai/spectur.html"><button>подобрать</button></a>
 							</div>	
 					</div>
 				</div>
@@ -327,13 +328,14 @@
 							<div class="_footer_block_contacts">
 								<h5>КОНТАКТЫ</h5>
 								<a href="#">souz18@mail.ru</a>
-								<a href="#">+7 (922) 505-00-91</a>
+								<a href="tel:+79225050991">+7 (922) 505-00-91</a>
 								<a href="#">Москва, дом 210 оф. 9</a>
 							</div>
 							<div class="_footer_block_social">
 								<h5>Мы в соц. сетях</h5>
-								<a href="#">Facebook</a>
-								<a href="#">Вконтакте</a>
+								<a href="https://www.facebook.com/soyuztravel"><i class="fab fa-facebook-f"></i>Facebook</a>
+								<a href="https://vk.com/clubsoyz "><i class="fab fa-vk"></i>Вконтакте</a>
+								<a href="https://www.instagram.com/vitaly_kazak_off"><i class="fab fa-instagram"></i>Instagram</a>
 							</div>
 						</div>
 					</div>
@@ -396,13 +398,13 @@
     	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <h5>Добрый день дорогой участник! </h5>
       <p>Данная форма является аналитической и полностью конфиденциальной. Все поля являются обязательными. Паспортные данные необходимы для оформления страховки и пропусков по необходимости. Просим вам заполнять максимально подробно, в случае отсутствия опыта - поле оставить пустым. </p>
-      <form action="">
-      	<input type="text" placeholder="ФИО">
-      	<input type="text" placeholder="E-mail">
-      	<input type="text" placeholder="Телефон">
-      	<textarea name="" id="" cols="30" rows="10" placeholder="Телефон ближайшего родственника для связи в экстренных случаях"></textarea>
+      <form class="_form_register">
+      	<input type="text" placeholder="ФИО" name="ФИО">
+      	<input type="text" placeholder="E-mail" name="E-mail">
+      	<input type="text" placeholder="Телефон" name="Телефон">
+      	<textarea cols="30" rows="10" placeholder="Телефон ближайшего родственника для связи в экстренных случаях" name="Телефон ближайшего родственника"></textarea>
       	<div class="styled-select">
-      		<select name="" id="" >
+      		<select id="" name="Выберите тур">
       			<option>Выберите тур/название тура и даты</option>
       		  			<option>Тур 1</option>
       		  			<option>Тур 2</option>
@@ -411,7 +413,7 @@
       		</select>
       	</div>
       	<div class="styled-select">
-      		<select name="" id="">
+      		<select id="" name="Где нас нашли">
       					<option>Где нас нашли</option>
       					<option>Пункт 1</option>
       					<option>Пункт 2</option>
@@ -419,18 +421,49 @@
       					<option>Пункт 4</option>
       		</select>
       	</div>
-      	<input type="text" placeholder="Ссылка вконтакте ">
-      	<textarea name="" id="" cols="30" rows="10" placeholder="Наличие опыта, с кем и куда ходили"></textarea>
-      	<input type="text" placeholder="Ограничения в еде (если есть)">
-      	<textarea name="" id="" cols="30" rows="10" placeholder="Паспортные данные, дата рождения, ФИО (на английском), 
-серия, номер, кем и когда выдан, прописка"></textarea>
+      	<input type="text" placeholder="Ссылка вконтакте" name="Ссылка вконтакте">
+      	<textarea id="" cols="30" rows="10" placeholder="Наличие опыта, с кем и куда ходили" name="Наличие опыта"></textarea>
+      	<input type="text" placeholder="Ограничения в еде (если есть)" name="Ограничения в еде">
+      	<textarea id="" cols="30" rows="10" placeholder="Паспортные данные, дата рождения, ФИО (на английском), 
+серия, номер, кем и когда выдан, прописка" name="Паспортные данные"></textarea>
+		<input type="hidden" name="Форма" value="Записаться в тур (popup)">
       	<button>отправить заявку</button>
       </form>
     </div>
   </div>
 </div>
 <!-- END Modal5 -->
-
+<!--START Modalcallback -->
+<div class="modal fade" id="Modacallback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	<p>Заполните форму контактов и мы 
+перезвоним в ближайшее время</p>
+		<form class="_modacallback">
+			<input type="text" placeholder="Ваше имя" required name="Имя">
+			<input type="text" placeholder="Ваш телефон" required name="Телефон">
+			<input type="hidden" name="Форма" value="Перезвоните мне (popup)">
+			<button>Перезвоните мне</button>
+		</form>
+    </div>
+  </div>
+</div>
+<!-- END Modalcallback -->
+<!--START Modalthank -->
+<div class="modal fade" id="Modalthank" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	<h4>
+    		Спасибо за заявку!
+    	</h4>
+    	<p>Наши менеджеры свяжутся <br>с вами в ближайщее время</p>
+		
+    </div>
+  </div>
+</div>
+<!-- END Modalthank -->
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -439,52 +472,6 @@
 	<script src="js/loadMoreResults.js"></script>
 	<script src="js/jquery.collapsible.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		$(document).ready(function() {
-  $('.loadMore').loadMoreResults({
-    displayedItems: 2,
-    button: {
-      'class': 'btn-load-more',
-      'text': 'ПОКАЗАТЬ ВСЕ'
-    }
-  });
-  if(window.matchMedia('(max-width: 768px)').matches)
-{
-  $('.loadMore').loadMoreResults({
-    displayedItems: 1
-  });
-}
-})
-	</script>
-	<script>
-		$(document).ready(function() {
-			$('.navbar-toggle').on('click', function(event) {
-				event.preventDefault();
-				$('._header_top_menu ul').slideToggle();
-				
-			});
-		});
 	
-	</script>
-	<script>
-		$('._turinfo_slider').slick({
-  
-});
-	</script>
-	<script>
-		$('._turinfo_faq').collapsible();
-	</script>
-	
-	<script>
-		$('._turinfo_faq p').click(function(){
-    var $this = $(this).find('span:nth-child(2)');
-    $this.toggleClass('SeeMore2');
-    if($this.hasClass('SeeMore2')){
-        $this.text('(скрыть)');         
-    } else {
-        $this.text('(показать)');
-    }
-});
-	</script>
 </body>
 </html>
