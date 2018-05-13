@@ -15,7 +15,7 @@ $(document).ready(function(){
 		];
 
 		$slider.on('afterChange', function(e, slick, index) {
-		$('._header').css('background-image', 'url(parnikovmikhail.github.io/turtaganai/img/bg/' + bgs[index] +   '.jpg)');;
+		$('._header').css('background-image', 'url(http://nikitenkoprojects.ru/portfolio/tur/img/bg/' + bgs[index] +   '.jpg)');;
 		});
 	//Слайдер с отзывами на главной	
 	$('._reviews_slider').slick({
@@ -116,5 +116,10 @@ $(document).ready(function(){
 	
   	//FAQ
 	$('._turinfo_faq').collapsible();
+  
+
 });
+window.FontAwesomeConfig = {
+    searchPseudoElements: true
+}
 
