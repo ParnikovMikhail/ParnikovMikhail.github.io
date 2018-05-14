@@ -15,11 +15,8 @@ $(document).ready(function(){
 		];
 
 		$slider.on('afterChange', function(e, slick, index) {
-<<<<<<< HEAD
-		$('._header').css('background-image', 'url(http://nikitenkoprojects.ru/portfolio/tur/img/bg/' + bgs[index] +   '.jpg)');;
-=======
-		$('._header').css('background-image', 'url(http://parnikovmikhail.github.io/turtaganai/img/bg/' + bgs[index] +   '.jpg)');;
->>>>>>> 6cfb95959f503488e408d28c3fa3e884052192ac
+	
+		$('._header').css('background-image', 'url(http://parnikovmikhail.github.io/turtaganai/img/bg/' + bgs[index] +   '.jpg)');
 		});
 	//Слайдер с отзывами на главной	
 	$('._reviews_slider').slick({
