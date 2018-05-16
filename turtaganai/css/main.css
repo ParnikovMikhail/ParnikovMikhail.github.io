@@ -2717,7 +2717,56 @@ body {
   ._blog_page ._blog_list_btn {
     padding-top: 30px; }
   ._blog_page {
-    margin-bottom: -175px; } }
+    margin-bottom: -175px; }
+  ._header_spec ._header_main_block h2 {
+    font-size: 22px; }
+  ._header_main_block h2 {
+    font-size: 40px; }
+  ._header_main_block span {
+    font-size: 22px; }
+  ._header_main_block_info span {
+    line-height: 1.2;
+    margin-bottom: 15px; }
+  ._header_main_block p {
+    line-height: 1.6; }
+  ._header_main {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  ._header_main .slick-dots {
+    bottom: -50px; }
+  ._header_top_menu ul {
+    position: absolute;
+    width: 100vw;
+    background: #252ae7;
+    border-bottom: 1px solid white;
+    margin-top: 41px;
+    z-index: 9999; }
+  ._header_top_menu ul li {
+    border-top: 1px solid white;
+    padding: 5px; }
+  ._header_top_hidemenu {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 0; }
+  ._header_top .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .navbar-toggle {
+    margin-left: 15px; }
+  ._header_main {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  ._header_main .slick-dots {
+    bottom: -40px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -2750,13 +2799,22 @@ body {
     margin-top: 0px;
     padding: 40px 0px; }
     ._spec_tur .row p {
-      font-size: 16px; }
-  ._header_spec ._header_main_block h2 {
-    font-size: 22px; } }
+      font-size: 16px; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 400px) {
+  ._header_top_logo img {
+    width: 100px; }
+  ._header_top_contacts button {
+    width: 125px; }
+  ._header_top_contacts a {
+    font-size: 14px; }
+  ._header_top_contacts a span {
+    font-size: 14px; }
+  ._header_top_contacts {
+    margin-right: 15px; }
+  ._header_top_menu ul {
+    margin-top: 35px; } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */

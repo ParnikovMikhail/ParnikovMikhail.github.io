@@ -15,8 +15,7 @@ $(document).ready(function(){
 		];
 
 		$slider.on('afterChange', function(e, slick, index) {
-	
-		$('._header').css('background-image', 'url(http://parnikovmikhail.github.io/turtaganai/img/bg/' + bgs[index] +   '.jpg)');
+		$('._header').css('background-image', 'url(/img/bg/' + bgs[index] +   '.jpg)');;
 		});
 	//Слайдер с отзывами на главной	
 	$('._reviews_slider').slick({
