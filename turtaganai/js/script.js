@@ -93,12 +93,7 @@ $(document).ready(function(){
       'text': 'ПОКАЗАТЬ ВСЕ'
     }
   	});
-	  if(window.matchMedia('(max-width: 768px)').matches)
-	{
-	  $('._load_more_blog').loadMoreResults({
-	    displayedItems: 1
-	  });
-	}
+	  
 	//Показать больше в списке туров
 	$('._tur_list .loadMore').loadMoreResults({
     displayedItems: 2,
