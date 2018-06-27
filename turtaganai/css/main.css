@@ -536,7 +536,35 @@ body {
       color: black;
       font-family: OpenSans-Bold;
       border: 0;
-      margin-top: 70px; }
+      margin-top: 70px;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none; }
+    ._header_main_block ._header_main_block_btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 165px;
+      height: 46px;
+      background-color: #00ff1a;
+      font-size: 17px;
+      text-transform: uppercase;
+      color: black;
+      font-family: OpenSans-Bold;
+      border: 0;
+      margin-top: 70px;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none; }
   ._header_main .slick-slide {
     outline: none; }
   ._header_main .slick-prev:before, ._header_main .slick-next:before {
@@ -2047,21 +2075,9 @@ body {
 ._blog_page {
   overflow: hidden; }
 
-._header_top_menu_main ul li:nth-child(1) a {
-  color: #00ff1a;
-  text-decoration: none; }
-
-._header_turlist ._header_top_menu ul li:nth-child(2) a {
-  color: #00ff1a;
-  text-decoration: none; }
-
-._header_spec ._header_top_menu ul li:nth-child(4) a {
-  color: #00ff1a;
-  text-decoration: none; }
-
-._header_blog ._header_top_menu ul li:nth-child(3) a {
-  color: #00ff1a;
-  text-decoration: none; }
+.current a {
+  color: #00ff1a !important;
+  text-decoration: none !important; }
 
 ._header_main_block h2 {
   word-wrap: break-word; }
@@ -2395,10 +2411,17 @@ body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: center; } }
+    text-align: center; }
+  ._header_main_block ._header_main_block_btn {
+    margin: 0 auto;
+    margin-top: 70px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  ._header_main_block ._header_main_block_btn {
+    margin-top: 30px; }
+  ._direction_block {
+    max-width: 302px; }
   ._aboutautor_block_right ._aboutautor_block_right_btn {
     margin: 0 auto;
     margin-top: 20px; }
@@ -2742,6 +2765,10 @@ body {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+	._header_top {
+  	background-color: rgba(0, 5, 49, 0.7);
+  }
+
   ._blog_page .container {
     padding-left: 0;
     padding-right: 0; }
@@ -2775,6 +2802,12 @@ body {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 400px) {
+._header_main {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+  ._header_top {
+  	background-color: rgba(0, 5, 49, 0.7);
+  }	
   ._header_top_logo img {
     width: 100px; }
   ._header_top_contacts button {
@@ -2782,11 +2815,7 @@ body {
   ._header_top_contacts a {
     font-size: 14px; }
   ._header_top_contacts a span {
-    font-size: 14px; }
-  ._header_top_contacts {
-    margin-right: 15px; }
-  ._header_top_menu ul {
-    margin-top: 35px; } }
+    font-size: 14px; } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
